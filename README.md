@@ -3,6 +3,6 @@ Item Draft custom game mode for Dota 2, where skills and items are swapped. This
 
 ## Status
 
-Currently waiting on the release of the Reborn tools to begin. No development done yet.
+Development underway.
 
 See [the wiki](https://github.com/Lattyware/itemdraft/wiki/Item-Draft) for plans and implementation detail.
