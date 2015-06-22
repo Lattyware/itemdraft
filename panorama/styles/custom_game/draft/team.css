@@ -1,0 +1,12 @@
+.team {
+  flow-children: down;
+}
+
+.team .team-name {
+  color: #ffffff;
+	font-size: 30px;
+}
+
+.team .players {
+  flow-children: down;
+}

@@ -1,0 +1,10 @@
+.gameinfo {
+  color: #ffffff;
+	font-size: 25px;
+  flow-children: down;
+  text-overflow: ellipsis;
+}
+
+.gameinfo Label {
+  margin-bottom: 25px;
+}

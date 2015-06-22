@@ -1,0 +1,26 @@
+.hidden {
+  opacity: 0;
+}
+
+#levelButton {
+  background-color: #FFD700;
+  margin-top: 800px;
+  margin-left: 510px;
+  width: 150px;
+  height: 25px;
+  text-align: center;
+}
+
+#itemSelection {
+  width: 400px;
+  height: 200px;
+  margin-top: 625px;
+  margin-left: 25px;
+  background-color: #000000;
+  flow-children: right;
+}
+
+.item {
+  width: 60px;
+  height: 40px;
+}

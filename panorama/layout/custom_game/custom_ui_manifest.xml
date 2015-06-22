@@ -1,0 +1,16 @@
+<root>
+  <Panel>
+    <CustomUIElement type="GameInfo"
+      layoutfile="file://{resources}/layout/custom_game/item_draft_game_info.xml" />
+
+    <CustomUIElement type="HeroSelection"
+      layoutfile="file://{resources}/layout/custom_game/draft/draft.xml" />
+
+      <CustomUIElement type="Hud"
+      layoutfile="file://{resources}/layout/custom_game/level/level.xml" />
+    <CustomUIElement type="Hud"
+      layoutfile="file://{resources}/layout/custom_game/ability_shop.xml" />
+    <CustomUIElement type="Hud"
+      layoutfile="file://{resources}/layout/custom_game/ability_quickbuy.xml" />
+  </Panel>
+</root>

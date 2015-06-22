@@ -1,0 +1,28 @@
+<!--
+  An item in the level view.
+-->
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/level/level.css" />
+	</styles>
+  <script>
+    "use strict";
+
+    var itemPanel = $.GetContextPanel();
+    var itemName = itemPanel.GetAttributeString("itemName", "");
+
+    var button = itemPanel.GetChild(0);
+    button.onactivate = "buy(" + itemName + ")";
+
+		var image = button.GetChild(0);
+		var itemShortName = itemName.substring(5, itemName.length);
+		image.SetImage("file://{images}/" + itemShortName + ".png");
+
+		function buy() {
+			$.Msg(itemName);
+		}
+  </script>
+  <Panel class="item">
+    <Button onactivate="buy();"><Image /></Button>
+  </Panel>
+</root>

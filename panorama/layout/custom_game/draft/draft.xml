@@ -1,0 +1,53 @@
+<!--
+The drafting screen for items.
+-->
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/draft/draft.css" />
+	</styles>
+  <script>
+    "use strict";
+
+    var rootPanel = $.GetContextPanel();
+
+    var teamNames = ["Radiant", "Dire"];
+    var nextTeamName = 0;
+    for (var teamId of Game.GetAllTeamIDs()) {
+      var team = teamNames[nextTeamName++];
+      var teamPanel = $.CreatePanel("Panel", $("#teams"), "team" + teamId);
+      teamPanel.SetAttributeString("name", team);
+      teamPanel.SetAttributeInt("id", teamId);
+      teamPanel.BLoadLayout("file://{resources}/layout/custom_game/draft/team.xml", false, false);
+    }
+
+    var itemsPanel = $.CreatePanel("Panel", rootPanel, "items");
+    itemsPanel.BLoadLayout("file://{resources}/layout/custom_game/draft/items.xml", false, false);
+
+    var draftOrderPanel = $("#draft-order");
+    for (var i = 1; i <= 2; i++) {
+        var draftOrderPlayer = $.CreatePanel("Panel", draftOrderPanel, "draft-order-player-" + i.toString());
+        draftOrderPlayer.SetAttributeInt("order", i);
+        draftOrderPlayer.BLoadLayout("file://{resources}/layout/custom_game/draft/order.xml", false, false);
+    }
+
+    for (var keyValue of CustomNetTables.GetAllTableValues("draft")) {
+      draftChange("draft", keyValue.key, keyValue.value);
+    }
+    function draftChange(table, key, value) {
+      if (key === "draft") {
+        if (Object.keys(value["order"]).length === 0) {
+          rootPanel.AddClass("hidden")
+        }
+      }
+    }
+    CustomNetTables.SubscribeNetTableListener("draft", draftChange);
+  </script>
+  <Panel class="fullscreen">
+    <Panel id="draft" class="fullscreen background">
+      <Label id="draft-description" text="Drafting order:" />
+      <Panel id="draft-order"></Panel>
+      <Panel id="teams">
+      </Panel>
+    </Panel>
+  </Panel>
+</root>

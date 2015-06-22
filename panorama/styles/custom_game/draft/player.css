@@ -1,0 +1,37 @@
+.player-draft-area {
+  flow-children: right;
+}
+
+.player-draft-area .player-info {
+  width: 70px;
+  flow-children: down;
+}
+
+.player-draft-area .player-info DOTAAvatarImage {
+  width: 60px;
+  height: 60px;
+}
+
+.player-draft-area .currently-drafting {
+  border: 1px solid #ffffff;
+}
+
+.player-draft-area .player-info .remaining-money {
+  color: #FFD700;
+  align: right bottom;
+  background-color: #000000;
+}
+
+.player-draft-area .drafted-items {
+  flow-children: down;
+}
+
+.player-draft-area .drafted-items .row {
+  flow-children: right;
+}
+
+.player-draft-area .drafted-items .row .drafted-item {
+  width: 40px;
+  height: 30px;
+  overflow: squish;
+}

@@ -1,0 +1,22 @@
+.item-grid {
+  flow-children: right;
+}
+
+.item-grid .group {
+  flow-children: down;
+}
+
+.item-grid .group .item {
+  margin: 2px;
+  border: 1px solid #000000;
+}
+
+.item-grid .group .item:hover {
+  border: 1px solid #ffffff;
+}
+
+.item-grid .group .item .cost {
+  color: #FFD700;
+  align: right bottom;
+  background-color: #000000;
+}

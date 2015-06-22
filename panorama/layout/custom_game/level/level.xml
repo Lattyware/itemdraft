@@ -1,0 +1,63 @@
+<!--
+  A widget allowing the selection of items to gain through leveling.
+-->
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/level/level.css" />
+	</styles>
+  <script>
+    "use strict";
+
+    var playerId = Game.GetLocalPlayerID().toString();
+    var levelButton = $("#levelButton");
+    var itemSelection = $("#itemSelection");
+
+    var items = {};
+    for (var item of CustomNetTables.GetAllTableValues("items")) {
+      items[item.key] = item.value;
+    }
+
+    var draftedItems = {};
+    for (var keyValue of CustomNetTables.GetAllTableValues("draft")) {
+      if (keyValue.key === playerId) {
+        var draft = keyValue.value["draft"];
+        for (var key in draft) {
+          var itemName = draft[key];
+          draftedItems[itemName] = items[itemName];
+          var newItem = $.CreatePanel("Panel", itemSelection, "selection-" + key);
+          newItem.SetAttributeString("itemName", itemName);
+          newItem.BLoadLayout("file://{resources}/layout/custom_game/level/item.xml", false, false);
+        }
+      }
+    }
+
+    function showLevelOptions() {
+      itemSelection.RemoveClass("hidden");
+    }
+
+    for (var keyValue of CustomNetTables.GetAllTableValues("game")) {
+      gameChange("game", keyValue.key, keyValue.value);
+    }
+    function gameChange(table, key, value) {
+      if (key === playerId) {
+        var gold = parseInt(value["gold"]);
+        for (var itemName in draftedItems) {
+          if (parseInt(draftedItems[itemName]["cost"]) < gold) {
+            levelButton.GetChild(0).text = "Level Up (" + gold.toString() + ")"
+            levelButton.RemoveClass("hidden");
+          } else {
+						levelButton.AddClass("hidden");
+					}
+        }
+      }
+    }
+    CustomNetTables.SubscribeNetTableListener("game", gameChange);
+  </script>
+  <Panel>
+    <Button id="levelButton" onactivate="showLevelOptions();" class="hidden">
+      <Label text="Level Up" />
+    </Button>
+    <Panel id="itemSelection" class="hidden">
+    </Panel>
+  </Panel>
+</root>
