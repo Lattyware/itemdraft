@@ -20,10 +20,6 @@ row0.SetAttributeInt("items", 0);
 var row1 = draftedItemsPanel.GetChild(1);
 row1.SetAttributeInt("items", 0);
 
-for (var keyValue of CustomNetTables.GetAllTableValues("draft")) {
-  draftChange("draft", keyValue.key, keyValue.value);
-}
-
 function draftChange(table, key, value) {
   if (key === playerId.toString()) {
     remainingMoneyLabel.text = value["gold"];
@@ -53,5 +49,4 @@ function draftChange(table, key, value) {
     draftedItems = draftedItems.concat(newItems);
   }
 }
-
-CustomNetTables.SubscribeNetTableListener("draft", draftChange);
+manageNetTable("draft", draftChange)

@@ -5,11 +5,12 @@
   also arbitrary.
 -->
 <root>
-	<styles>
-		<include src="file://{resources}/styles/custom_game/draft/items.css" />
-	</styles>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/draft/items.css" />
+  </styles>
   <scripts>
-		<include src="file://{resources}/scripts/custom_game/draft/items.js" />
+    <include src="file://{resources}/scripts/custom_game/utility.js" />
+    <include src="file://{resources}/scripts/custom_game/draft/items.js" />
   </scripts>
   <Panel>
     <Panel class="item-grid">

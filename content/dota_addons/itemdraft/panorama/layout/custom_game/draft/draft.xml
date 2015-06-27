@@ -2,9 +2,9 @@
 	The drafting screen for items.
 -->
 <root>
-	<styles>
-		<include src="file://{resources}/styles/custom_game/draft/draft.css" />
-	</styles>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/draft/draft.css" />
+  </styles>
   <scripts>
     <include src="file://{resources}/scripts/custom_game/utility.js" />
     <include src="file://{resources}/scripts/custom_game/draft/draft.js" />

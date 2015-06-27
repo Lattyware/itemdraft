@@ -2,11 +2,11 @@
   A display of a team's players with their draft.
 -->
 <root>
-	<styles>
-		<include src="file://{resources}/styles/custom_game/draft/team.css" />
-	</styles>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/draft/team.css" />
+  </styles>
   <scripts>
-		<include src="file://{resources}/scripts/custom_game/draft/team.js" />
+    <include src="file://{resources}/scripts/custom_game/draft/team.js" />
   </scripts>
   <Panel class="team">
     <Label class="team-name" />

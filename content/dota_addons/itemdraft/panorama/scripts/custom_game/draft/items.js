@@ -1,12 +1,11 @@
 "use strict";
 
-for (var item of CustomNetTables.GetAllTableValues("items")) {
-  var name = item.key;
-  var data = item.value;
+function items(table, name, data) {
   var costLabel = $.CreatePanel("Label", $("#" + name), name+"-cost");
   costLabel.AddClass("cost");
   costLabel.text = data.cost;
 }
+manageNetTable("items", items);
 
 function attemptDraft(item) {
   var drafted = {};

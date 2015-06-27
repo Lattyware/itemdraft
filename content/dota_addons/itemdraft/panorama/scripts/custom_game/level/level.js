@@ -8,23 +8,25 @@ setForHudFlipping(itemSelection);
 setForHudFlipping(levelButton);
 
 var items = {};
-for (var item of CustomNetTables.GetAllTableValues("items")) {
-  items[item.key] = item.value;
+function itemChange(table, key, value) {
+  items[key] = value;
 }
+manageNetTable("items", itemChange)
 
 var draftedItems = {};
-for (var keyValue of CustomNetTables.GetAllTableValues("draft")) {
-  if (keyValue.key === playerId) {
-    var draft = keyValue.value["draft"];
-    for (var key in draft) {
-      var itemName = draft[key];
+function draftChange(table, key, value) {
+  if (key === playerId) {
+    var draft = value["draft"];
+    for (var k in draft) {
+      var itemName = draft[k];
       draftedItems[itemName] = items[itemName];
-      var newItem = $.CreatePanel("Panel", itemSelection, "selection-" + key);
+      var newItem = $.CreatePanel("Panel", itemSelection, "selection-" + k);
       newItem.SetAttributeString("itemName", itemName);
       newItem.BLoadLayout("file://{resources}/layout/custom_game/level/item.xml", false, false);
     }
   }
 }
+manageNetTable("draft", draftChange)
 
 function showLevelOptions() {
   itemSelection.ToggleClass("hidden");

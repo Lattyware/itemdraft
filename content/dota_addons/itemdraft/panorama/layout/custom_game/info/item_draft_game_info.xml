@@ -4,7 +4,7 @@
 -->
 <root>
   <styles>
-      <include src="file://{resources}/styles/custom_game/info/item_draft_game_info.css" />
+    <include src="file://{resources}/styles/custom_game/info/item_draft_game_info.css" />
   </styles>
   <Panel class="gameinfo">
     <Label text="Item draft is a game mode where dota is flipped around - draft your items, and level up to get them, while buying abilities with your hard-earned gold!" />

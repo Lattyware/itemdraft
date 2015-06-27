@@ -4,6 +4,7 @@
 -->
 <root>
   <scripts>
+    <include src="file://{resources}/scripts/custom_game/utility.js" />
     <include src="file://{resources}/scripts/custom_game/shop/ability_quickbuy.js" />
   </scripts>
   <Panel>
