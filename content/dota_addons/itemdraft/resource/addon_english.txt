@@ -1,8 +1,0 @@
-"lang"
-{
-	"Language"		"English"
-	"Tokens"
-	{		
-		"addon_game_name"								"Item Draft"
-	}
-}
