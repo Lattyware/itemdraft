@@ -27,8 +27,8 @@ Any text editor will do (you'll want syntax highlighting) - [Atom][Atom] is a go
 more fully-features, [IntelliJ Community Edition][IntelliJ] has a plugin for Lua and support for XML/JS/CSS, making it a 
 very good choice. You will find an IntelliJ project file in the root of the repository.
 
-[Atom] https://atom.io/
-[IntelliJ] https://www.jetbrains.com/idea/download/
+[Atom]: https://atom.io/
+[IntelliJ]: https://www.jetbrains.com/idea/download/
 
 ### Code
 
