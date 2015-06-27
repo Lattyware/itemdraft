@@ -1,0 +1,13 @@
+<!--
+  A replacement for the shop that allows you to buy abilities instead of
+  items.
+-->
+<root>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/utility.js" />
+    <include src="file://{resources}/scripts/custom_game/shop/ability_shop.js" />
+  </scripts>
+  <Panel hittest="false">
+
+  </Panel>
+</root>

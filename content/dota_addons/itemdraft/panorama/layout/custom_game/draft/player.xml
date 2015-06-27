@@ -1,0 +1,22 @@
+<!--
+  A display of a player and their draft.
+-->
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/draft/player.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/draft/player.js" />
+	</scripts>
+  <Panel class="player-draft-area">
+    <Panel class="player-info">
+      <DOTAAvatarImage steamid="-1" />
+      <DOTAUserName steamid="-1" />
+      <Label class="remaining-money" />
+    </Panel>
+    <Panel class="drafted-items">
+			<Panel class="row"></Panel>
+			<Panel class="row"></Panel>
+    </Panel>
+  </Panel>
+</root>

@@ -1,0 +1,18 @@
+<!--
+  A widget allowing the selection of items to gain through leveling.
+-->
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/level/level.css" />
+	</styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/utility.js" />
+		<include src="file://{resources}/scripts/custom_game/level/level.js" />
+  </scripts>
+  <Panel class="fullscreen" hittest="false">
+    <Button id="levelButton" onactivate="showLevelOptions();" class="hidden">
+      <Label text="Level Up" />
+    </Button>
+    <Panel id="itemSelection" class="hidden"></Panel>
+  </Panel>
+</root>

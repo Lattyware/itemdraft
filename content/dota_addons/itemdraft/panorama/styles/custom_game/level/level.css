@@ -1,0 +1,41 @@
+.hidden {
+  visibility: collapse;
+}
+
+#levelButton {
+  horizontal-align: left;
+  margin-bottom: 250px;
+  vertical-align: bottom;
+  background-color: #FFD700;
+  width: 150px;
+  height: 25px;
+  text-align: center;
+  margin-left: 400px;
+}
+#levelButton.hud-flipped {
+  margin-left: 520px;
+}
+
+#itemSelection {
+  horizontal-align: left;
+  vertical-align: bottom;
+  width: 370px;
+  height: fit-children;
+  margin-bottom: 280px;
+  background-color: #000000;
+  flow-children: right-wrap;
+  margin-left: 320px;
+}
+#itemSelection.hud-flipped {
+  margin-left: 400px;
+}
+
+.item {
+  width: 60px;
+  height: 40px;
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100%;
+}

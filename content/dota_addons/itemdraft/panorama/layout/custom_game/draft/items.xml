@@ -1,0 +1,179 @@
+<!--
+  A display of all items.
+
+  This is not generated as otherwise the assets are not loaded. The grouping is
+  also arbitrary.
+-->
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/draft/items.css" />
+	</styles>
+  <scripts>
+		<include src="file://{resources}/scripts/custom_game/draft/items.js" />
+  </scripts>
+  <Panel>
+    <Panel class="item-grid">
+      <Panel id="consumables" class="group">
+        <Panel class="item" id="item_clarity"><Button onactivate="attemptDraft('item_clarity');"><Image src="file://{images}/clarity.png" /></Button></Panel>
+        <Panel class="item" id="item_flask"><Button onactivate="attemptDraft('item_flask');"><Image src="file://{images}/flask.png" /></Button></Panel>
+        <Panel class="item" id="item_tango"><Button onactivate="attemptDraft('item_tango');"><Image src="file://{images}/tango.png" /></Button></Panel>
+        <Panel class="item" id="item_enchanted_mango"><Button onactivate="attemptDraft('item_enchanted_mango');"><Image src="file://{images}/enchanted_mango.png" /></Button></Panel>
+        <Panel class="item" id="item_bottle"><Button onactivate="attemptDraft('item_bottle');"><Image src="file://{images}/bottle.png" /></Button></Panel>
+      </Panel>
+      <Panel id="attributes" class="group">
+        <Panel class="item" id="item_branches"><Button onactivate="attemptDraft('item_branches');"><Image src="file://{images}/branches.png" /></Button></Panel>
+        <Panel class="item" id="item_gauntlets"><Button onactivate="attemptDraft('item_gauntlets');"><Image src="file://{images}/gauntlets.png" /></Button></Panel>
+        <Panel class="item" id="item_slippers"><Button onactivate="attemptDraft('item_slippers');"><Image src="file://{images}/slippers.png" /></Button></Panel>
+        <Panel class="item" id="item_mantle"><Button onactivate="attemptDraft('item_mantle');"><Image src="file://{images}/mantle.png" /></Button></Panel>
+        <Panel class="item" id="item_circlet"><Button onactivate="attemptDraft('item_circlet');"><Image src="file://{images}/circlet.png" /></Button></Panel>
+        <Panel class="item" id="item_belt_of_strength"><Button onactivate="attemptDraft('item_belt_of_strength');"><Image src="file://{images}/belt_of_strength.png" /></Button></Panel>
+        <Panel class="item" id="item_boots_of_elves"><Button onactivate="attemptDraft('item_boots_of_elves');"><Image src="file://{images}/boots_of_elves.png" /></Button></Panel>
+        <Panel class="item" id="item_robe"><Button onactivate="attemptDraft('item_robe');"><Image src="file://{images}/robe.png" /></Button></Panel>
+        <Panel class="item" id="item_ogre_axe"><Button onactivate="attemptDraft('item_ogre_axe');"><Image src="file://{images}/ogre_axe.png" /></Button></Panel>
+        <Panel class="item" id="item_blade_of_alacrity"><Button onactivate="attemptDraft('item_blade_of_alacrity');"><Image src="file://{images}/blade_of_alacrity.png" /></Button></Panel>
+        <Panel class="item" id="item_staff_of_wizardry"><Button onactivate="attemptDraft('item_staff_of_wizardry');"><Image src="file://{images}/staff_of_wizardry.png" /></Button></Panel>
+      </Panel>
+      <Panel id="armaments" class="group">
+        <Panel class="item" id="item_ring_of_protection"><Button onactivate="attemptDraft('item_ring_of_protection');"><Image src="file://{images}/ring_of_protection.png" /></Button></Panel>
+        <Panel class="item" id="item_stout_shield"><Button onactivate="attemptDraft('item_stout_shield');"><Image src="file://{images}/stout_shield.png" /></Button></Panel>
+        <Panel class="item" id="item_quelling_blade"><Button onactivate="attemptDraft('item_quelling_blade');"><Image src="file://{images}/quelling_blade.png" /></Button></Panel>
+        <Panel class="item" id="item_orb_of_venom"><Button onactivate="attemptDraft('item_orb_of_venom');"><Image src="file://{images}/orb_of_venom.png" /></Button></Panel>
+        <Panel class="item" id="item_blades_of_attack"><Button onactivate="attemptDraft('item_blades_of_attack');"><Image src="file://{images}/blades_of_attack.png" /></Button></Panel>
+        <Panel class="item" id="item_chainmail"><Button onactivate="attemptDraft('item_chainmail');"><Image src="file://{images}/chainmail.png" /></Button></Panel>
+        <Panel class="item" id="item_quarterstaff"><Button onactivate="attemptDraft('item_quarterstaff');"><Image src="file://{images}/quarterstaff.png" /></Button></Panel>
+        <Panel class="item" id="item_helm_of_iron_will"><Button onactivate="attemptDraft('item_helm_of_iron_will');"><Image src="file://{images}/helm_of_iron_will.png" /></Button></Panel>
+        <Panel class="item" id="item_broadsword"><Button onactivate="attemptDraft('item_broadsword');"><Image src="file://{images}/broadsword.png" /></Button></Panel>
+        <Panel class="item" id="item_claymore"><Button onactivate="attemptDraft('item_claymore');"><Image src="file://{images}/claymore.png" /></Button></Panel>
+        <Panel class="item" id="item_javelin"><Button onactivate="attemptDraft('item_javelin');"><Image src="file://{images}/javelin.png" /></Button></Panel>
+        <Panel class="item" id="item_mithril_hammer"><Button onactivate="attemptDraft('item_mithril_hammer');"><Image src="file://{images}/mithril_hammer.png" /></Button></Panel>
+      </Panel>
+      <Panel id="arcane" class="group">
+        <Panel class="item" id="item_magic_stick"><Button onactivate="attemptDraft('item_magic_stick');"><Image src="file://{images}/magic_stick.png" /></Button></Panel>
+        <Panel class="item" id="item_sobi_mask"><Button onactivate="attemptDraft('item_sobi_mask');"><Image src="file://{images}/sobi_mask.png" /></Button></Panel>
+        <Panel class="item" id="item_ring_of_regen"><Button onactivate="attemptDraft('item_ring_of_regen');"><Image src="file://{images}/ring_of_regen.png" /></Button></Panel>
+        <Panel class="item" id="item_boots"><Button onactivate="attemptDraft('item_boots');"><Image src="file://{images}/boots.png" /></Button></Panel>
+        <Panel class="item" id="item_gloves"><Button onactivate="attemptDraft('item_gloves');"><Image src="file://{images}/gloves.png" /></Button></Panel>
+        <Panel class="item" id="item_cloak"><Button onactivate="attemptDraft('item_cloak');"><Image src="file://{images}/cloak.png" /></Button></Panel>
+        <Panel class="item" id="item_ring_of_health"><Button onactivate="attemptDraft('item_ring_of_health');"><Image src="file://{images}/ring_of_health.png" /></Button></Panel>
+        <Panel class="item" id="item_void_stone"><Button onactivate="attemptDraft('item_void_stone');"><Image src="file://{images}/void_stone.png" /></Button></Panel>
+        <Panel class="item" id="item_lifesteal"><Button onactivate="attemptDraft('item_lifesteal');"><Image src="file://{images}/lifesteal.png" /></Button></Panel>
+        <Panel class="item" id="item_shadow_amulet"><Button onactivate="attemptDraft('item_shadow_amulet');"><Image src="file://{images}/shadow_amulet.png" /></Button></Panel>
+        <Panel class="item" id="item_ghost"><Button onactivate="attemptDraft('item_ghost');"><Image src="file://{images}/ghost.png" /></Button></Panel>
+        <Panel class="item" id="item_blink"><Button onactivate="attemptDraft('item_blink');"><Image src="file://{images}/blink.png" /></Button></Panel>
+      </Panel>
+      <Panel id="common" class="group">
+        <Panel class="item" id="item_magic_wand"><Button onactivate="attemptDraft('item_magic_wand');"><Image src="file://{images}/magic_wand.png" /></Button></Panel>
+        <Panel class="item" id="item_null_talisman"><Button onactivate="attemptDraft('item_null_talisman');"><Image src="file://{images}/null_talisman.png" /></Button></Panel>
+        <Panel class="item" id="item_wraith_band"><Button onactivate="attemptDraft('item_wraith_band');"><Image src="file://{images}/wraith_band.png" /></Button></Panel>
+        <Panel class="item" id="item_bracer"><Button onactivate="attemptDraft('item_bracer');"><Image src="file://{images}/bracer.png" /></Button></Panel>
+        <Panel class="item" id="item_poor_mans_shield"><Button onactivate="attemptDraft('item_poor_mans_shield');"><Image src="file://{images}/poor_mans_shield.png" /></Button></Panel>
+        <Panel class="item" id="item_soul_ring"><Button onactivate="attemptDraft('item_soul_ring');"><Image src="file://{images}/soul_ring.png" /></Button></Panel>
+        <Panel class="item" id="item_phase_boots"><Button onactivate="attemptDraft('item_phase_boots');"><Image src="file://{images}/phase_boots.png" /></Button></Panel>
+        <Panel class="item" id="item_power_treads"><Button onactivate="attemptDraft('item_power_treads');"><Image src="file://{images}/power_treads.png" /></Button></Panel>
+        <Panel class="item" id="item_oblivion_staff"><Button onactivate="attemptDraft('item_oblivion_staff');"><Image src="file://{images}/oblivion_staff.png" /></Button></Panel>
+        <Panel class="item" id="item_pers"><Button onactivate="attemptDraft('item_pers');"><Image src="file://{images}/pers.png" /></Button></Panel>
+        <Panel class="item" id="item_hand_of_midas"><Button onactivate="attemptDraft('item_hand_of_midas');"><Image src="file://{images}/hand_of_midas.png" /></Button></Panel>
+        <Panel class="item" id="item_moon_shard"><Button onactivate="attemptDraft('item_moon_shard');"><Image src="file://{images}/moon_shard.png" /></Button></Panel>
+      </Panel>
+      <Panel id="support" class="group">
+        <Panel class="item" id="item_ring_of_basilius"><Button onactivate="attemptDraft('item_ring_of_basilius');"><Image src="file://{images}/ring_of_basilius.png" /></Button></Panel>
+        <Panel class="item" id="item_headdress"><Button onactivate="attemptDraft('item_headdress');"><Image src="file://{images}/headdress.png" /></Button></Panel>
+        <Panel class="item" id="item_buckler"><Button onactivate="attemptDraft('item_buckler');"><Image src="file://{images}/buckler.png" /></Button></Panel>
+        <Panel class="item" id="item_urn_of_shadows"><Button onactivate="attemptDraft('item_urn_of_shadows');"><Image src="file://{images}/urn_of_shadows.png" /></Button></Panel>
+        <Panel class="item" id="item_tranquil_boots"><Button onactivate="attemptDraft('item_tranquil_boots');"><Image src="file://{images}/tranquil_boots.png" /></Button></Panel>
+        <Panel class="item" id="item_ring_of_aquila"><Button onactivate="attemptDraft('item_ring_of_aquila');"><Image src="file://{images}/ring_of_aquila.png" /></Button></Panel>
+        <Panel class="item" id="item_medallion_of_courage"><Button onactivate="attemptDraft('item_medallion_of_courage');"><Image src="file://{images}/medallion_of_courage.png" /></Button></Panel>
+        <Panel class="item" id="item_arcane_boots"><Button onactivate="attemptDraft('item_arcane_boots');"><Image src="file://{images}/arcane_boots.png" /></Button></Panel>
+        <Panel class="item" id="item_ancient_janggo"><Button onactivate="attemptDraft('item_ancient_janggo');"><Image src="file://{images}/ancient_janggo.png" /></Button></Panel>
+        <Panel class="item" id="item_mekansm"><Button onactivate="attemptDraft('item_mekansm');"><Image src="file://{images}/mekansm.png" /></Button></Panel>
+        <Panel class="item" id="item_vladmir"><Button onactivate="attemptDraft('item_vladmir');"><Image src="file://{images}/vladmir.png" /></Button></Panel>
+        <Panel class="item" id="item_pipe"><Button onactivate="attemptDraft('item_pipe');"><Image src="file://{images}/pipe.png" /></Button></Panel>
+        <Panel class="item" id="item_guardian_greaves"><Button onactivate="attemptDraft('item_guardian_greaves');"><Image src="file://{images}/guardian_greaves.png" /></Button></Panel>
+      </Panel>
+      <Panel id="caster" class="group">
+        <Panel class="item" id="item_glimmer_cape"><Button onactivate="attemptDraft('item_glimmer_cape');"><Image src="file://{images}/glimmer_cape.png" /></Button></Panel>
+        <Panel class="item" id="item_force_staff"><Button onactivate="attemptDraft('item_force_staff');"><Image src="file://{images}/force_staff.png" /></Button></Panel>
+        <Panel class="item" id="item_veil_of_discord"><Button onactivate="attemptDraft('item_veil_of_discord');"><Image src="file://{images}/veil_of_discord.png" /></Button></Panel>
+        <Panel class="item" id="item_cyclone"><Button onactivate="attemptDraft('item_cyclone');"><Image src="file://{images}/cyclone.png" /></Button></Panel>
+        <Panel class="item" id="item_solar_crest"><Button onactivate="attemptDraft('item_solar_crest');"><Image src="file://{images}/solar_crest.png" /></Button></Panel>
+        <Panel class="item" id="item_rod_of_atos"><Button onactivate="attemptDraft('item_rod_of_atos');"><Image src="file://{images}/rod_of_atos.png" /></Button></Panel>
+        <Panel class="item" id="item_orchid"><Button onactivate="attemptDraft('item_orchid');"><Image src="file://{images}/orchid.png" /></Button></Panel>
+        <Panel class="item" id="item_ultimate_scepter"><Button onactivate="attemptDraft('item_ultimate_scepter');"><Image src="file://{images}/ultimate_scepter.png" /></Button></Panel>
+        <Panel class="item" id="item_refresher"><Button onactivate="attemptDraft('item_refresher');"><Image src="file://{images}/refresher.png" /></Button></Panel>
+        <Panel class="item" id="item_sheepstick"><Button onactivate="attemptDraft('item_sheepstick');"><Image src="file://{images}/sheepstick.png" /></Button></Panel>
+        <Panel class="item" id="item_octarine_core"><Button onactivate="attemptDraft('item_octarine_core');"><Image src="file://{images}/octarine_core.png" /></Button></Panel>
+      </Panel>
+      <Panel id="weapons" class="group">
+        <Panel class="item" id="item_lesser_crit"><Button onactivate="attemptDraft('item_lesser_crit');"><Image src="file://{images}/lesser_crit.png" /></Button></Panel>
+        <Panel class="item" id="item_armlet"><Button onactivate="attemptDraft('item_armlet');"><Image src="file://{images}/armlet.png" /></Button></Panel>
+        <Panel class="item" id="item_basher"><Button onactivate="attemptDraft('item_basher');"><Image src="file://{images}/basher.png" /></Button></Panel>
+        <Panel class="item" id="item_invis_sword"><Button onactivate="attemptDraft('item_invis_sword');"><Image src="file://{images}/invis_sword.png" /></Button></Panel>
+        <Panel class="item" id="item_bfury"><Button onactivate="attemptDraft('item_bfury');"><Image src="file://{images}/bfury.png" /></Button></Panel>
+        <Panel class="item" id="item_ethereal_blade"><Button onactivate="attemptDraft('item_ethereal_blade');"><Image src="file://{images}/ethereal_blade.png" /></Button></Panel>
+        <Panel class="item" id="item_silver_edge"><Button onactivate="attemptDraft('item_silver_edge');"><Image src="file://{images}/silver_edge.png" /></Button></Panel>
+        <Panel class="item" id="item_radiance"><Button onactivate="attemptDraft('item_radiance');"><Image src="file://{images}/radiance.png" /></Button></Panel>
+        <Panel class="item" id="item_monkey_king_bar"><Button onactivate="attemptDraft('item_monkey_king_bar');"><Image src="file://{images}/monkey_king_bar.png" /></Button></Panel>
+        <Panel class="item" id="item_greater_crit"><Button onactivate="attemptDraft('item_greater_crit');"><Image src="file://{images}/greater_crit.png" /></Button></Panel>
+        <Panel class="item" id="item_butterfly"><Button onactivate="attemptDraft('item_butterfly');"><Image src="file://{images}/butterfly.png" /></Button></Panel>
+        <Panel class="item" id="item_rapier"><Button onactivate="attemptDraft('item_rapier');"><Image src="file://{images}/rapier.png" /></Button></Panel>
+        <Panel class="item" id="item_abyssal_blade"><Button onactivate="attemptDraft('item_abyssal_blade');"><Image src="file://{images}/abyssal_blade.png" /></Button></Panel>
+      </Panel>
+      <Panel id="armor" class="group">
+        <Panel class="item" id="item_hood_of_defiance"><Button onactivate="attemptDraft('item_hood_of_defiance');"><Image src="file://{images}/hood_of_defiance.png" /></Button></Panel>
+        <Panel class="item" id="item_vanguard"><Button onactivate="attemptDraft('item_vanguard');"><Image src="file://{images}/vanguard.png" /></Button></Panel>
+        <Panel class="item" id="item_blade_mail"><Button onactivate="attemptDraft('item_blade_mail');"><Image src="file://{images}/blade_mail.png" /></Button></Panel>
+        <Panel class="item" id="item_soul_booster"><Button onactivate="attemptDraft('item_soul_booster');"><Image src="file://{images}/soul_booster.png" /></Button></Panel>
+        <Panel class="item" id="item_crimson_guard"><Button onactivate="attemptDraft('item_crimson_guard');"><Image src="file://{images}/crimson_guard.png" /></Button></Panel>
+        <Panel class="item" id="item_black_king_bar"><Button onactivate="attemptDraft('item_black_king_bar');"><Image src="file://{images}/black_king_bar.png" /></Button></Panel>
+        <Panel class="item" id="item_lotus_orb"><Button onactivate="attemptDraft('item_lotus_orb');"><Image src="file://{images}/lotus_orb.png" /></Button></Panel>
+        <Panel class="item" id="item_shivas_guard"><Button onactivate="attemptDraft('item_shivas_guard');"><Image src="file://{images}/shivas_guard.png" /></Button></Panel>
+        <Panel class="item" id="item_bloodstone"><Button onactivate="attemptDraft('item_bloodstone');"><Image src="file://{images}/bloodstone.png" /></Button></Panel>
+        <Panel class="item" id="item_manta"><Button onactivate="attemptDraft('item_manta');"><Image src="file://{images}/manta.png" /></Button></Panel>
+        <Panel class="item" id="item_sphere"><Button onactivate="attemptDraft('item_sphere');"><Image src="file://{images}/sphere.png" /></Button></Panel>
+        <Panel class="item" id="item_assault"><Button onactivate="attemptDraft('item_assault');"><Image src="file://{images}/assault.png" /></Button></Panel>
+        <Panel class="item" id="item_heart"><Button onactivate="attemptDraft('item_heart');"><Image src="file://{images}/heart.png" /></Button></Panel>
+      </Panel>
+      <Panel id="artifacts" class="group">
+        <Panel class="item" id="item_mask_of_madness"><Button onactivate="attemptDraft('item_mask_of_madness');"><Image src="file://{images}/mask_of_madness.png" /></Button></Panel>
+        <Panel class="item" id="item_helm_of_the_dominator"><Button onactivate="attemptDraft('item_helm_of_the_dominator');"><Image src="file://{images}/helm_of_the_dominator.png" /></Button></Panel>
+        <Panel class="item" id="item_sange"><Button onactivate="attemptDraft('item_sange');"><Image src="file://{images}/sange.png" /></Button></Panel>
+        <Panel class="item" id="item_yasha"><Button onactivate="attemptDraft('item_yasha');"><Image src="file://{images}/yasha.png" /></Button></Panel>
+        <Panel class="item" id="item_maelstrom"><Button onactivate="attemptDraft('item_maelstrom');"><Image src="file://{images}/maelstrom.png" /></Button></Panel>
+        <Panel class="item" id="item_desolator"><Button onactivate="attemptDraft('item_desolator');"><Image src="file://{images}/desolator.png" /></Button></Panel>
+        <Panel class="item" id="item_heavens_halberd"><Button onactivate="attemptDraft('item_heavens_halberd');"><Image src="file://{images}/heavens_halberd.png" /></Button></Panel>
+        <Panel class="item" id="item_sange_and_yasha"><Button onactivate="attemptDraft('item_sange_and_yasha');"><Image src="file://{images}/sange_and_yasha.png" /></Button></Panel>
+        <Panel class="item" id="item_skadi"><Button onactivate="attemptDraft('item_skadi');"><Image src="file://{images}/skadi.png" /></Button></Panel>
+        <Panel class="item" id="item_mjollnir"><Button onactivate="attemptDraft('item_mjollnir');"><Image src="file://{images}/mjollnir.png" /></Button></Panel>
+        <Panel class="item" id="item_satanic"><Button onactivate="attemptDraft('item_satanic');"><Image src="file://{images}/satanic.png" /></Button></Panel>
+      </Panel>
+      <Panel id="secret" class="group">
+        <Panel class="item" id="item_energy_booster"><Button onactivate="attemptDraft('item_energy_booster');"><Image src="file://{images}/energy_booster.png" /></Button></Panel>
+        <Panel class="item" id="item_vitality_booster"><Button onactivate="attemptDraft('item_vitality_booster');"><Image src="file://{images}/vitality_booster.png" /></Button></Panel>
+        <Panel class="item" id="item_point_booster"><Button onactivate="attemptDraft('item_point_booster');"><Image src="file://{images}/point_booster.png" /></Button></Panel>
+        <Panel class="item" id="item_platemail"><Button onactivate="attemptDraft('item_platemail');"><Image src="file://{images}/platemail.png" /></Button></Panel>
+        <Panel class="item" id="item_talisman_of_evasion"><Button onactivate="attemptDraft('item_talisman_of_evasion');"><Image src="file://{images}/talisman_of_evasion.png" /></Button></Panel>
+        <Panel class="item" id="item_hyperstone"><Button onactivate="attemptDraft('item_hyperstone');"><Image src="file://{images}/hyperstone.png" /></Button></Panel>
+        <Panel class="item" id="item_ultimate_orb"><Button onactivate="attemptDraft('item_ultimate_orb');"><Image src="file://{images}/ultimate_orb.png" /></Button></Panel>
+        <Panel class="item" id="item_demon_edge"><Button onactivate="attemptDraft('item_demon_edge');"><Image src="file://{images}/demon_edge.png" /></Button></Panel>
+        <Panel class="item" id="item_mystic_staff"><Button onactivate="attemptDraft('item_mystic_staff');"><Image src="file://{images}/mystic_staff.png" /></Button></Panel>
+        <Panel class="item" id="item_reaver"><Button onactivate="attemptDraft('item_reaver');"><Image src="file://{images}/reaver.png" /></Button></Panel>
+        <Panel class="item" id="item_eagle"><Button onactivate="attemptDraft('item_eagle');"><Image src="file://{images}/eagle.png" /></Button></Panel>
+        <Panel class="item" id="item_relic"><Button onactivate="attemptDraft('item_relic');"><Image src="file://{images}/relic.png" /></Button></Panel>
+      </Panel>
+      <Panel id="upgraded" class="group">
+        <Panel class="item" id="item_travel_boots"><Button onactivate="attemptDraft('item_travel_boots');"><Image src="file://{images}/travel_boots.png" /></Button></Panel>
+        <Panel class="item" id="item_travel_boots_2"><Button onactivate="attemptDraft('item_travel_boots_2');"><Image src="file://{images}/travel_boots_2.png" /></Button></Panel>
+        <Panel class="item" id="item_necronomicon"><Button onactivate="attemptDraft('item_necronomicon');"><Image src="file://{images}/necronomicon.png" /></Button></Panel>
+        <Panel class="item" id="item_necronomicon_2"><Button onactivate="attemptDraft('item_necronomicon_2');"><Image src="file://{images}/necronomicon_2.png" /></Button></Panel>
+        <Panel class="item" id="item_necronomicon_3"><Button onactivate="attemptDraft('item_necronomicon_3');"><Image src="file://{images}/necronomicon_3.png" /></Button></Panel>
+        <Panel class="item" id="item_dagon"><Button onactivate="attemptDraft('item_dagon');"><Image src="file://{images}/dagon.png" /></Button></Panel>
+        <Panel class="item" id="item_dagon_2"><Button onactivate="attemptDraft('item_dagon_2');"><Image src="file://{images}/dagon_2.png" /></Button></Panel>
+        <Panel class="item" id="item_dagon_3"><Button onactivate="attemptDraft('item_dagon_3');"><Image src="file://{images}/dagon_3.png" /></Button></Panel>
+        <Panel class="item" id="item_dagon_4"><Button onactivate="attemptDraft('item_dagon_4');"><Image src="file://{images}/dagon_4.png" /></Button></Panel>
+        <Panel class="item" id="item_dagon_5"><Button onactivate="attemptDraft('item_dagon_5');"><Image src="file://{images}/dagon_5.png" /></Button></Panel>
+        <Panel class="item" id="item_diffusal_blade"><Button onactivate="attemptDraft('item_diffusal_blade');"><Image src="file://{images}/diffusal_blade.png" /></Button></Panel>
+        <Panel class="item" id="item_diffusal_blade_2"><Button onactivate="attemptDraft('item_diffusal_blade_2');"><Image src="file://{images}/diffusal_blade_2.png" /></Button></Panel>
+      </Panel>
+    </Panel>
+  </Panel>
+</root>

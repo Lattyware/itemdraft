@@ -1,0 +1,14 @@
+<!--
+  An item in the level view.
+-->
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/level/level.css" />
+	</styles>
+  <scripts>
+		<include src="file://{resources}/scripts/custom_game/level/item.js" />
+  </scripts>
+  <Panel class="item">
+    <Button onactivate="buy();"><Image /></Button>
+  </Panel>
+</root>
