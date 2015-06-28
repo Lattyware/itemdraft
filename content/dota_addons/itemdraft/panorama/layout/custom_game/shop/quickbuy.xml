@@ -1,0 +1,12 @@
+<!--
+  A replacement for quickbuy that allows you to buy skills instead of
+  items.
+-->
+<root>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/utility.js" />
+    <include src="file://{resources}/scripts/custom_game/shop/quickbuy.js" />
+  </scripts>
+  <Panel>
+  </Panel>
+</root>

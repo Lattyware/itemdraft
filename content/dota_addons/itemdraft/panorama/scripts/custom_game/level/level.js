@@ -4,8 +4,7 @@ var playerId = Game.GetLocalPlayerID().toString();
 var levelButton = $("#levelButton");
 var itemSelection = $("#itemSelection");
 
-setForHudFlipping(itemSelection);
-setForHudFlipping(levelButton);
+adjustForHudFlipping()
 
 var items = {};
 function itemChange(table, key, value) {
@@ -31,8 +30,7 @@ manageNetTable("draft", draftChange)
 function showLevelOptions() {
   itemSelection.ToggleClass("hidden");
   // We can't detect the settings change, so doing it here means it can at least be sorted when the user clicks.
-  setForHudFlipping(itemSelection);
-  setForHudFlipping(levelButton);
+  adjustForHudFlipping()
 }
 
 function gameChange(table, key, value) {
@@ -50,3 +48,9 @@ function gameChange(table, key, value) {
   }
 }
 manageNetTable("game", gameChange);
+
+
+function adjustForHudFlipping() {
+  setForHudFlipping(itemSelection);
+  setForHudFlipping(levelButton);
+}

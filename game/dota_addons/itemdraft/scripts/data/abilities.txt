@@ -260,13 +260,12 @@
     {
       "cost"  "1000"
     }
-    "morphling_morph"
+    "morphling_morph_agi"
     {
       "cost"  "1000"
       "subabilities"
       {
-        "1"  "morphling_morph_agi"
-        "2"  "morphling_morph_str"
+        "1"  "morphling_morph_str"
       }
     }
     "morphling_hybrid"

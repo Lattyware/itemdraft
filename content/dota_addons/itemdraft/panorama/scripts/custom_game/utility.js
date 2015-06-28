@@ -32,3 +32,12 @@ function setForHudFlipping(panel) {
     panel.RemoveClass("hud-flipped")
   }
 }
+
+/**
+ * Encode a value as a key to send through an event.
+ */
+function encodeAsKey(value) {
+  var wrapper = {};
+  wrapper[value] = null;
+  return wrapper;
+}

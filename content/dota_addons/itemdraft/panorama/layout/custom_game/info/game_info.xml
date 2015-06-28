@@ -1,0 +1,16 @@
+<!--
+  An information screen to quickly let a player understand the item draft
+  game mode.
+-->
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/info/game_info.css" />
+  </styles>
+  <Panel class="gameinfo">
+    <Label text="Item draft is a game mode where dota is flipped around - draft your items, and level up to get them, while buying abilities with your hard-earned gold!" />
+    <Label text="Remember that when you pick your hero, you don't get their skills. (Unless you buy them!)" />
+    <Label text="As you level up, you can spend your experience on items you drafted. You can draft items until you have 25 levels of experience worth." />
+    <Label text="Items that are not consumable or component items, as well as recipes, can only be drafted by one person! Get them quick or miss out!" />
+    <Label text="Some consumables (and the gem) still get bought with gold." />
+  </Panel>
+</root>

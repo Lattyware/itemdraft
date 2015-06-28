@@ -4,7 +4,7 @@
 
 require("draft")
 require("level")
-require("ability_shop")
+require("shop")
 
 if ItemDraftGameMode == nil then
 	ItemDraftGameMode = class({})
@@ -29,6 +29,7 @@ function ItemDraftGameMode:InitGameMode()
 
   registerDraftCallbacks()
   registerLevelCallbacks()
+	registerShopCallbacks()
 
   ListenToGameEvent("game_rules_state_change", self.StateChange, nil)
 end

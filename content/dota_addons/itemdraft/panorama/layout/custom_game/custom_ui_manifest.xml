@@ -1,7 +1,7 @@
 <root>
   <Panel>
     <CustomUIElement type="GameInfo"
-      layoutfile="file://{resources}/layout/custom_game/info/item_draft_game_info.xml" />
+      layoutfile="file://{resources}/layout/custom_game/info/game_info.xml" />
 
     <CustomUIElement type="HeroSelection"
       layoutfile="file://{resources}/layout/custom_game/draft/draft.xml" />
@@ -9,8 +9,8 @@
     <CustomUIElement type="Hud"
       layoutfile="file://{resources}/layout/custom_game/level/level.xml" />
     <CustomUIElement type="Hud"
-      layoutfile="file://{resources}/layout/custom_game/shop/ability_shop.xml" />
+      layoutfile="file://{resources}/layout/custom_game/shop/shop.xml" />
     <CustomUIElement type="Hud"
-      layoutfile="file://{resources}/layout/custom_game/shop/ability_quickbuy.xml" />
+      layoutfile="file://{resources}/layout/custom_game/shop/quickbuy.xml" />
   </Panel>
 </root>

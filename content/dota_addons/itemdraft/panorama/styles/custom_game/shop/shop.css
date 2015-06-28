@@ -1,0 +1,68 @@
+.fullscreen {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  visibility: collapse;
+}
+
+#shopButton {
+  horizontal-align: right;
+  margin-right: 20px;
+  margin-bottom: 180px;
+  vertical-align: bottom;
+  background-color: #FFD700;
+  width: 80px;
+  height: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+#shopButton.hud-flipped {
+  horizontal-align: left;
+  margin-left: 20px;
+}
+
+#shop {
+  horizontal-align: right;
+  margin-right: 20px;
+  margin-bottom: 250px;
+  vertical-align: bottom;
+  width: 380px;
+  height: 750px;
+  background-color: #222222;
+  flow-children: down;
+  overflow: scroll;
+}
+#shop.hud-flipped {
+  horizontal-align: left;
+  margin-left: 20px;
+}
+
+#shop .hero-row {
+  flow-children: right;
+  margin-top: 20px;
+}
+
+#shop .hero-icon {
+  margin: 5px;
+  vertical-align: middle;
+}
+
+#shop .hero-row .abilities {
+  width: 380px;
+  flow-children: right-wrap;
+}
+
+#shop .hero-row .abilities .ability {
+  width: 80px;
+  height: 80px;
+  margin: 2px;
+}
+
+#shop .hero-row .abilities .ability .cost {
+  horizontal-align: right;
+  vertical-align: bottom;
+  color: #FFD700;
+  background-color: #000000;
+}

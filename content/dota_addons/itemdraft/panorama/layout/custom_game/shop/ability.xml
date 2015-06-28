@@ -1,0 +1,18 @@
+<!--
+  An ability in the shop.
+-->
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/shop/shop.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/utility.js" />
+        <include src="file://{resources}/scripts/custom_game/shop/ability.js" />
+    </scripts>
+    <Panel class="ability">
+        <Button onactivate="buy()">
+            <Image class="icon" />
+            <Label class="cost" />
+        </Button>
+    </Panel>
+</root>

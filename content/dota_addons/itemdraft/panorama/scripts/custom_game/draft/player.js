@@ -29,7 +29,6 @@ function draftChange(table, key, value) {
       newItems.push(draft[key]);
     }
     for (var existingItem of draftedItems) {
-      // Yes, this is array.remove(). Thanks JS.
       var index = newItems.indexOf(existingItem);
       if (index > -1) {
         newItems.splice(index, 1);
@@ -43,7 +42,7 @@ function draftChange(table, key, value) {
       }
       var itemImage = $.CreatePanel("Image", row, "player-drafted-item-" + (itemNumber++).toString());
       var itemName = item.substring(5, item.length);
-      itemImage.SetImage("file://{images}/" + itemName + ".png");
+      itemImage.SetImage("file://{images}/items/" + itemName + ".png");
       itemImage.AddClass("drafted-item");
     }
     draftedItems = draftedItems.concat(newItems);
