@@ -97,7 +97,7 @@ function draft(_, args)
   if #draftOrder == 0 then
     return
   end
-  if tostring(playerId) == draftOrder[1] then
+  if playerId ~= draftOrder[1] then
     return
   end
   if gold < cost then
