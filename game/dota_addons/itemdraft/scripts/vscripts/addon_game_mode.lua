@@ -20,6 +20,7 @@ end
 
 function ItemDraftGameMode:InitGameMode()
 	GameRules:EnableCustomGameSetupAutoLaunch(false)
+  GameRules:GetGameModeEntity():SetExecuteOrderFilter(ItemDraftGameMode.FilterExecuteOrder, self)
 	self.gameMode = GameRules:GetGameModeEntity()
 	self.gameMode:SetThink("OnThink", self, "GlobalThink", 2)
 	self.draftSetup = false
@@ -32,6 +33,13 @@ function ItemDraftGameMode:InitGameMode()
 	registerShopCallbacks()
 
   ListenToGameEvent("game_rules_state_change", self.StateChange, nil)
+
+	function callback()
+	end
+	local heroes = LoadKeyValues("scripts/data/npc_heroes.txt")
+	for hero, _ in pairs(heroes) do
+		PrecacheUnitByNameAsync(hero, callback);
+	end
 end
 
 function ItemDraftGameMode:StateChange()
@@ -47,4 +55,15 @@ function ItemDraftGameMode:OnThink()
 		return nil
 	end
 	return 1
+end
+
+function ItemDraftGameMode:FilterExecuteOrder(filterTable)
+  if filterTable.order_type ==  DOTA_UNIT_ORDER_SELL_ITEM then
+    -- TODO: Add items that can be sold.
+    return false
+  end
+  if filterTable.order_type ==  DOTA_UNIT_ORDER_DISASSEMBLE_ITEM then
+    return false
+  end
+  return true
 end

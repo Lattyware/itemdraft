@@ -10,7 +10,7 @@ var button = rootPanel.GetChild(0);
 var icon = button.GetChild(0);
 var costLabel = button.GetChild(1);
 
-icon.SetImage("file://{images}/abilities/" + ability + ".png");
+icon.SetImage("file://{images}/spellicons/" + ability + ".png");
 costLabel.text = cost.toString();
 
 function buy() {

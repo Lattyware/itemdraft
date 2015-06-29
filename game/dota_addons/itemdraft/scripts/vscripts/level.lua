@@ -36,17 +36,7 @@ function heroPicked(event)
   local player = EntIndexToHScript(event.player)
   levelUp(player)
   local hero = EntIndexToHScript(event.heroindex)
-  local done = false
-  local i = 0
-  while not done do
-    local ability = hero:GetAbilityByIndex(i)
-    if ability == nil then
-      done = true
-    else
-      hero:RemoveAbility(ability:GetAbilityName())
-    end
-    i = i + 1
-  end
+  removeAbilities(hero)
 end
 
 -- A callback to level up the player.
