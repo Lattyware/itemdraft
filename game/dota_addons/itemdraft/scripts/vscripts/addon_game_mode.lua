@@ -11,6 +11,10 @@ if ItemDraftGameMode == nil then
 end
 
 function Precache(context)
+	local heroes = LoadKeyValues("scripts/data/npc_heroes.txt")
+	for hero, _ in pairs(heroes) do
+		PrecacheUnitByNameSync(hero, context);
+	end
 end
 
 function Activate()
@@ -26,25 +30,18 @@ function ItemDraftGameMode:InitGameMode()
 	self.draftSetup = false
 
   loadDraft()
-	loadShop()
 
   registerDraftCallbacks()
   registerLevelCallbacks()
 	registerShopCallbacks()
 
   ListenToGameEvent("game_rules_state_change", self.StateChange, nil)
-
-	function callback()
-	end
-	local heroes = LoadKeyValues("scripts/data/npc_heroes.txt")
-	for hero, _ in pairs(heroes) do
-		PrecacheUnitByNameAsync(hero, callback);
-	end
 end
 
 function ItemDraftGameMode:StateChange()
   if GameRules:State_Get() == DOTA_GAMERULES_STATE_HERO_SELECTION then
     startDraft()
+    loadShop()
   end
 end
 

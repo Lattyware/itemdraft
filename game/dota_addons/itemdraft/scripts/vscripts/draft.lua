@@ -21,25 +21,25 @@ end
 function startDraft()
   PauseGame(true)
 
-  local players = {}
-  players[DOTA_TEAM_GOODGUYS] = {}
-  players[DOTA_TEAM_BADGUYS] = {}
-  for teamNumber, players in pairs(players) do
+  teams = {}
+  teams[DOTA_TEAM_GOODGUYS] = {}
+  teams[DOTA_TEAM_BADGUYS] = {}
+  for teamNumber, teamPlayers in pairs(teams) do
     local playerCount = PlayerResource:GetPlayerCountForTeam(teamNumber)
     if playerCount ~= 0 then
       for i = 1, playerCount do
         local playerId = PlayerResource:GetNthPlayerIDOnTeam(teamNumber, i)
-        players[#players + 1] = playerId
+        teamPlayers[#teamPlayers + 1] = playerId
         CustomNetTables:SetTableValue("draft", tostring(playerId), {
           id = playerId,
           gold = levelGold,
           draft = {}
         })
-        CustomNetTables:SetTableValue("game", tostring(playerId), {gold = 0})
+        CustomNetTables:SetTableValue("game", tostring(playerId), {gold = 0, leveled = {}})
       end
     end
   end
-  local draftOrder = computeDraftOrder(players)
+  local draftOrder = computeDraftOrder(teams)
   CustomNetTables:SetTableValue("draft", "draft", {order = draftOrder})
 end
 

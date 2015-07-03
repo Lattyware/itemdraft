@@ -10,6 +10,9 @@
     <include src="file://{resources}/scripts/custom_game/level/item.js" />
   </scripts>
   <Panel class="item">
-    <Button onactivate="buy();"><Image /></Button>
+    <Button onactivate="buy();">
+      <Image />
+      <Label class="cost" />
+    </Button>
   </Panel>
 </root>

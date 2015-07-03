@@ -4,7 +4,7 @@
   {
     "lone_druid_spirit_bear"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "lone_druid_rabid"
     {
@@ -16,7 +16,7 @@
     }
     "lone_druid_true_form"
     {
-      "cost"  "1000"
+      "cost"  "5000"
       "subabilities"
       {
         "1"  "lone_druid_true_form_battle_cry"
@@ -28,11 +28,11 @@
   {
     "death_prophet_carrion_swarm"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "death_prophet_silence"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "death_prophet_witchcraft"
     {
@@ -40,18 +40,18 @@
     }
     "death_prophet_exorcism"
     {
-      "cost"  "1000"
+      "cost"  "5000"
     }
   }
   "npc_dota_hero_drow_ranger"
   {
     "drow_ranger_frost_arrows"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "drow_ranger_wave_of_silence"
     {
-      "cost"  "1000"
+      "cost"  "5000"
     }
     "drow_ranger_trueshot"
     {
@@ -59,45 +59,45 @@
     }
     "drow_ranger_marksmanship"
     {
-      "cost"  "1000"
+      "cost"  "4000"
     }
   }
   "npc_dota_hero_pugna"
   {
     "pugna_nether_blast"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "pugna_decrepify"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "pugna_nether_ward"
     {
-      "cost"  "1000"
+      "cost"  "3500"
     }
     "pugna_life_drain"
     {
-      "cost"  "1000"
+      "cost"  "6000"
     }
   }
   "npc_dota_hero_naga_siren"
   {
     "naga_siren_mirror_image"
     {
-      "cost"  "1000"
+      "cost"  "4000"
     }
     "naga_siren_ensnare"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "naga_siren_rip_tide"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "naga_siren_song_of_the_siren"
     {
-      "cost"  "1000"
+      "cost"  "6000"
       "subabilities"
       {
         "1"  "naga_siren_song_of_the_siren_cancel"
@@ -108,7 +108,7 @@
   {
     "wisp_tether"
     {
-      "cost"  "1000"
+      "cost"  "500"
       "subabilities"
       {
         "1"  "wisp_tether_break"
@@ -116,7 +116,7 @@
     }
     "wisp_spirits"
     {
-      "cost"  "1000"
+      "cost"  "300"
       "subabilities"
       {
         "1"  "wisp_spirits_in"
@@ -125,41 +125,41 @@
     }
     "wisp_overcharge"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "wisp_relocate"
     {
-      "cost"  "1000"
+      "cost"  "5000"
     }
   }
   "npc_dota_hero_ogre_magi"
   {
     "ogre_magi_fireblast"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "ogre_magi_ignite"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "ogre_magi_bloodlust"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "ogre_magi_unrefined_fireblast"
     {
-      "cost"  "1000"
+      "cost"  "5000"
     }
     "ogre_magi_multicast"
     {
-      "cost"  "1000"
+      "cost"  "6000"
     }
   }
   "npc_dota_hero_tidehunter"
   {
     "tidehunter_gush"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "tidehunter_kraken_shell"
     {
@@ -171,7 +171,7 @@
     }
     "tidehunter_ravage"
     {
-      "cost"  "1000"
+      "cost"  "5000"
     }
   }
   "npc_dota_hero_slardar"
@@ -182,15 +182,15 @@
     }
     "slardar_slithereen_crush"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "slardar_bash"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "slardar_amplify_damage"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_jakiro"
@@ -548,19 +548,19 @@
   {
     "abaddon_death_coil"
     {
-      "cost"  "1000"
+      "cost"  "500"
     }
     "abaddon_aphotic_shield"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "abaddon_frostmourne"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "abaddon_borrowed_time"
     {
-      "cost"  "1000"
+      "cost"  "5000"
     }
   }
   "npc_dota_hero_puck"
@@ -590,19 +590,19 @@
   {
     "antimage_mana_break"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "antimage_blink"
     {
-      "cost"  "1000"
+      "cost"  "5000"
     }
     "antimage_spell_shield"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "antimage_mana_void"
     {
-      "cost"  "1000"
+      "cost"  "5000"
     }
   }
   "npc_dota_hero_legion_commander"
@@ -644,7 +644,7 @@
     }
     "bane_fiends_grip"
     {
-      "cost"  "1000"
+      "cost"  "6000"
     }
   }
   "npc_dota_hero_kunkka"
@@ -2163,19 +2163,19 @@
   {
     "tinker_laser"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "tinker_heat_seeking_missile"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "tinker_march_of_the_machines"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "tinker_rearm"
     {
-      "cost"  "1000"
+      "cost"  "10000"
     }
   }
   "npc_dota_hero_dragon_knight"
@@ -2194,7 +2194,7 @@
     }
     "dragon_knight_elder_dragon_form"
     {
-      "cost"  "1000"
+      "cost"  "4000"
     }
   }
   "npc_dota_hero_mirana"

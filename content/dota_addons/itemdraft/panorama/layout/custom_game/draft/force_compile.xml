@@ -1,0 +1,7 @@
+<!--
+  Reference every image we use dynamically to force compilation.
+-->
+<root>
+    <Panel>
+    </Panel>
+</root>

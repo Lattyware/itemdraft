@@ -3,6 +3,7 @@
     custom_net_tables = [
         "draft",
         "items",
+        "shop",
         "abilities",
         "game"
     ]

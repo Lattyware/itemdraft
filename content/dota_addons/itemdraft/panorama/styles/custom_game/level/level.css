@@ -36,7 +36,18 @@
   height: 40px;
 }
 
+.item .cost {
+  horizontal-align: right;
+  vertical-align: bottom;
+  color: #FFD700;
+  background-color: #000000;
+}
+
 .fullscreen {
   width: 100%;
   height: 100%;
+}
+
+.not-buyable {
+  opacity: 0.1;
 }

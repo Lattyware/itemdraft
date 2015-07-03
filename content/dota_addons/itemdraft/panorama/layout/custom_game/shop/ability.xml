@@ -14,5 +14,6 @@
             <Image class="icon" />
             <Label class="cost" />
         </Button>
+        <Panel />
     </Panel>
 </root>

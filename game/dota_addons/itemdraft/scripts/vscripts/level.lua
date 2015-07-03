@@ -21,14 +21,47 @@ end
 -- An item event was recieved from the user.
 function item(_, args)
   local playerId = args["PlayerID"]
-  local item = decodeFromKey(args["item"])
+  local itemName = decodeFromKey(args["item"])
+
+  local draft = destringTable(CustomNetTables:GetTableValue("draft", tostring(playerId))["draft"])
+  local item = CustomNetTables:GetTableValue("items", itemName)
+  local value = CustomNetTables:GetTableValue("game", tostring(playerId))
+  local gold = value["gold"]
+  local cost = item["cost"]
 
   -- TODO: Check valid.
 
+  local leveled = destringTable(value["leveled"])
+  local nextOne = nextNotIn(draft, itemName, keys(leveled, itemName))
+
+  if nextOne == nil then
+    return
+  end
+  if gold < cost then
+    return
+  end
+
+  leveled[#leveled + 1] = nextOne
+
+  value["gold"] = gold - cost
+  value["leveled"] = leveled
+
+  CustomNetTables:SetTableValue("game", tostring(playerId), value)
+
   local player = PlayerResource:GetPlayer(playerId)
   local hero = player:GetAssignedHero()
-  local item = CreateItem(item, hero, hero)
-  hero:AddItem(item)
+  local itemInstance = CreateItem(itemName, hero, hero)
+  hero:AddItem(itemInstance)
+end
+
+-- Get the next key not in the given set.
+function nextNotIn(tbl, item, exclude)
+  for key, value in pairs(tbl) do
+    if value == item and not exclude[key] then
+      return key
+    end
+  end
+  return nil
 end
 
 -- A callback at the start to give the initial level up and remove the hero's default skills.

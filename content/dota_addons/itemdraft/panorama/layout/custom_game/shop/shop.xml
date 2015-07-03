@@ -14,6 +14,9 @@
     <Button id="shopButton" onactivate="showAbilityShop();">
       <Label text="Shop" />
     </Button>
-    <Panel id="shop" class="hidden" />
+    <Panel id="shop" class="hidden">
+      <Panel id="currentView" />
+      <Panel id="rows" />
+    </Panel>
   </Panel>
 </root>

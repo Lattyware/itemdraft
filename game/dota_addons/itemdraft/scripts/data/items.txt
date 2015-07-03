@@ -2171,7 +2171,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"75"
-		"ItemCost"						"4450"
+		"ItemCost"						"2450"
 		"ItemShopTags"					"teleport;move_speed"
 		"ItemQuality"					"common"
 		"ItemAliases"					"bot;boots of travel"
@@ -2217,7 +2217,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"75"
-		"ItemCost"						"2450"
+		"ItemCost"						"4450"
 		"ItemShopTags"					"teleport;move_speed"
 		"ItemQuality"					"common"
 		"ItemAliases"					"bot;boots of travel"
