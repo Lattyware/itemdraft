@@ -108,3 +108,49 @@ function keys(tbl, item)
   end
   return keys
 end
+
+-- Returns a function that gives the next value from values each time it's called, looping when the end is reached.
+function loopingIterator(values)
+  local pos = 1
+  local function iterator()
+    if (pos > #values) then
+      pos = 1
+    end
+    local value = values[pos]
+    pos = pos + 1
+    return pos - 1, value
+  end
+  return iterator
+end
+
+-- Returns a function that gives the next value from values each time it's called.
+function iterator(values)
+  local pos = 1
+  local function iterator()
+    local value = values[pos]
+    pos = pos + 1
+    return pos - 1, value
+  end
+  return iterator
+end
+
+-- Interleave table together, taking values from each in a round-robin approach. When one runs out, ignore it.
+function interleave(tables)
+  local iters = {}
+  for _, table in ipairs(tables) do
+    iters[#iters + 1] = iterator(table)
+  end
+  local teamIterators = loopingIterator(iters)
+
+  local interleaved = {}
+  while #iters > 0 do
+    local team, teamIterator = teamIterators()
+    local _, value = teamIterator()
+    if (value == nil) then
+      table.remove(iters, team)
+    else
+      interleaved[#interleaved + 1] = value
+    end
+  end
+  return interleaved
+end

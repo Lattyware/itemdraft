@@ -144,35 +144,18 @@ function removeFromDraft(id)
   return #newDraftOrder == 0
 end
 
--- Compute a draft order for the given players (given as teams).
--- Ugly as sin, fix up at some point.
+-- Compute the draft order.
 function computeDraftOrder(players)
-  local draftOrder = {}
-  local pickFrom = DOTA_TEAM_GOODGUYS
-  local pickState = {[DOTA_TEAM_GOODGUYS]=1, [DOTA_TEAM_BADGUYS]=1}
-  local total = 0
-  for _, players in pairs(players) do
-    total = total + #players
+  local teams = {}
+  for _, values in pairs(players) do
+    teams[#teams + 1] = values
   end
-  for i = 1, total do
-    draftOrder[#draftOrder + 1] = players[pickFrom][pickState[pickFrom]]
-    pickState[pickFrom] = pickState[pickFrom] + 1
-    pickFrom = flipPickFrom(pickFrom)
-  end
-  pickFrom = flipPickFrom(pickFrom)
-  for i = 1, total do
-    pickState[pickFrom] = pickState[pickFrom] - 1
-    draftOrder[#draftOrder + 1] = players[pickFrom][pickState[pickFrom]]
-    pickFrom = flipPickFrom(pickFrom)
-  end
-  return draftOrder
-end
+  local draftOrder = interleave(teams)
 
--- Flip the picking side.
-function flipPickFrom(pickFrom)
-  if pickFrom == DOTA_TEAM_GOODGUYS then
-    return DOTA_TEAM_BADGUYS
-  else
-    return DOTA_TEAM_GOODGUYS
+  local itemCount = #draftOrder
+  for k, v in ipairs(draftOrder) do
+    draftOrder[itemCount * 2 + 1 - k] = v
   end
+
+  return draftOrder
 end
