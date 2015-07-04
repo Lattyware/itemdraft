@@ -5,6 +5,7 @@ var playerId = Game.GetLocalPlayerID().toString();
 var itemPanel = $.GetContextPanel();
 var itemName = itemPanel.GetAttributeString("itemName", "");
 var cost = itemPanel.GetAttributeInt("cost", -1);
+var draftId = itemPanel.GetAttributeString("draftId", "");
 
 var button = itemPanel.GetChild(0);
 
@@ -16,7 +17,7 @@ var costLabel = button.GetChild(1);
 costLabel.text = cost;
 
 function buy() {
-  GameEvents.SendCustomGameEventToServer("item", {item: encodeAsKey(itemName)});
+  GameEvents.SendCustomGameEventToServer("item", {draftId: encodeAsKey(draftId)});
 }
 
 var items = {};

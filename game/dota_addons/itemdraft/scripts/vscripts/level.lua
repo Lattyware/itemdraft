@@ -21,27 +21,25 @@ end
 -- An item event was recieved from the user.
 function item(_, args)
   local playerId = args["PlayerID"]
-  local itemName = decodeFromKey(args["item"])
+  local draftId = tonumber(decodeFromKey(args["draftId"]))
 
   local draft = destringTable(CustomNetTables:GetTableValue("draft", tostring(playerId))["draft"])
+  local itemName = draft[draftId]
   local item = CustomNetTables:GetTableValue("items", itemName)
   local value = CustomNetTables:GetTableValue("game", tostring(playerId))
   local gold = value["gold"]
   local cost = item["cost"]
 
-  -- TODO: Check valid.
-
   local leveled = destringTable(value["leveled"])
-  local nextOne = nextNotIn(draft, itemName, keys(leveled, itemName))
 
-  if nextOne == nil then
+  if setOf(leveled)[draftId] then
     return
   end
   if gold < cost then
     return
   end
 
-  leveled[#leveled + 1] = nextOne
+  leveled[#leveled + 1] = draftId
 
   value["gold"] = gold - cost
   value["leveled"] = leveled

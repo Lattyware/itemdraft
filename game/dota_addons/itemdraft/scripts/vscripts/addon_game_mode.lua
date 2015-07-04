@@ -11,9 +11,9 @@ if ItemDraftGameMode == nil then
 end
 
 function Precache(context)
-	local heroes = LoadKeyValues("scripts/data/npc_heroes.txt")
-	for hero, _ in pairs(heroes) do
-		PrecacheUnitByNameSync(hero, context);
+	local abilities = LoadKeyValues("scripts/data/npc_abilities.txt")
+	for name, _ in pairs(abilities) do
+		PrecacheItemByNameSync(name, context)
 	end
 end
 

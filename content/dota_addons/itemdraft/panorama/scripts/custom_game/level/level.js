@@ -17,12 +17,13 @@ var draftedItems = {};
 function draftChange(table, key, value) {
   if (key === playerId) {
     var draft = value["draft"];
-    draftKeys = draft;
     for (var k in draft) {
       var itemName = draft[k];
-      if (!(itemName in draftedItems)) {
+      if (!(k in draftKeys)) {
+        draftKeys[k] = itemName
         draftedItems[itemName] = items[itemName];
         var newItem = $.CreatePanel("Panel", itemSelection, "selection-" + k);
+        newItem.SetAttributeString("draftId", k);
         newItem.SetAttributeString("itemName", itemName);
         newItem.SetAttributeInt("cost", items[itemName]["cost"]);
         newItem.BLoadLayout("file://{resources}/layout/custom_game/level/item.xml", false, false);
@@ -42,18 +43,18 @@ function gameChange(table, key, value) {
   if (key === playerId) {
     var leveled = value["leveled"];
     for (var key in leveled) {
-      var leveledItemKey = leveled[key];
-      delete draftedItems[draftKeys[leveledItemKey]];
+      var leveledItemKey = leveled[key].toString();
+      delete draftKeys[leveledItemKey];
       $("#selection-" + leveledItemKey).AddClass("hidden");
     }
     var gold = parseInt(value["gold"]);
     levelButton.GetChild(0).text = "Level Up (" + gold.toString() + ")"
-    for (var itemName in draftedItems) {
-      if (parseInt(draftedItems[itemName]["cost"]) < gold) {
+    levelButton.AddClass("hidden");
+    itemSelection.AddClass("hidden");
+    for (var key in draftKeys) {
+      var item = draftedItems[draftKeys[key]];
+      if (parseInt(item["cost"]) < gold) {
         levelButton.RemoveClass("hidden");
-      } else {
-        levelButton.AddClass("hidden");
-        itemSelection.AddClass("hidden");
       }
     }
   }
