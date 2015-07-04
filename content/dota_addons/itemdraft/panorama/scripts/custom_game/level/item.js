@@ -10,8 +10,7 @@ var draftId = itemPanel.GetAttributeString("draftId", "");
 var button = itemPanel.GetChild(0);
 
 var image = button.GetChild(0);
-var itemShortName = itemName.substring(5, itemName.length);
-image.SetImage("file://{images}/items/" + itemShortName + ".png");
+image.itemname = itemName;
 
 var costLabel = button.GetChild(1);
 costLabel.text = cost;

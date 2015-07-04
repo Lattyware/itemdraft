@@ -10,13 +10,19 @@ var button = rootPanel.GetChild(0);
 var icon = button.GetChild(0);
 var costLabel = button.GetChild(1);
 
-icon.SetImage("file://{images}/spellicons/" + ability + ".png");
+icon.abilityname = ability
 costLabel.text = cost.toString();
 
-var tooltip = {
-  title: $.Localize("#DOTA_Tooltip_ability_" + ability),
-  text: $.Localize("#DOTA_Tooltip_ability_" + ability + "_Description")
+function showTooltip() {
+  $.DispatchEvent("DOTAShowAbilityTooltip", icon, ability);
 }
+
+function hideTooltip() {
+  $.DispatchEvent("DOTAHideAbilityTooltip", icon);
+}
+
+icon.SetPanelEvent("onmouseover", showTooltip);
+icon.SetPanelEvent("onmouseout", hideTooltip);
 
 function buy() {
   GameEvents.SendCustomGameEventToServer("buy_ability", {

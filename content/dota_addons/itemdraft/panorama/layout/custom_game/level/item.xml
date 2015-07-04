@@ -11,7 +11,7 @@
   </scripts>
   <Panel class="item">
     <Button onactivate="buy();">
-      <Image />
+      <DOTAItemImage />
       <Label class="cost" />
     </Button>
   </Panel>

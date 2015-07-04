@@ -12,8 +12,8 @@
   <Panel class="fullscreen">
     <Panel id="draft" class="fullscreen background">
       <Label id="draft-description" text="Drafting order:" />
-      <Panel id="draft-order"></Panel>
-      <Panel id="teams"></Panel>
+      <Panel id="draft-order" />
+      <Panel id="teams" />
     </Panel>
   </Panel>
 </root>

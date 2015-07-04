@@ -10,6 +10,17 @@ var button = rootPanel.GetChild(0);
 var icon = button.GetChild(0);
 var keyLabel = button.GetChild(1);
 
+function showTooltip() {
+  $.DispatchEvent("DOTAShowAbilityTooltip", icon, ability);
+}
+
+function hideTooltip() {
+  $.DispatchEvent("DOTAHideAbilityTooltip", icon);
+}
+
+icon.SetPanelEvent("onmouseover", showTooltip);
+icon.SetPanelEvent("onmouseout", hideTooltip);
+
 function abilityChanged(table, playerId, abilities) {
   if (playerId === Game.GetLocalPlayerID().toString()) {
     for (var abilitySlot in abilities) {
@@ -31,5 +42,5 @@ function sell() {
 
 function update() {
   keyLabel.text = key;
-  icon.SetImage("file://{images}/spellicons/" + ability + ".png");
+  icon.abilityname = ability;
 }

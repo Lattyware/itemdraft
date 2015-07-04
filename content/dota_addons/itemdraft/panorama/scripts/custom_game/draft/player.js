@@ -15,10 +15,6 @@ avatar.steamid = steamId;
 username.steamid = steamId;
 
 var draftedItemsPanel = playerPanel.GetChild(1);
-var row0 = draftedItemsPanel.GetChild(0);
-row0.SetAttributeInt("items", 0);
-var row1 = draftedItemsPanel.GetChild(1);
-row1.SetAttributeInt("items", 0);
 
 function draftChange(table, key, value) {
   if (key === playerId.toString()) {
@@ -36,13 +32,9 @@ function draftChange(table, key, value) {
     }
     var itemNumber = draftedItems.length;
     for (var item of newItems) {
-      var row = row0;
-      if (row0.GetAttributeInt("items", -1) >= 14) {
-        row = row1;
-      }
-      var itemImage = $.CreatePanel("Image", row, "player-drafted-item-" + (itemNumber++).toString());
-      var itemName = item.substring(5, item.length);
-      itemImage.SetImage("file://{images}/items/" + itemName + ".png");
+      var itemImage = $.CreatePanel("DOTAItemImage", draftedItemsPanel, "player-drafted-item-" + (itemNumber++).toString());
+      itemImage.itemname = item;
+      $.Msg(item);
       itemImage.AddClass("drafted-item");
     }
     draftedItems = draftedItems.concat(newItems);

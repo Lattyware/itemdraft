@@ -15,165 +15,165 @@
   <Panel>
     <Panel class="item-grid">
       <Panel id="consumables" class="group">
-        <Panel class="item" id="item_clarity"><Button onactivate="attemptDraft('item_clarity');"><Image src="file://{images}/items/clarity.png" /></Button></Panel>
-        <Panel class="item" id="item_flask"><Button onactivate="attemptDraft('item_flask');"><Image src="file://{images}/items/flask.png" /></Button></Panel>
-        <Panel class="item" id="item_tango"><Button onactivate="attemptDraft('item_tango');"><Image src="file://{images}/items/tango.png" /></Button></Panel>
-        <Panel class="item" id="item_enchanted_mango"><Button onactivate="attemptDraft('item_enchanted_mango');"><Image src="file://{images}/items/enchanted_mango.png" /></Button></Panel>
-        <Panel class="item" id="item_bottle"><Button onactivate="attemptDraft('item_bottle');"><Image src="file://{images}/items/bottle.png" /></Button></Panel>
+        <Panel class="item" id="item_clarity"><Button onactivate="attemptDraft('item_clarity');"><DOTAItemImage itemname="item_clarity" onmouseover="DOTAShowAbilityTooltip(item_clarity)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_flask"><Button onactivate="attemptDraft('item_flask');"><DOTAItemImage itemname="item_flask" onmouseover="DOTAShowAbilityTooltip(item_flask)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_tango"><Button onactivate="attemptDraft('item_tango');"><DOTAItemImage itemname="item_tango" onmouseover="DOTAShowAbilityTooltip(item_tango)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_enchanted_mango"><Button onactivate="attemptDraft('item_enchanted_mango');"><DOTAItemImage itemname="item_enchanted_mango" onmouseover="DOTAShowAbilityTooltip(item_enchanted_mango)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_bottle"><Button onactivate="attemptDraft('item_bottle');"><DOTAItemImage itemname="item_bottle" onmouseover="DOTAShowAbilityTooltip(item_bottle)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="attributes" class="group">
-        <Panel class="item" id="item_branches"><Button onactivate="attemptDraft('item_branches');"><Image src="file://{images}/items/branches.png" /></Button></Panel>
-        <Panel class="item" id="item_gauntlets"><Button onactivate="attemptDraft('item_gauntlets');"><Image src="file://{images}/items/gauntlets.png" /></Button></Panel>
-        <Panel class="item" id="item_slippers"><Button onactivate="attemptDraft('item_slippers');"><Image src="file://{images}/items/slippers.png" /></Button></Panel>
-        <Panel class="item" id="item_mantle"><Button onactivate="attemptDraft('item_mantle');"><Image src="file://{images}/items/mantle.png" /></Button></Panel>
-        <Panel class="item" id="item_circlet"><Button onactivate="attemptDraft('item_circlet');"><Image src="file://{images}/items/circlet.png" /></Button></Panel>
-        <Panel class="item" id="item_belt_of_strength"><Button onactivate="attemptDraft('item_belt_of_strength');"><Image src="file://{images}/items/belt_of_strength.png" /></Button></Panel>
-        <Panel class="item" id="item_boots_of_elves"><Button onactivate="attemptDraft('item_boots_of_elves');"><Image src="file://{images}/items/boots_of_elves.png" /></Button></Panel>
-        <Panel class="item" id="item_robe"><Button onactivate="attemptDraft('item_robe');"><Image src="file://{images}/items/robe.png" /></Button></Panel>
-        <Panel class="item" id="item_ogre_axe"><Button onactivate="attemptDraft('item_ogre_axe');"><Image src="file://{images}/items/ogre_axe.png" /></Button></Panel>
-        <Panel class="item" id="item_blade_of_alacrity"><Button onactivate="attemptDraft('item_blade_of_alacrity');"><Image src="file://{images}/items/blade_of_alacrity.png" /></Button></Panel>
-        <Panel class="item" id="item_staff_of_wizardry"><Button onactivate="attemptDraft('item_staff_of_wizardry');"><Image src="file://{images}/items/staff_of_wizardry.png" /></Button></Panel>
+        <Panel class="item" id="item_branches"><Button onactivate="attemptDraft('item_branches');"><DOTAItemImage itemname="item_branches" onmouseover="DOTAShowAbilityTooltip(item_branches)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_gauntlets"><Button onactivate="attemptDraft('item_gauntlets');"><DOTAItemImage itemname="item_gauntlets" onmouseover="DOTAShowAbilityTooltip(item_gauntlets)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_slippers"><Button onactivate="attemptDraft('item_slippers');"><DOTAItemImage itemname="item_slippers" onmouseover="DOTAShowAbilityTooltip(item_slippers)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_mantle"><Button onactivate="attemptDraft('item_mantle');"><DOTAItemImage itemname="item_mantle" onmouseover="DOTAShowAbilityTooltip(item_mantle)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_circlet"><Button onactivate="attemptDraft('item_circlet');"><DOTAItemImage itemname="item_circlet" onmouseover="DOTAShowAbilityTooltip(item_circlet)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_belt_of_strength"><Button onactivate="attemptDraft('item_belt_of_strength');"><DOTAItemImage itemname="item_belt_of_strength" onmouseover="DOTAShowAbilityTooltip(item_belt_of_strength)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_boots_of_elves"><Button onactivate="attemptDraft('item_boots_of_elves');"><DOTAItemImage itemname="item_boots_of_elves" onmouseover="DOTAShowAbilityTooltip(item_boots_of_elves)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_robe"><Button onactivate="attemptDraft('item_robe');"><DOTAItemImage itemname="item_robe" onmouseover="DOTAShowAbilityTooltip(item_robe)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_ogre_axe"><Button onactivate="attemptDraft('item_ogre_axe');"><DOTAItemImage itemname="item_ogre_axe" onmouseover="DOTAShowAbilityTooltip(item_ogre_axe)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_blade_of_alacrity"><Button onactivate="attemptDraft('item_blade_of_alacrity');"><DOTAItemImage itemname="item_blade_of_alacrity" onmouseover="DOTAShowAbilityTooltip(item_blade_of_alacrity)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_staff_of_wizardry"><Button onactivate="attemptDraft('item_staff_of_wizardry');"><DOTAItemImage itemname="item_staff_of_wizardry" onmouseover="DOTAShowAbilityTooltip(item_staff_of_wizardry)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="armaments" class="group">
-        <Panel class="item" id="item_ring_of_protection"><Button onactivate="attemptDraft('item_ring_of_protection');"><Image src="file://{images}/items/ring_of_protection.png" /></Button></Panel>
-        <Panel class="item" id="item_stout_shield"><Button onactivate="attemptDraft('item_stout_shield');"><Image src="file://{images}/items/stout_shield.png" /></Button></Panel>
-        <Panel class="item" id="item_quelling_blade"><Button onactivate="attemptDraft('item_quelling_blade');"><Image src="file://{images}/items/quelling_blade.png" /></Button></Panel>
-        <Panel class="item" id="item_orb_of_venom"><Button onactivate="attemptDraft('item_orb_of_venom');"><Image src="file://{images}/items/orb_of_venom.png" /></Button></Panel>
-        <Panel class="item" id="item_blades_of_attack"><Button onactivate="attemptDraft('item_blades_of_attack');"><Image src="file://{images}/items/blades_of_attack.png" /></Button></Panel>
-        <Panel class="item" id="item_chainmail"><Button onactivate="attemptDraft('item_chainmail');"><Image src="file://{images}/items/chainmail.png" /></Button></Panel>
-        <Panel class="item" id="item_quarterstaff"><Button onactivate="attemptDraft('item_quarterstaff');"><Image src="file://{images}/items/quarterstaff.png" /></Button></Panel>
-        <Panel class="item" id="item_helm_of_iron_will"><Button onactivate="attemptDraft('item_helm_of_iron_will');"><Image src="file://{images}/items/helm_of_iron_will.png" /></Button></Panel>
-        <Panel class="item" id="item_broadsword"><Button onactivate="attemptDraft('item_broadsword');"><Image src="file://{images}/items/broadsword.png" /></Button></Panel>
-        <Panel class="item" id="item_claymore"><Button onactivate="attemptDraft('item_claymore');"><Image src="file://{images}/items/claymore.png" /></Button></Panel>
-        <Panel class="item" id="item_javelin"><Button onactivate="attemptDraft('item_javelin');"><Image src="file://{images}/items/javelin.png" /></Button></Panel>
-        <Panel class="item" id="item_mithril_hammer"><Button onactivate="attemptDraft('item_mithril_hammer');"><Image src="file://{images}/items/mithril_hammer.png" /></Button></Panel>
+        <Panel class="item" id="item_ring_of_protection"><Button onactivate="attemptDraft('item_ring_of_protection');"><DOTAItemImage itemname="item_ring_of_protection" onmouseover="DOTAShowAbilityTooltip(item_ring_of_protection)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_stout_shield"><Button onactivate="attemptDraft('item_stout_shield');"><DOTAItemImage itemname="item_stout_shield" onmouseover="DOTAShowAbilityTooltip(item_stout_shield)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_quelling_blade"><Button onactivate="attemptDraft('item_quelling_blade');"><DOTAItemImage itemname="item_quelling_blade" onmouseover="DOTAShowAbilityTooltip(item_quelling_blade)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_orb_of_venom"><Button onactivate="attemptDraft('item_orb_of_venom');"><DOTAItemImage itemname="item_orb_of_venom" onmouseover="DOTAShowAbilityTooltip(item_orb_of_venom)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_blades_of_attack"><Button onactivate="attemptDraft('item_blades_of_attack');"><DOTAItemImage itemname="item_blades_of_attack" onmouseover="DOTAShowAbilityTooltip(item_blades_of_attack)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_chainmail"><Button onactivate="attemptDraft('item_chainmail');"><DOTAItemImage itemname="item_chainmail" onmouseover="DOTAShowAbilityTooltip(item_chainmail)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_quarterstaff"><Button onactivate="attemptDraft('item_quarterstaff');"><DOTAItemImage itemname="item_quarterstaff" onmouseover="DOTAShowAbilityTooltip(item_quarterstaff)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_helm_of_iron_will"><Button onactivate="attemptDraft('item_helm_of_iron_will');"><DOTAItemImage itemname="item_helm_of_iron_will" onmouseover="DOTAShowAbilityTooltip(item_helm_of_iron_will)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_broadsword"><Button onactivate="attemptDraft('item_broadsword');"><DOTAItemImage itemname="item_broadsword" onmouseover="DOTAShowAbilityTooltip(item_broadsword)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_claymore"><Button onactivate="attemptDraft('item_claymore');"><DOTAItemImage itemname="item_claymore" onmouseover="DOTAShowAbilityTooltip(item_claymore)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_javelin"><Button onactivate="attemptDraft('item_javelin');"><DOTAItemImage itemname="item_javelin" onmouseover="DOTAShowAbilityTooltip(item_javelin)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_mithril_hammer"><Button onactivate="attemptDraft('item_mithril_hammer');"><DOTAItemImage itemname="item_mithril_hammer" onmouseover="DOTAShowAbilityTooltip(item_mithril_hammer)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="arcane" class="group">
-        <Panel class="item" id="item_magic_stick"><Button onactivate="attemptDraft('item_magic_stick');"><Image src="file://{images}/items/magic_stick.png" /></Button></Panel>
-        <Panel class="item" id="item_sobi_mask"><Button onactivate="attemptDraft('item_sobi_mask');"><Image src="file://{images}/items/sobi_mask.png" /></Button></Panel>
-        <Panel class="item" id="item_ring_of_regen"><Button onactivate="attemptDraft('item_ring_of_regen');"><Image src="file://{images}/items/ring_of_regen.png" /></Button></Panel>
-        <Panel class="item" id="item_boots"><Button onactivate="attemptDraft('item_boots');"><Image src="file://{images}/items/boots.png" /></Button></Panel>
-        <Panel class="item" id="item_gloves"><Button onactivate="attemptDraft('item_gloves');"><Image src="file://{images}/items/gloves.png" /></Button></Panel>
-        <Panel class="item" id="item_cloak"><Button onactivate="attemptDraft('item_cloak');"><Image src="file://{images}/items/cloak.png" /></Button></Panel>
-        <Panel class="item" id="item_ring_of_health"><Button onactivate="attemptDraft('item_ring_of_health');"><Image src="file://{images}/items/ring_of_health.png" /></Button></Panel>
-        <Panel class="item" id="item_void_stone"><Button onactivate="attemptDraft('item_void_stone');"><Image src="file://{images}/items/void_stone.png" /></Button></Panel>
-        <Panel class="item" id="item_lifesteal"><Button onactivate="attemptDraft('item_lifesteal');"><Image src="file://{images}/items/lifesteal.png" /></Button></Panel>
-        <Panel class="item" id="item_shadow_amulet"><Button onactivate="attemptDraft('item_shadow_amulet');"><Image src="file://{images}/items/shadow_amulet.png" /></Button></Panel>
-        <Panel class="item" id="item_ghost"><Button onactivate="attemptDraft('item_ghost');"><Image src="file://{images}/items/ghost.png" /></Button></Panel>
-        <Panel class="item" id="item_blink"><Button onactivate="attemptDraft('item_blink');"><Image src="file://{images}/items/blink.png" /></Button></Panel>
+        <Panel class="item" id="item_magic_stick"><Button onactivate="attemptDraft('item_magic_stick');"><DOTAItemImage itemname="item_magic_stick" onmouseover="DOTAShowAbilityTooltip(item_magic_stick)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_sobi_mask"><Button onactivate="attemptDraft('item_sobi_mask');"><DOTAItemImage itemname="item_sobi_mask" onmouseover="DOTAShowAbilityTooltip(item_sobi_mask)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_ring_of_regen"><Button onactivate="attemptDraft('item_ring_of_regen');"><DOTAItemImage itemname="item_ring_of_regen" onmouseover="DOTAShowAbilityTooltip(item_ring_of_regen)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_boots"><Button onactivate="attemptDraft('item_boots');"><DOTAItemImage itemname="item_boots" onmouseover="DOTAShowAbilityTooltip(item_boots)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_gloves"><Button onactivate="attemptDraft('item_gloves');"><DOTAItemImage itemname="item_gloves" onmouseover="DOTAShowAbilityTooltip(item_gloves)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_cloak"><Button onactivate="attemptDraft('item_cloak');"><DOTAItemImage itemname="item_cloak" onmouseover="DOTAShowAbilityTooltip(item_cloak)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_ring_of_health"><Button onactivate="attemptDraft('item_ring_of_health');"><DOTAItemImage itemname="item_ring_of_health" onmouseover="DOTAShowAbilityTooltip(item_ring_of_health)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_void_stone"><Button onactivate="attemptDraft('item_void_stone');"><DOTAItemImage itemname="item_void_stone" onmouseover="DOTAShowAbilityTooltip(item_void_stone)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_lifesteal"><Button onactivate="attemptDraft('item_lifesteal');"><DOTAItemImage itemname="item_lifesteal" onmouseover="DOTAShowAbilityTooltip(item_lifesteal)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_shadow_amulet"><Button onactivate="attemptDraft('item_shadow_amulet');"><DOTAItemImage itemname="item_shadow_amulet" onmouseover="DOTAShowAbilityTooltip(item_shadow_amulet)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_ghost"><Button onactivate="attemptDraft('item_ghost');"><DOTAItemImage itemname="item_ghost" onmouseover="DOTAShowAbilityTooltip(item_ghost)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_blink"><Button onactivate="attemptDraft('item_blink');"><DOTAItemImage itemname="item_blink" onmouseover="DOTAShowAbilityTooltip(item_blink)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="common" class="group">
-        <Panel class="item" id="item_magic_wand"><Button onactivate="attemptDraft('item_magic_wand');"><Image src="file://{images}/items/magic_wand.png" /></Button></Panel>
-        <Panel class="item" id="item_null_talisman"><Button onactivate="attemptDraft('item_null_talisman');"><Image src="file://{images}/items/null_talisman.png" /></Button></Panel>
-        <Panel class="item" id="item_wraith_band"><Button onactivate="attemptDraft('item_wraith_band');"><Image src="file://{images}/items/wraith_band.png" /></Button></Panel>
-        <Panel class="item" id="item_bracer"><Button onactivate="attemptDraft('item_bracer');"><Image src="file://{images}/items/bracer.png" /></Button></Panel>
-        <Panel class="item" id="item_poor_mans_shield"><Button onactivate="attemptDraft('item_poor_mans_shield');"><Image src="file://{images}/items/poor_mans_shield.png" /></Button></Panel>
-        <Panel class="item" id="item_soul_ring"><Button onactivate="attemptDraft('item_soul_ring');"><Image src="file://{images}/items/soul_ring.png" /></Button></Panel>
-        <Panel class="item" id="item_phase_boots"><Button onactivate="attemptDraft('item_phase_boots');"><Image src="file://{images}/items/phase_boots.png" /></Button></Panel>
-        <Panel class="item" id="item_power_treads"><Button onactivate="attemptDraft('item_power_treads');"><Image src="file://{images}/items/power_treads.png" /></Button></Panel>
-        <Panel class="item" id="item_oblivion_staff"><Button onactivate="attemptDraft('item_oblivion_staff');"><Image src="file://{images}/items/oblivion_staff.png" /></Button></Panel>
-        <Panel class="item" id="item_pers"><Button onactivate="attemptDraft('item_pers');"><Image src="file://{images}/items/pers.png" /></Button></Panel>
-        <Panel class="item" id="item_hand_of_midas"><Button onactivate="attemptDraft('item_hand_of_midas');"><Image src="file://{images}/items/hand_of_midas.png" /></Button></Panel>
-        <Panel class="item" id="item_moon_shard"><Button onactivate="attemptDraft('item_moon_shard');"><Image src="file://{images}/items/moon_shard.png" /></Button></Panel>
+        <Panel class="item" id="item_magic_wand"><Button onactivate="attemptDraft('item_magic_wand');"><DOTAItemImage itemname="item_magic_wand" onmouseover="DOTAShowAbilityTooltip(item_magic_wand)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_null_talisman"><Button onactivate="attemptDraft('item_null_talisman');"><DOTAItemImage itemname="item_null_talisman" onmouseover="DOTAShowAbilityTooltip(item_null_talisman)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_wraith_band"><Button onactivate="attemptDraft('item_wraith_band');"><DOTAItemImage itemname="item_wraith_band" onmouseover="DOTAShowAbilityTooltip(item_wraith_band)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_bracer"><Button onactivate="attemptDraft('item_bracer');"><DOTAItemImage itemname="item_bracer" onmouseover="DOTAShowAbilityTooltip(item_bracer)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_poor_mans_shield"><Button onactivate="attemptDraft('item_poor_mans_shield');"><DOTAItemImage itemname="item_poor_mans_shield" onmouseover="DOTAShowAbilityTooltip(item_poor_mans_shield)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_soul_ring"><Button onactivate="attemptDraft('item_soul_ring');"><DOTAItemImage itemname="item_soul_ring" onmouseover="DOTAShowAbilityTooltip(item_soul_ring)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_phase_boots"><Button onactivate="attemptDraft('item_phase_boots');"><DOTAItemImage itemname="item_phase_boots" onmouseover="DOTAShowAbilityTooltip(item_phase_boots)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_power_treads"><Button onactivate="attemptDraft('item_power_treads');"><DOTAItemImage itemname="item_power_treads" onmouseover="DOTAShowAbilityTooltip(item_power_treads)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_oblivion_staff"><Button onactivate="attemptDraft('item_oblivion_staff');"><DOTAItemImage itemname="item_oblivion_staff" onmouseover="DOTAShowAbilityTooltip(item_oblivion_staff)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_pers"><Button onactivate="attemptDraft('item_pers');"><DOTAItemImage itemname="item_pers" onmouseover="DOTAShowAbilityTooltip(item_pers)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_hand_of_midas"><Button onactivate="attemptDraft('item_hand_of_midas');"><DOTAItemImage itemname="item_hand_of_midas" onmouseover="DOTAShowAbilityTooltip(item_hand_of_midas)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_moon_shard"><Button onactivate="attemptDraft('item_moon_shard');"><DOTAItemImage itemname="item_moon_shard" onmouseover="DOTAShowAbilityTooltip(item_moon_shard)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="support" class="group">
-        <Panel class="item" id="item_ring_of_basilius"><Button onactivate="attemptDraft('item_ring_of_basilius');"><Image src="file://{images}/items/ring_of_basilius.png" /></Button></Panel>
-        <Panel class="item" id="item_headdress"><Button onactivate="attemptDraft('item_headdress');"><Image src="file://{images}/items/headdress.png" /></Button></Panel>
-        <Panel class="item" id="item_buckler"><Button onactivate="attemptDraft('item_buckler');"><Image src="file://{images}/items/buckler.png" /></Button></Panel>
-        <Panel class="item" id="item_urn_of_shadows"><Button onactivate="attemptDraft('item_urn_of_shadows');"><Image src="file://{images}/items/urn_of_shadows.png" /></Button></Panel>
-        <Panel class="item" id="item_tranquil_boots"><Button onactivate="attemptDraft('item_tranquil_boots');"><Image src="file://{images}/items/tranquil_boots.png" /></Button></Panel>
-        <Panel class="item" id="item_ring_of_aquila"><Button onactivate="attemptDraft('item_ring_of_aquila');"><Image src="file://{images}/items/ring_of_aquila.png" /></Button></Panel>
-        <Panel class="item" id="item_medallion_of_courage"><Button onactivate="attemptDraft('item_medallion_of_courage');"><Image src="file://{images}/items/medallion_of_courage.png" /></Button></Panel>
-        <Panel class="item" id="item_arcane_boots"><Button onactivate="attemptDraft('item_arcane_boots');"><Image src="file://{images}/items/arcane_boots.png" /></Button></Panel>
-        <Panel class="item" id="item_ancient_janggo"><Button onactivate="attemptDraft('item_ancient_janggo');"><Image src="file://{images}/items/ancient_janggo.png" /></Button></Panel>
-        <Panel class="item" id="item_mekansm"><Button onactivate="attemptDraft('item_mekansm');"><Image src="file://{images}/items/mekansm.png" /></Button></Panel>
-        <Panel class="item" id="item_vladmir"><Button onactivate="attemptDraft('item_vladmir');"><Image src="file://{images}/items/vladmir.png" /></Button></Panel>
-        <Panel class="item" id="item_pipe"><Button onactivate="attemptDraft('item_pipe');"><Image src="file://{images}/items/pipe.png" /></Button></Panel>
-        <Panel class="item" id="item_guardian_greaves"><Button onactivate="attemptDraft('item_guardian_greaves');"><Image src="file://{images}/items/guardian_greaves.png" /></Button></Panel>
+        <Panel class="item" id="item_ring_of_basilius"><Button onactivate="attemptDraft('item_ring_of_basilius');"><DOTAItemImage itemname="item_ring_of_basilius" onmouseover="DOTAShowAbilityTooltip(item_ring_of_basilius)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_headdress"><Button onactivate="attemptDraft('item_headdress');"><DOTAItemImage itemname="item_headdress" onmouseover="DOTAShowAbilityTooltip(item_headdress)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_buckler"><Button onactivate="attemptDraft('item_buckler');"><DOTAItemImage itemname="item_buckler" onmouseover="DOTAShowAbilityTooltip(item_buckler)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_urn_of_shadows"><Button onactivate="attemptDraft('item_urn_of_shadows');"><DOTAItemImage itemname="item_urn_of_shadows" onmouseover="DOTAShowAbilityTooltip(item_urn_of_shadows)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_tranquil_boots"><Button onactivate="attemptDraft('item_tranquil_boots');"><DOTAItemImage itemname="item_tranquil_boots" onmouseover="DOTAShowAbilityTooltip(item_tranquil_boots)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_ring_of_aquila"><Button onactivate="attemptDraft('item_ring_of_aquila');"><DOTAItemImage itemname="item_ring_of_aquila" onmouseover="DOTAShowAbilityTooltip(item_ring_of_aquila)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_medallion_of_courage"><Button onactivate="attemptDraft('item_medallion_of_courage');"><DOTAItemImage itemname="item_medallion_of_courage" onmouseover="DOTAShowAbilityTooltip(item_medallion_of_courage)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_arcane_boots"><Button onactivate="attemptDraft('item_arcane_boots');"><DOTAItemImage itemname="item_arcane_boots" onmouseover="DOTAShowAbilityTooltip(item_arcane_boots)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_ancient_janggo"><Button onactivate="attemptDraft('item_ancient_janggo');"><DOTAItemImage itemname="item_ancient_janggo" onmouseover="DOTAShowAbilityTooltip(item_ancient_janggo)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_mekansm"><Button onactivate="attemptDraft('item_mekansm');"><DOTAItemImage itemname="item_mekansm" onmouseover="DOTAShowAbilityTooltip(item_mekansm)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_vladmir"><Button onactivate="attemptDraft('item_vladmir');"><DOTAItemImage itemname="item_vladmir" onmouseover="DOTAShowAbilityTooltip(item_vladmir)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_pipe"><Button onactivate="attemptDraft('item_pipe');"><DOTAItemImage itemname="item_pipe" onmouseover="DOTAShowAbilityTooltip(item_pipe)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_guardian_greaves"><Button onactivate="attemptDraft('item_guardian_greaves');"><DOTAItemImage itemname="item_guardian_greaves" onmouseover="DOTAShowAbilityTooltip(item_guardian_greaves)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="caster" class="group">
-        <Panel class="item" id="item_glimmer_cape"><Button onactivate="attemptDraft('item_glimmer_cape');"><Image src="file://{images}/items/glimmer_cape.png" /></Button></Panel>
-        <Panel class="item" id="item_force_staff"><Button onactivate="attemptDraft('item_force_staff');"><Image src="file://{images}/items/force_staff.png" /></Button></Panel>
-        <Panel class="item" id="item_veil_of_discord"><Button onactivate="attemptDraft('item_veil_of_discord');"><Image src="file://{images}/items/veil_of_discord.png" /></Button></Panel>
-        <Panel class="item" id="item_cyclone"><Button onactivate="attemptDraft('item_cyclone');"><Image src="file://{images}/items/cyclone.png" /></Button></Panel>
-        <Panel class="item" id="item_solar_crest"><Button onactivate="attemptDraft('item_solar_crest');"><Image src="file://{images}/items/solar_crest.png" /></Button></Panel>
-        <Panel class="item" id="item_rod_of_atos"><Button onactivate="attemptDraft('item_rod_of_atos');"><Image src="file://{images}/items/rod_of_atos.png" /></Button></Panel>
-        <Panel class="item" id="item_orchid"><Button onactivate="attemptDraft('item_orchid');"><Image src="file://{images}/items/orchid.png" /></Button></Panel>
-        <Panel class="item" id="item_ultimate_scepter"><Button onactivate="attemptDraft('item_ultimate_scepter');"><Image src="file://{images}/items/ultimate_scepter.png" /></Button></Panel>
-        <Panel class="item" id="item_refresher"><Button onactivate="attemptDraft('item_refresher');"><Image src="file://{images}/items/refresher.png" /></Button></Panel>
-        <Panel class="item" id="item_sheepstick"><Button onactivate="attemptDraft('item_sheepstick');"><Image src="file://{images}/items/sheepstick.png" /></Button></Panel>
-        <Panel class="item" id="item_octarine_core"><Button onactivate="attemptDraft('item_octarine_core');"><Image src="file://{images}/items/octarine_core.png" /></Button></Panel>
+        <Panel class="item" id="item_glimmer_cape"><Button onactivate="attemptDraft('item_glimmer_cape');"><DOTAItemImage itemname="item_glimmer_cape" onmouseover="DOTAShowAbilityTooltip(item_glimmer_cape)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_force_staff"><Button onactivate="attemptDraft('item_force_staff');"><DOTAItemImage itemname="item_force_staff" onmouseover="DOTAShowAbilityTooltip(item_force_staff)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_veil_of_discord"><Button onactivate="attemptDraft('item_veil_of_discord');"><DOTAItemImage itemname="item_veil_of_discord" onmouseover="DOTAShowAbilityTooltip(item_veil_of_discord)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_cyclone"><Button onactivate="attemptDraft('item_cyclone');"><DOTAItemImage itemname="item_cyclone" onmouseover="DOTAShowAbilityTooltip(item_cyclone)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_solar_crest"><Button onactivate="attemptDraft('item_solar_crest');"><DOTAItemImage itemname="item_solar_crest" onmouseover="DOTAShowAbilityTooltip(item_solar_crest)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_rod_of_atos"><Button onactivate="attemptDraft('item_rod_of_atos');"><DOTAItemImage itemname="item_rod_of_atos" onmouseover="DOTAShowAbilityTooltip(item_rod_of_atos)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_orchid"><Button onactivate="attemptDraft('item_orchid');"><DOTAItemImage itemname="item_orchid" onmouseover="DOTAShowAbilityTooltip(item_orchid)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_ultimate_scepter"><Button onactivate="attemptDraft('item_ultimate_scepter');"><DOTAItemImage itemname="item_ultimate_scepter" onmouseover="DOTAShowAbilityTooltip(item_ultimate_scepter)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_refresher"><Button onactivate="attemptDraft('item_refresher');"><DOTAItemImage itemname="item_refresher" onmouseover="DOTAShowAbilityTooltip(item_refresher)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_sheepstick"><Button onactivate="attemptDraft('item_sheepstick');"><DOTAItemImage itemname="item_sheepstick" onmouseover="DOTAShowAbilityTooltip(item_sheepstick)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_octarine_core"><Button onactivate="attemptDraft('item_octarine_core');"><DOTAItemImage itemname="item_octarine_core" onmouseover="DOTAShowAbilityTooltip(item_octarine_core)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="weapons" class="group">
-        <Panel class="item" id="item_lesser_crit"><Button onactivate="attemptDraft('item_lesser_crit');"><Image src="file://{images}/items/lesser_crit.png" /></Button></Panel>
-        <Panel class="item" id="item_armlet"><Button onactivate="attemptDraft('item_armlet');"><Image src="file://{images}/items/armlet.png" /></Button></Panel>
-        <Panel class="item" id="item_basher"><Button onactivate="attemptDraft('item_basher');"><Image src="file://{images}/items/basher.png" /></Button></Panel>
-        <Panel class="item" id="item_invis_sword"><Button onactivate="attemptDraft('item_invis_sword');"><Image src="file://{images}/items/invis_sword.png" /></Button></Panel>
-        <Panel class="item" id="item_bfury"><Button onactivate="attemptDraft('item_bfury');"><Image src="file://{images}/items/bfury.png" /></Button></Panel>
-        <Panel class="item" id="item_ethereal_blade"><Button onactivate="attemptDraft('item_ethereal_blade');"><Image src="file://{images}/items/ethereal_blade.png" /></Button></Panel>
-        <Panel class="item" id="item_silver_edge"><Button onactivate="attemptDraft('item_silver_edge');"><Image src="file://{images}/items/silver_edge.png" /></Button></Panel>
-        <Panel class="item" id="item_radiance"><Button onactivate="attemptDraft('item_radiance');"><Image src="file://{images}/items/radiance.png" /></Button></Panel>
-        <Panel class="item" id="item_monkey_king_bar"><Button onactivate="attemptDraft('item_monkey_king_bar');"><Image src="file://{images}/items/monkey_king_bar.png" /></Button></Panel>
-        <Panel class="item" id="item_greater_crit"><Button onactivate="attemptDraft('item_greater_crit');"><Image src="file://{images}/items/greater_crit.png" /></Button></Panel>
-        <Panel class="item" id="item_butterfly"><Button onactivate="attemptDraft('item_butterfly');"><Image src="file://{images}/items/butterfly.png" /></Button></Panel>
-        <Panel class="item" id="item_rapier"><Button onactivate="attemptDraft('item_rapier');"><Image src="file://{images}/items/rapier.png" /></Button></Panel>
-        <Panel class="item" id="item_abyssal_blade"><Button onactivate="attemptDraft('item_abyssal_blade');"><Image src="file://{images}/items/abyssal_blade.png" /></Button></Panel>
+        <Panel class="item" id="item_lesser_crit"><Button onactivate="attemptDraft('item_lesser_crit');"><DOTAItemImage itemname="item_lesser_crit" onmouseover="DOTAShowAbilityTooltip(item_lesser_crit)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_armlet"><Button onactivate="attemptDraft('item_armlet');"><DOTAItemImage itemname="item_armlet" onmouseover="DOTAShowAbilityTooltip(item_armlet)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_basher"><Button onactivate="attemptDraft('item_basher');"><DOTAItemImage itemname="item_basher" onmouseover="DOTAShowAbilityTooltip(item_basher)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_invis_sword"><Button onactivate="attemptDraft('item_invis_sword');"><DOTAItemImage itemname="item_invis_sword" onmouseover="DOTAShowAbilityTooltip(item_invis_sword)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_bfury"><Button onactivate="attemptDraft('item_bfury');"><DOTAItemImage itemname="item_bfury" onmouseover="DOTAShowAbilityTooltip(item_bfury)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_ethereal_blade"><Button onactivate="attemptDraft('item_ethereal_blade');"><DOTAItemImage itemname="item_ethereal_blade" onmouseover="DOTAShowAbilityTooltip(item_ethereal_blade)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_silver_edge"><Button onactivate="attemptDraft('item_silver_edge');"><DOTAItemImage itemname="item_silver_edge" onmouseover="DOTAShowAbilityTooltip(item_silver_edge)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_radiance"><Button onactivate="attemptDraft('item_radiance');"><DOTAItemImage itemname="item_radiance" onmouseover="DOTAShowAbilityTooltip(item_radiance)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_monkey_king_bar"><Button onactivate="attemptDraft('item_monkey_king_bar');"><DOTAItemImage itemname="item_monkey_king_bar" onmouseover="DOTAShowAbilityTooltip(item_monkey_king_bar)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_greater_crit"><Button onactivate="attemptDraft('item_greater_crit');"><DOTAItemImage itemname="item_greater_crit" onmouseover="DOTAShowAbilityTooltip(item_greater_crit)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_butterfly"><Button onactivate="attemptDraft('item_butterfly');"><DOTAItemImage itemname="item_butterfly" onmouseover="DOTAShowAbilityTooltip(item_butterfly)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_rapier"><Button onactivate="attemptDraft('item_rapier');"><DOTAItemImage itemname="item_rapier" onmouseover="DOTAShowAbilityTooltip(item_rapier)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_abyssal_blade"><Button onactivate="attemptDraft('item_abyssal_blade');"><DOTAItemImage itemname="item_abyssal_blade" onmouseover="DOTAShowAbilityTooltip(item_abyssal_blade)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="armor" class="group">
-        <Panel class="item" id="item_hood_of_defiance"><Button onactivate="attemptDraft('item_hood_of_defiance');"><Image src="file://{images}/items/hood_of_defiance.png" /></Button></Panel>
-        <Panel class="item" id="item_vanguard"><Button onactivate="attemptDraft('item_vanguard');"><Image src="file://{images}/items/vanguard.png" /></Button></Panel>
-        <Panel class="item" id="item_blade_mail"><Button onactivate="attemptDraft('item_blade_mail');"><Image src="file://{images}/items/blade_mail.png" /></Button></Panel>
-        <Panel class="item" id="item_soul_booster"><Button onactivate="attemptDraft('item_soul_booster');"><Image src="file://{images}/items/soul_booster.png" /></Button></Panel>
-        <Panel class="item" id="item_crimson_guard"><Button onactivate="attemptDraft('item_crimson_guard');"><Image src="file://{images}/items/crimson_guard.png" /></Button></Panel>
-        <Panel class="item" id="item_black_king_bar"><Button onactivate="attemptDraft('item_black_king_bar');"><Image src="file://{images}/items/black_king_bar.png" /></Button></Panel>
-        <Panel class="item" id="item_lotus_orb"><Button onactivate="attemptDraft('item_lotus_orb');"><Image src="file://{images}/items/lotus_orb.png" /></Button></Panel>
-        <Panel class="item" id="item_shivas_guard"><Button onactivate="attemptDraft('item_shivas_guard');"><Image src="file://{images}/items/shivas_guard.png" /></Button></Panel>
-        <Panel class="item" id="item_bloodstone"><Button onactivate="attemptDraft('item_bloodstone');"><Image src="file://{images}/items/bloodstone.png" /></Button></Panel>
-        <Panel class="item" id="item_manta"><Button onactivate="attemptDraft('item_manta');"><Image src="file://{images}/items/manta.png" /></Button></Panel>
-        <Panel class="item" id="item_sphere"><Button onactivate="attemptDraft('item_sphere');"><Image src="file://{images}/items/sphere.png" /></Button></Panel>
-        <Panel class="item" id="item_assault"><Button onactivate="attemptDraft('item_assault');"><Image src="file://{images}/items/assault.png" /></Button></Panel>
-        <Panel class="item" id="item_heart"><Button onactivate="attemptDraft('item_heart');"><Image src="file://{images}/items/heart.png" /></Button></Panel>
+        <Panel class="item" id="item_hood_of_defiance"><Button onactivate="attemptDraft('item_hood_of_defiance');"><DOTAItemImage itemname="item_hood_of_defiance" onmouseover="DOTAShowAbilityTooltip(item_hood_of_defiance)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_vanguard"><Button onactivate="attemptDraft('item_vanguard');"><DOTAItemImage itemname="item_vanguard" onmouseover="DOTAShowAbilityTooltip(item_vanguard)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_blade_mail"><Button onactivate="attemptDraft('item_blade_mail');"><DOTAItemImage itemname="item_blade_mail" onmouseover="DOTAShowAbilityTooltip(item_blade_mail)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_soul_booster"><Button onactivate="attemptDraft('item_soul_booster');"><DOTAItemImage itemname="item_soul_booster" onmouseover="DOTAShowAbilityTooltip(item_soul_booster)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_crimson_guard"><Button onactivate="attemptDraft('item_crimson_guard');"><DOTAItemImage itemname="item_crimson_guard" onmouseover="DOTAShowAbilityTooltip(item_crimson_guard)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_black_king_bar"><Button onactivate="attemptDraft('item_black_king_bar');"><DOTAItemImage itemname="item_black_king_bar" onmouseover="DOTAShowAbilityTooltip(item_black_king_bar)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_lotus_orb"><Button onactivate="attemptDraft('item_lotus_orb');"><DOTAItemImage itemname="item_lotus_orb" onmouseover="DOTAShowAbilityTooltip(item_lotus_orb)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_shivas_guard"><Button onactivate="attemptDraft('item_shivas_guard');"><DOTAItemImage itemname="item_shivas_guard" onmouseover="DOTAShowAbilityTooltip(item_shivas_guard)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_bloodstone"><Button onactivate="attemptDraft('item_bloodstone');"><DOTAItemImage itemname="item_bloodstone" onmouseover="DOTAShowAbilityTooltip(item_bloodstone)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_manta"><Button onactivate="attemptDraft('item_manta');"><DOTAItemImage itemname="item_manta" onmouseover="DOTAShowAbilityTooltip(item_manta)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_sphere"><Button onactivate="attemptDraft('item_sphere');"><DOTAItemImage itemname="item_sphere" onmouseover="DOTAShowAbilityTooltip(item_sphere)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_assault"><Button onactivate="attemptDraft('item_assault');"><DOTAItemImage itemname="item_assault" onmouseover="DOTAShowAbilityTooltip(item_assault)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_heart"><Button onactivate="attemptDraft('item_heart');"><DOTAItemImage itemname="item_heart" onmouseover="DOTAShowAbilityTooltip(item_heart)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="artifacts" class="group">
-        <Panel class="item" id="item_mask_of_madness"><Button onactivate="attemptDraft('item_mask_of_madness');"><Image src="file://{images}/items/mask_of_madness.png" /></Button></Panel>
-        <Panel class="item" id="item_helm_of_the_dominator"><Button onactivate="attemptDraft('item_helm_of_the_dominator');"><Image src="file://{images}/items/helm_of_the_dominator.png" /></Button></Panel>
-        <Panel class="item" id="item_sange"><Button onactivate="attemptDraft('item_sange');"><Image src="file://{images}/items/sange.png" /></Button></Panel>
-        <Panel class="item" id="item_yasha"><Button onactivate="attemptDraft('item_yasha');"><Image src="file://{images}/items/yasha.png" /></Button></Panel>
-        <Panel class="item" id="item_maelstrom"><Button onactivate="attemptDraft('item_maelstrom');"><Image src="file://{images}/items/maelstrom.png" /></Button></Panel>
-        <Panel class="item" id="item_desolator"><Button onactivate="attemptDraft('item_desolator');"><Image src="file://{images}/items/desolator.png" /></Button></Panel>
-        <Panel class="item" id="item_heavens_halberd"><Button onactivate="attemptDraft('item_heavens_halberd');"><Image src="file://{images}/items/heavens_halberd.png" /></Button></Panel>
-        <Panel class="item" id="item_sange_and_yasha"><Button onactivate="attemptDraft('item_sange_and_yasha');"><Image src="file://{images}/items/sange_and_yasha.png" /></Button></Panel>
-        <Panel class="item" id="item_skadi"><Button onactivate="attemptDraft('item_skadi');"><Image src="file://{images}/items/skadi.png" /></Button></Panel>
-        <Panel class="item" id="item_mjollnir"><Button onactivate="attemptDraft('item_mjollnir');"><Image src="file://{images}/items/mjollnir.png" /></Button></Panel>
-        <Panel class="item" id="item_satanic"><Button onactivate="attemptDraft('item_satanic');"><Image src="file://{images}/items/satanic.png" /></Button></Panel>
+        <Panel class="item" id="item_mask_of_madness"><Button onactivate="attemptDraft('item_mask_of_madness');"><DOTAItemImage itemname="item_mask_of_madness" onmouseover="DOTAShowAbilityTooltip(item_mask_of_madness)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_helm_of_the_dominator"><Button onactivate="attemptDraft('item_helm_of_the_dominator');"><DOTAItemImage itemname="item_helm_of_the_dominator" onmouseover="DOTAShowAbilityTooltip(item_helm_of_the_dominator)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_sange"><Button onactivate="attemptDraft('item_sange');"><DOTAItemImage itemname="item_sange" onmouseover="DOTAShowAbilityTooltip(item_sange)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_yasha"><Button onactivate="attemptDraft('item_yasha');"><DOTAItemImage itemname="item_yasha" onmouseover="DOTAShowAbilityTooltip(item_yasha)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_maelstrom"><Button onactivate="attemptDraft('item_maelstrom');"><DOTAItemImage itemname="item_maelstrom" onmouseover="DOTAShowAbilityTooltip(item_maelstrom)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_desolator"><Button onactivate="attemptDraft('item_desolator');"><DOTAItemImage itemname="item_desolator" onmouseover="DOTAShowAbilityTooltip(item_desolator)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_heavens_halberd"><Button onactivate="attemptDraft('item_heavens_halberd');"><DOTAItemImage itemname="item_heavens_halberd" onmouseover="DOTAShowAbilityTooltip(item_heavens_halberd)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_sange_and_yasha"><Button onactivate="attemptDraft('item_sange_and_yasha');"><DOTAItemImage itemname="item_sange_and_yasha" onmouseover="DOTAShowAbilityTooltip(item_sange_and_yasha)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_skadi"><Button onactivate="attemptDraft('item_skadi');"><DOTAItemImage itemname="item_skadi" onmouseover="DOTAShowAbilityTooltip(item_skadi)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_mjollnir"><Button onactivate="attemptDraft('item_mjollnir');"><DOTAItemImage itemname="item_mjollnir" onmouseover="DOTAShowAbilityTooltip(item_mjollnir)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_satanic"><Button onactivate="attemptDraft('item_satanic');"><DOTAItemImage itemname="item_satanic" onmouseover="DOTAShowAbilityTooltip(item_satanic)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="secret" class="group">
-        <Panel class="item" id="item_energy_booster"><Button onactivate="attemptDraft('item_energy_booster');"><Image src="file://{images}/items/energy_booster.png" /></Button></Panel>
-        <Panel class="item" id="item_vitality_booster"><Button onactivate="attemptDraft('item_vitality_booster');"><Image src="file://{images}/items/vitality_booster.png" /></Button></Panel>
-        <Panel class="item" id="item_point_booster"><Button onactivate="attemptDraft('item_point_booster');"><Image src="file://{images}/items/point_booster.png" /></Button></Panel>
-        <Panel class="item" id="item_platemail"><Button onactivate="attemptDraft('item_platemail');"><Image src="file://{images}/items/platemail.png" /></Button></Panel>
-        <Panel class="item" id="item_talisman_of_evasion"><Button onactivate="attemptDraft('item_talisman_of_evasion');"><Image src="file://{images}/items/talisman_of_evasion.png" /></Button></Panel>
-        <Panel class="item" id="item_hyperstone"><Button onactivate="attemptDraft('item_hyperstone');"><Image src="file://{images}/items/hyperstone.png" /></Button></Panel>
-        <Panel class="item" id="item_ultimate_orb"><Button onactivate="attemptDraft('item_ultimate_orb');"><Image src="file://{images}/items/ultimate_orb.png" /></Button></Panel>
-        <Panel class="item" id="item_demon_edge"><Button onactivate="attemptDraft('item_demon_edge');"><Image src="file://{images}/items/demon_edge.png" /></Button></Panel>
-        <Panel class="item" id="item_mystic_staff"><Button onactivate="attemptDraft('item_mystic_staff');"><Image src="file://{images}/items/mystic_staff.png" /></Button></Panel>
-        <Panel class="item" id="item_reaver"><Button onactivate="attemptDraft('item_reaver');"><Image src="file://{images}/items/reaver.png" /></Button></Panel>
-        <Panel class="item" id="item_eagle"><Button onactivate="attemptDraft('item_eagle');"><Image src="file://{images}/items/eagle.png" /></Button></Panel>
-        <Panel class="item" id="item_relic"><Button onactivate="attemptDraft('item_relic');"><Image src="file://{images}/items/relic.png" /></Button></Panel>
+        <Panel class="item" id="item_energy_booster"><Button onactivate="attemptDraft('item_energy_booster');"><DOTAItemImage itemname="item_energy_booster" onmouseover="DOTAShowAbilityTooltip(item_energy_booster)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_vitality_booster"><Button onactivate="attemptDraft('item_vitality_booster');"><DOTAItemImage itemname="item_vitality_booster" onmouseover="DOTAShowAbilityTooltip(item_vitality_booster)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_point_booster"><Button onactivate="attemptDraft('item_point_booster');"><DOTAItemImage itemname="item_point_booster" onmouseover="DOTAShowAbilityTooltip(item_point_booster)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_platemail"><Button onactivate="attemptDraft('item_platemail');"><DOTAItemImage itemname="item_platemail" onmouseover="DOTAShowAbilityTooltip(item_platemail)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_talisman_of_evasion"><Button onactivate="attemptDraft('item_talisman_of_evasion');"><DOTAItemImage itemname="item_talisman_of_evasion" onmouseover="DOTAShowAbilityTooltip(item_talisman_of_evasion)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_hyperstone"><Button onactivate="attemptDraft('item_hyperstone');"><DOTAItemImage itemname="item_hyperstone" onmouseover="DOTAShowAbilityTooltip(item_hyperstone)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_ultimate_orb"><Button onactivate="attemptDraft('item_ultimate_orb');"><DOTAItemImage itemname="item_ultimate_orb" onmouseover="DOTAShowAbilityTooltip(item_ultimate_orb)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_demon_edge"><Button onactivate="attemptDraft('item_demon_edge');"><DOTAItemImage itemname="item_demon_edge" onmouseover="DOTAShowAbilityTooltip(item_demon_edge)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_mystic_staff"><Button onactivate="attemptDraft('item_mystic_staff');"><DOTAItemImage itemname="item_mystic_staff" onmouseover="DOTAShowAbilityTooltip(item_mystic_staff)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_reaver"><Button onactivate="attemptDraft('item_reaver');"><DOTAItemImage itemname="item_reaver" onmouseover="DOTAShowAbilityTooltip(item_reaver)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_eagle"><Button onactivate="attemptDraft('item_eagle');"><DOTAItemImage itemname="item_eagle" onmouseover="DOTAShowAbilityTooltip(item_eagle)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_relic"><Button onactivate="attemptDraft('item_relic');"><DOTAItemImage itemname="item_relic" onmouseover="DOTAShowAbilityTooltip(item_relic)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
       <Panel id="upgraded" class="group">
-        <Panel class="item" id="item_travel_boots"><Button onactivate="attemptDraft('item_travel_boots');"><Image src="file://{images}/items/travel_boots.png" /></Button></Panel>
-        <Panel class="item" id="item_travel_boots_2"><Button onactivate="attemptDraft('item_travel_boots_2');"><Image src="file://{images}/items/travel_boots_2.png" /></Button></Panel>
-        <Panel class="item" id="item_necronomicon"><Button onactivate="attemptDraft('item_necronomicon');"><Image src="file://{images}/items/necronomicon.png" /></Button></Panel>
-        <Panel class="item" id="item_necronomicon_2"><Button onactivate="attemptDraft('item_necronomicon_2');"><Image src="file://{images}/items/necronomicon_2.png" /></Button></Panel>
-        <Panel class="item" id="item_necronomicon_3"><Button onactivate="attemptDraft('item_necronomicon_3');"><Image src="file://{images}/items/necronomicon_3.png" /></Button></Panel>
-        <Panel class="item" id="item_dagon"><Button onactivate="attemptDraft('item_dagon');"><Image src="file://{images}/items/dagon.png" /></Button></Panel>
-        <Panel class="item" id="item_dagon_2"><Button onactivate="attemptDraft('item_dagon_2');"><Image src="file://{images}/items/dagon_2.png" /></Button></Panel>
-        <Panel class="item" id="item_dagon_3"><Button onactivate="attemptDraft('item_dagon_3');"><Image src="file://{images}/items/dagon_3.png" /></Button></Panel>
-        <Panel class="item" id="item_dagon_4"><Button onactivate="attemptDraft('item_dagon_4');"><Image src="file://{images}/items/dagon_4.png" /></Button></Panel>
-        <Panel class="item" id="item_dagon_5"><Button onactivate="attemptDraft('item_dagon_5');"><Image src="file://{images}/items/dagon_5.png" /></Button></Panel>
-        <Panel class="item" id="item_diffusal_blade"><Button onactivate="attemptDraft('item_diffusal_blade');"><Image src="file://{images}/items/diffusal_blade.png" /></Button></Panel>
-        <Panel class="item" id="item_diffusal_blade_2"><Button onactivate="attemptDraft('item_diffusal_blade_2');"><Image src="file://{images}/items/diffusal_blade_2.png" /></Button></Panel>
+        <Panel class="item" id="item_travel_boots"><Button onactivate="attemptDraft('item_travel_boots');"><DOTAItemImage itemname="item_travel_boots" onmouseover="DOTAShowAbilityTooltip(item_travel_boots)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_travel_boots_2"><Button onactivate="attemptDraft('item_travel_boots_2');"><DOTAItemImage itemname="item_travel_boots_2" onmouseover="DOTAShowAbilityTooltip(item_travel_boots_2)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_necronomicon"><Button onactivate="attemptDraft('item_necronomicon');"><DOTAItemImage itemname="item_necronomicon" onmouseover="DOTAShowAbilityTooltip(item_necronomicon)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_necronomicon_2"><Button onactivate="attemptDraft('item_necronomicon_2');"><DOTAItemImage itemname="item_necronomicon_2" onmouseover="DOTAShowAbilityTooltip(item_necronomicon_2)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_necronomicon_3"><Button onactivate="attemptDraft('item_necronomicon_3');"><DOTAItemImage itemname="item_necronomicon_3" onmouseover="DOTAShowAbilityTooltip(item_necronomicon_3)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_dagon"><Button onactivate="attemptDraft('item_dagon');"><DOTAItemImage itemname="item_dagon" onmouseover="DOTAShowAbilityTooltip(item_dagon)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_dagon_2"><Button onactivate="attemptDraft('item_dagon_2');"><DOTAItemImage itemname="item_dagon_2" onmouseover="DOTAShowAbilityTooltip(item_dagon_2)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_dagon_3"><Button onactivate="attemptDraft('item_dagon_3');"><DOTAItemImage itemname="item_dagon_3" onmouseover="DOTAShowAbilityTooltip(item_dagon_3)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_dagon_4"><Button onactivate="attemptDraft('item_dagon_4');"><DOTAItemImage itemname="item_dagon_4" onmouseover="DOTAShowAbilityTooltip(item_dagon_4)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_dagon_5"><Button onactivate="attemptDraft('item_dagon_5');"><DOTAItemImage itemname="item_dagon_5" onmouseover="DOTAShowAbilityTooltip(item_dagon_5)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_diffusal_blade"><Button onactivate="attemptDraft('item_diffusal_blade');"><DOTAItemImage itemname="item_diffusal_blade" onmouseover="DOTAShowAbilityTooltip(item_diffusal_blade)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+        <Panel class="item" id="item_diffusal_blade_2"><Button onactivate="attemptDraft('item_diffusal_blade_2');"><DOTAItemImage itemname="item_diffusal_blade_2" onmouseover="DOTAShowAbilityTooltip(item_diffusal_blade_2)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
       </Panel>
     </Panel>
   </Panel>

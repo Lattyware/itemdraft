@@ -11,7 +11,7 @@
   </scripts>
   <Panel class="slot">
     <Button onactivate="sell()">
-      <Image class="icon" />
+      <DOTAAbilityImage class="icon" />
       <Label class="key" />
     </Button>
   </Panel>

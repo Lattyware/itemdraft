@@ -11,7 +11,7 @@
     </scripts>
     <Panel class="ability">
         <Button onactivate="buy()">
-            <Image class="icon" />
+            <DOTAAbilityImage />
             <Label class="cost" />
         </Button>
         <Panel />

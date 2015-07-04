@@ -11,10 +11,6 @@ if ItemDraftGameMode == nil then
 end
 
 function Precache(context)
-	local abilities = LoadKeyValues("scripts/data/abilities.txt")
-	for name, _ in pairs(abilities) do
-    PrecacheUnitByNameSync(name, context)
-	end
 end
 
 function Activate()

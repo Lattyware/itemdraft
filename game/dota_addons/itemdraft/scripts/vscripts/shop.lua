@@ -44,8 +44,9 @@ function onBuyAility(_, args)
   -- TODO: Check stock.
 
   local hero = PlayerResource:GetPlayer(playerId):GetAssignedHero()
-  addOrUpgradeAbility(playerId, hero, purchasedAbility, cost, ultimate)
-  hero:SpendGold(cost, DOTA_ModifyGold_PurchaseItem)
+  if addOrUpgradeAbility(playerId, hero, sourceHero, purchasedAbility, cost, ultimate) then
+    hero:SpendGold(cost, DOTA_ModifyGold_PurchaseItem)
+  end
 end
 
 -- Handles sell ability events from clients.
@@ -58,17 +59,17 @@ function onSellAbility(_, args)
   sellAbility(playerId, hero, soldAbility)
 end
 
--- Add or upgrade the given ability on the given player.
-function addOrUpgradeAbility(playerId, hero, abilityName, cost, ultimate)
+-- Add or upgrade the given ability on the given player, returning true if the ability was added/upgraded.
+function addOrUpgradeAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
   if (abilityInfoByName(playerId, abilityName) ~= nil) then
-    upgradeAbility(playerId, hero, abilityName, cost)
+    return upgradeAbility(playerId, hero, abilityName, cost)
   else
-    addAbility(playerId, hero, abilityName, cost, ultimate)
+    return addAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
   end
 end
 
--- Add an ability to the given player.
-function addAbility(playerId, hero, abilityName, cost, ultimate)
+-- Add an ability to the given player, returning true if the ability was added/upgraded.
+function addAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
   local slot = nextEmptyAbilitySlot(playerId, ultimate)
   if slot ~= nil then
     local playerAbilities = getPlayerAbilities(playerId)
@@ -78,10 +79,22 @@ function addAbility(playerId, hero, abilityName, cost, ultimate)
     abilityInfo["level"] = 0
     abilityInfo["sunkCost"] = 0
     abilityInfo["empty"] = false
+    PrecacheUnitByNameAsync(sourceHero, addAbilityCallback(playerId, hero, abilityName, cost))
+    -- We don't need the whole hero! But this doesn't work T__T
+    --PrecacheItemByNameAsync(abilityName, addAbilityCallback(playerId, hero, abilityName, cost))
     setPlayerAbilities(playerId, playerAbilities)
+    return true
+  end
+  return false
+end
+
+-- Actually add and upgrade the ability, used as a callback after loading the ability.
+function addAbilityCallback(playerId, hero, abilityName, cost)
+  function callback()
     hero:AddAbility(abilityName)
     upgradeAbility(playerId, hero, abilityName, cost)
   end
+  return callback
 end
 
 -- Get the ability info given the name of the ability, if the player has it, or nil.
@@ -117,7 +130,9 @@ function upgradeAbility(playerId, hero, abilityName, cost)
     local playerAbilities = getPlayerAbilities(playerId)
     playerAbilities[abilityInfo["slot"]] = abilityInfo
     setPlayerAbilities(playerId, playerAbilities)
+    return true;
   end
+  return false;
 end
 
 -- Sell an ability.

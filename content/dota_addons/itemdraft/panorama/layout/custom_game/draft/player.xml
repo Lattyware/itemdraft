@@ -15,9 +15,6 @@
       <DOTAUserName steamid="-1" />
       <Label class="remaining-money" />
     </Panel>
-    <Panel class="drafted-items">
-			<Panel class="row"></Panel>
-			<Panel class="row"></Panel>
-    </Panel>
+    <Panel class="drafted-items" />
   </Panel>
 </root>

@@ -5,7 +5,21 @@ var rootPanel = $.GetContextPanel();
 var heroName = rootPanel.GetAttributeString("heroName", "");
 var abilitiesString = rootPanel.GetAttributeString("abilities", "");
 
-rootPanel.GetChild(0).heroname = heroName
+var heroIcon = rootPanel.GetChild(0);
+
+heroIcon.heroname = heroName
+
+function showTooltip() {
+  $.DispatchEvent("DOTAShowTextTooltip", heroIcon, $.Localize("#" + heroName));
+}
+
+function hideTooltip() {
+  $.DispatchEvent("DOTAHideTextTooltip", heroIcon);
+}
+
+heroIcon.SetPanelEvent("onmouseover", showTooltip);
+heroIcon.SetPanelEvent("onmouseout", hideTooltip);
+
 var abilitesPanel = rootPanel.GetChild(1)
 
 var abilities = []
