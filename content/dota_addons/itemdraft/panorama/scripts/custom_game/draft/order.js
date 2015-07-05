@@ -1,7 +1,14 @@
 "use strict";
 
-var panel = $.GetContextPanel();
-var order = panel.GetAttributeInt("order", -1);
+var rootPanel = $.GetContextPanel();
+var order = rootPanel.GetAttributeInt("order", -1);
+var maxOrder = rootPanel.GetAttributeInt("maxOrder", -1);
+
+var panel = rootPanel.GetChild(0);
+
+if (order === maxOrder) {
+  rootPanel.GetChild(1).AddClass("last-fade");
+}
 
 function draftChange(table, key, value) {
   if (key === "draft") {

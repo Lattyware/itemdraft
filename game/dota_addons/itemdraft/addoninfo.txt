@@ -1,10 +1,10 @@
 "AddonInfo"
 {
-	"TeamCount" "2"
-	maps			"dota"
-	"IsPlayable"	"1"
+	"TeamCount"  "2"
+	"maps"  "dota"
+	"IsPlayable"  "1"
 	"dota"
 	{
-					"MaxPlayers"                    "10"
+    "MaxPlayers"  "10"
 	}
 }

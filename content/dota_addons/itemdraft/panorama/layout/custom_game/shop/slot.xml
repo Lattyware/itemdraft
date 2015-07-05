@@ -10,7 +10,7 @@
     <include src="file://{resources}/scripts/custom_game/shop/slot.js" />
   </scripts>
   <Panel class="slot">
-    <Button onactivate="sell()">
+    <Button onclick="upgrade">
       <DOTAAbilityImage class="icon" />
       <Label class="key" />
     </Button>

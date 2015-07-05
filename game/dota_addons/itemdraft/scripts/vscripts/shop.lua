@@ -12,6 +12,7 @@ placeholders = {Q = "invoker_empty1", W = "invoker_empty2", E = "doom_bringer_em
 -- Register the listeners for events to do with drafting.
 function registerShopCallbacks()
   CustomGameEventManager:RegisterListener("buy_ability", onBuyAility)
+  CustomGameEventManager:RegisterListener("upgrade_ability", onUpgradeAility)
   CustomGameEventManager:RegisterListener("sell_ability", onSellAbility)
 end
 
@@ -24,6 +25,15 @@ function loadShop()
       skill["ultimate"] = npcAbilities[skillName]["AbilityType"] == "DOTA_ABILITY_TYPE_ULTIMATE"
     end
     CustomNetTables:SetTableValue("shop", hero, skills)
+  end
+  local npcHeroes = LoadKeyValues("scripts/data/npc_heroes.txt")
+  for hero, data in pairs(npcHeroes) do
+    if type(data) == "table" then
+      local aliases = data["NameAliases"];
+      if (aliases ~= nil) then
+        CustomNetTables:SetTableValue("search_synonyms", hero, split(aliases, ";"))
+      end
+    end
   end
 end
 
@@ -45,6 +55,26 @@ function onBuyAility(_, args)
 
   local hero = PlayerResource:GetPlayer(playerId):GetAssignedHero()
   if addOrUpgradeAbility(playerId, hero, sourceHero, purchasedAbility, cost, ultimate) then
+    hero:SpendGold(cost, DOTA_ModifyGold_PurchaseItem)
+  end
+end
+
+-- Handles upgrade ability events from the client.
+function onUpgradeAility(_, args)
+  local playerId = args["PlayerID"]
+  local sourceHero = decodeFromKey(args["sourceHero"])
+  local upgradedAbility = decodeFromKey(args["ability"])
+
+  local abilityDetails = CustomNetTables:GetTableValue("shop", sourceHero)[upgradedAbility]
+  local cost = tonumber(abilityDetails["cost"])
+  local gold = PlayerResource:GetGold(playerId)
+
+  if gold < cost then
+    return
+  end
+
+  local hero = PlayerResource:GetPlayer(playerId):GetAssignedHero()
+  if upgradeAbility(playerId, hero, upgradedAbility, cost) then
     hero:SpendGold(cost, DOTA_ModifyGold_PurchaseItem)
   end
 end
@@ -78,6 +108,7 @@ function addAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
     abilityInfo["name"] = abilityName
     abilityInfo["level"] = 0
     abilityInfo["sunkCost"] = 0
+    abilityInfo["sourceHero"] = sourceHero
     abilityInfo["empty"] = false
     PrecacheUnitByNameAsync(sourceHero, addAbilityCallback(playerId, hero, abilityName, cost))
     -- We don't need the whole hero! But this doesn't work T__T

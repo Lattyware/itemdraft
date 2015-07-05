@@ -11,7 +11,7 @@
   </scripts>
   <Panel class="fullscreen" hittest="false">
     <Button id="levelButton" onactivate="showLevelOptions();" class="hidden">
-      <Label text="Level Up" />
+      <Label text="#DOTA_LevelUp" />
     </Button>
     <Panel id="itemSelection" class="hidden"></Panel>
   </Panel>

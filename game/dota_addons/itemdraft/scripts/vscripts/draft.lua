@@ -157,5 +157,11 @@ function computeDraftOrder(players)
     draftOrder[itemCount * 2 + 1 - k] = v
   end
 
+  -- Repeat the draft order, this ensures the UI works when on one drafter.
+  local itemCount = #draftOrder
+  for i = 1, itemCount do
+    draftOrder[itemCount + i] = draftOrder[i]
+  end
+
   return draftOrder
 end

@@ -7,7 +7,7 @@
   visibility: collapse;
 }
 
-#shopButton {
+#shop-button {
   horizontal-align: right;
   margin-right: 20px;
   margin-bottom: 180px;
@@ -18,7 +18,7 @@
   text-align: center;
   font-weight: bold;
 }
-#shopButton.hud-flipped {
+#shop-button.hud-flipped {
   horizontal-align: left;
   margin-left: 20px;
 }
@@ -38,14 +38,32 @@
   margin-left: 30px;
 }
 
-#shop #currentView {
+#shop #current-view {
   flow-children: right;
 }
 
-#shop #currentView .slot {
+#shop #current-view .slot {
   width: 60px;
   height: 60px;
   margin: 2px;
+}
+
+#shop #search-box {
+  width: 100%;
+  height: 35px;
+  font-size: 30px;
+  background-color: #333333;
+  color: #d7d7d7;
+  margin: 5px 5px 10px 5px;
+  background-image: url("file://{images}/search.png");
+  background-position: left 5px center;
+  background-repeat: no-repeat;
+  padding-left: 45px;
+}
+
+
+#shop #search-box Label {
+  color: #505358;
 }
 
 #shop #rows {
@@ -55,7 +73,7 @@
 
 #shop .hero-row {
   flow-children: right;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #shop .hero-icon {

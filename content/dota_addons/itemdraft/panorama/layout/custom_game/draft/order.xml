@@ -9,8 +9,11 @@
     <include src="file://{resources}/scripts/custom_game/utility.js" />
     <include src="file://{resources}/scripts/custom_game/draft/order.js" />
   </scripts>
-  <Panel class="draft-order-player">
-    <DOTAAvatarImage steamid="-1" />
-    <DOTAUserName steamid="-1" />
+  <Panel>
+    <Panel class="draft-order-player">
+      <DOTAAvatarImage steamid="-1" />
+      <DOTAUserName steamid="-1" />
+    </Panel>
+    <Panel class="overlay" />
   </Panel>
 </root>

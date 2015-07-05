@@ -2,7 +2,7 @@
 
 var rootPanel = $.GetContextPanel();
 
-var teamNames = ["Radiant", "Dire"];
+var teamNames = [$.Localize("DOTA_GoodGuys"), $.Localize("DOTA_BadGuys")];
 var nextTeamName = 0;
 for (var teamId of Game.GetAllTeamIDs()) {
   var team = teamNames[nextTeamName++];
@@ -16,9 +16,11 @@ var itemsPanel = $.CreatePanel("Panel", rootPanel, "items");
 itemsPanel.BLoadLayout("file://{resources}/layout/custom_game/draft/items.xml", false, false);
 
 var draftOrderPanel = $("#draft-order");
-for (var i = 1; i <= 3; i++) {
+var draftersShown = 4;
+for (var i = 1; i <= draftersShown; i++) {
     var draftOrderPlayer = $.CreatePanel("Panel", draftOrderPanel, "draft-order-player-" + i.toString());
     draftOrderPlayer.SetAttributeInt("order", i);
+    draftOrderPlayer.SetAttributeInt("maxOrder", draftersShown);
     draftOrderPlayer.BLoadLayout("file://{resources}/layout/custom_game/draft/order.xml", false, false);
 }
 

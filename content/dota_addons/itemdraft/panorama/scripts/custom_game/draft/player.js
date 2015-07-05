@@ -39,5 +39,8 @@ function draftChange(table, key, value) {
     }
     draftedItems = draftedItems.concat(newItems);
   }
+  if (key === "draft") {
+    playerInfoPanel.SetHasClass("current-drafter", value["order"][1] === playerId)
+  }
 }
 manageNetTable("draft", draftChange)

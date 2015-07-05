@@ -12,8 +12,8 @@
   height: 60px;
 }
 
-.player-draft-area .currently-drafting {
-  border: 1px solid #ffffff;
+.current-drafter {
+  background-color: #FFD700;
 }
 
 .player-draft-area .player-info .remaining-money {

@@ -48,7 +48,7 @@ function gameChange(table, key, value) {
       $("#selection-" + leveledItemKey).AddClass("hidden");
     }
     var gold = parseInt(value["gold"]);
-    levelButton.GetChild(0).text = "Level Up (" + gold.toString() + ")"
+    levelButton.GetChild(0).text = $.Localize("#DOTA_LevelUp") + " (" + gold.toString() + ")"
     levelButton.AddClass("hidden");
     itemSelection.AddClass("hidden");
     for (var key in draftKeys) {
