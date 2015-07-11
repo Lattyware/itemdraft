@@ -3,8 +3,19 @@
 --
 
 require("utility")
+require("libs/timers")
 
 levelGold = 15000
+
+preDraftTime = 0
+draftTime = 5
+
+draftTurn = 0
+
+draftStarted = false
+draftEnded = false
+
+itemGrouping = LoadKeyValues("scripts/data/item_grouping.txt")["draft"]
 
 -- Register the listeners for events to do with drafting.
 function registerDraftCallbacks()
@@ -39,11 +50,21 @@ function startDraft()
     end
   end
   local draftOrder = computeDraftOrder(teams)
-  CustomNetTables:SetTableValue("draft", "draft", {order = draftOrder})
+
+  Timers:CreateTimer({
+    useGameTime = false,
+    endTime = preDraftTime,
+    callback = function()
+      draftStarted = true
+      CustomNetTables:SetTableValue("draft", "draft", {order = draftOrder})
+      initialDraftTimer()
+    end
+  })
 end
 
 -- Finish the draft.
 function finishDraft()
+  draftEnded = true
   PauseGame(false)
 end
 
@@ -83,41 +104,49 @@ end
 
 -- Handles draft events from clients.
 function draft(_, args)
-  local playerId = args["PlayerID"]
-  local draftedItem = args["draft"]
+  if draftStarted then
+    local playerId = args["PlayerID"]
+    local draftedItem = args["draft"]
 
-  local draftOrder = destringTable(CustomNetTables:GetTableValue("draft", "draft")["order"])
-  local itemDetails = CustomNetTables:GetTableValue("items", draftedItem)
-  local playerInfo = CustomNetTables:GetTableValue("draft", tostring(playerId))
-  local gold = tonumber(playerInfo["gold"])
-  local cost = tonumber(itemDetails["cost"])
+    local draftOrder = destringTable(CustomNetTables:GetTableValue("draft", "draft")["order"])
+    local itemDetails = CustomNetTables:GetTableValue("items", draftedItem)
+    local playerInfo = CustomNetTables:GetTableValue("draft", tostring(playerId))
+    local gold = tonumber(playerInfo["gold"])
+    local cost = tonumber(itemDetails["cost"])
 
-  if #draftOrder == 0 then
-    return
-  end
-  if playerId ~= draftOrder[1] then
-    return
-  end
-  if gold < cost then
-    return
-  end
-  if gold < 50 then
-    return
-  end
+    if #draftOrder == 0 then return false end
+    if playerId ~= draftOrder[1] then return false end
+    if gold < cost then return false end
+    if gold < 50 then return false end
 
-  local draft = destringTable(playerInfo["draft"])
-  draft[#draft + 1] = draftedItem
-  playerInfo["draft"] = draft
-  playerInfo["gold"] = gold - cost
-  CustomNetTables:SetTableValue("draft", tostring(playerId), playerInfo)
+    local draft = destringTable(playerInfo["draft"])
+    draft[#draft + 1] = draftedItem
+    playerInfo["draft"] = draft
+    playerInfo["gold"] = gold - cost
+    CustomNetTables:SetTableValue("draft", tostring(playerId), playerInfo)
 
-  if gold - cost < 50 then
-    if (removeFromDraft(playerId)) then
-      finishDraft()
-      return
+    if gold - cost < 50 then
+      if (removeFromDraft(playerId)) then
+        finishDraft()
+        return true
+      end
     end
+    advanceDraft()
+    return true
   end
-  advanceDraft()
+end
+
+-- Draft a random item (for when the user doesn't draft in time).
+function randomDraft(playerId)
+  local groups = {}
+  for _, items in pairs(itemGrouping) do
+    groups[#groups + 1] = destringTable(items)
+  end
+  local group = groups[math.random(#groups)]
+  local item = group[math.random(#group)]
+  if not draft(nil, {PlayerID = playerId, draft = item}) then
+    randomDraft(playerId)
+  end
 end
 
 -- Advance the draft by one, return the new current drafter.
@@ -126,7 +155,35 @@ function advanceDraft()
   local previous = table.remove(draftOrder, 1)
   table.insert(draftOrder, previous)
   CustomNetTables:SetTableValue("draft", "draft", {order = draftOrder})
-  return draftOrder[1]
+  draftTurn = draftTurn + 1
+  local expectedDraftTurn = draftTurn
+  local nextToDraft = draftOrder[1]
+  Timers:CreateTimer({
+    useGameTime = false,
+    endTime = draftTime,
+    callback = function()
+      if (not draftEnded) and expectedDraftTurn == draftTurn then
+        randomDraft(tonumber(nextToDraft))
+      end
+    end
+  })
+  return nextToDraft
+end
+
+-- Set up the first draft timer.
+function initialDraftTimer()
+  local draftOrder = destringTable(CustomNetTables:GetTableValue("draft", "draft")["order"])
+  local nextToDraft = draftOrder[1]
+  local expectedDraftTurn = draftTurn
+  Timers:CreateTimer({
+    useGameTime = false,
+    endTime = draftTime,
+    callback = function()
+      if (not draftEnded) and expectedDraftTurn == draftTurn then
+        randomDraft(tonumber(nextToDraft))
+      end
+    end
+  })
 end
 
 -- Removes someone from the draft, and returns if the draft is done.

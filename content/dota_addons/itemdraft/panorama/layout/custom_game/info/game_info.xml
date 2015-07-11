@@ -7,6 +7,6 @@
     <include src="file://{resources}/styles/custom_game/info/game_info.css" />
   </styles>
   <Panel class="gameinfo">
-    <Label text="#addondescription" />
+    <Label html="true" text="#addondescription" />
   </Panel>
 </root>

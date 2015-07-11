@@ -8,12 +8,21 @@
 }
 
 #draft-description {
-  margin-left: 25px;
+  margin-left: 425px;
   margin-top: 35px;
-  width: 700px;
+  width: 500px;
   color: #ffffff;
   font-size: 40px;
   text-align: right;
+}
+
+.draft-timer {
+  margin-left: 25px;
+  margin-top: 35px;
+  width: 575px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
 }
 
 #teams {

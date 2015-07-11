@@ -2,6 +2,7 @@
 
 var playerId = Game.GetLocalPlayerID().toString();
 var levelButton = $("#level-button");
+var levelGold = $("#level-gold");
 var itemSelection = $("#item-selection");
 
 adjustForHudFlipping()
@@ -48,7 +49,7 @@ function gameChange(table, key, value) {
       $("#selection-" + leveledItemKey).AddClass("hidden");
     }
     var gold = parseInt(value["gold"]);
-    levelButton.GetChild(0).text = $.Localize("#DOTA_LevelUp") + " (" + gold.toString() + ")"
+    levelGold.SetDialogVariableInt("gold", gold);
     levelButton.AddClass("hidden");
     itemSelection.AddClass("hidden");
     for (var key in draftKeys) {
@@ -61,8 +62,8 @@ function gameChange(table, key, value) {
 }
 manageNetTable("game", gameChange);
 
-
 function adjustForHudFlipping() {
   setForHudFlipping(itemSelection);
   setForHudFlipping(levelButton);
+  setForHudFlipping(levelGold);
 }

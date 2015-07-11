@@ -11,8 +11,9 @@
   </scripts>
   <Panel class="fullscreen">
     <Panel id="draft" class="fullscreen background">
-      <Label id="draft-description" text="#draftorder" />
-      <Panel id="draft-order" />
+      <Label id="draft-start-timer" class="draft-timer" text="#draftstarttimer" />
+      <Label id="draft-underway-timer" class="draft-timer hidden" text="#draftunderwaytimer" />
+      <Panel id="draft-order" class="hidden" />
       <Panel id="teams" />
     </Panel>
   </Panel>

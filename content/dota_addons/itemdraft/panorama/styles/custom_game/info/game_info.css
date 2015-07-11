@@ -2,9 +2,18 @@
   color: #ffffff;
 	font-size: 25px;
   flow-children: down;
-  text-overflow: ellipsis;
 }
 
 .gameinfo Label {
   margin-bottom: 25px;
+}
+
+.gameinfo Label a {
+  color: #5555ff;
+  text-decoration: underline;
+}
+
+.gameinfo Label .alpha {
+  font-weight: bold;
+  text-transform: uppercase;
 }

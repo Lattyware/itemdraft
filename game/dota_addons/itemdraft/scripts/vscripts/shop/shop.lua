@@ -39,7 +39,7 @@ function loadShop()
   end
   local draftingRules = LoadKeyValues("scripts/data/item_drafting_rules.txt")
   local items = LoadKeyValues("scripts/data/items.txt")
-  local grouping = LoadKeyValues("scripts/data/item_grouping.txt")
+  local grouping = LoadKeyValues("scripts/data/item_grouping.txt")["shop"]
   local itemsToGroup = {}
   for group, items in pairs(grouping) do
     for _, item in pairs(items) do
@@ -146,13 +146,13 @@ function addAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
   if slot ~= nil then
     local playerAbilities = getPlayerAbilities(playerId)
     local abilityInfo = playerAbilities[slot]
-    hero:RemoveAbility(abilityInfo["name"])
+    local replacing =  abilityInfo["name"]
     abilityInfo["name"] = abilityName
     abilityInfo["level"] = 0
     abilityInfo["sunkCost"] = 0
     abilityInfo["sourceHero"] = sourceHero
     abilityInfo["empty"] = false
-    PrecacheUnitByNameAsync(sourceHero, addAbilityCallback(playerId, hero, abilityName, cost))
+    PrecacheUnitByNameAsync(sourceHero, addAbilityCallback(playerId, hero, abilityName, cost, replacing))
     -- We don't need the whole hero! But this doesn't work T__T
     --PrecacheItemByNameAsync(abilityName, addAbilityCallback(playerId, hero, abilityName, cost))
     setPlayerAbilities(playerId, playerAbilities)
@@ -162,8 +162,9 @@ function addAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
 end
 
 -- Actually add and upgrade the ability, used as a callback after loading the ability.
-function addAbilityCallback(playerId, hero, abilityName, cost)
+function addAbilityCallback(playerId, hero, abilityName, cost, replacing)
   function callback()
+    hero:RemoveAbility(replacing)
     hero:AddAbility(abilityName)
     upgradeAbility(playerId, hero, abilityName, cost)
   end

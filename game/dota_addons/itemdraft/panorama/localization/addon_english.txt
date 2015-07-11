@@ -2,18 +2,34 @@
 {
   "addonname"  "Item Draft"
 
-  "draftorder"  "Drafting order:"
   "search"  "Hero/ability name"
   "abilities"  "Abilities"
   "items"  "Items"
+  "levelgold"  "{d:gold}xp"
 
-  "addondescription"  "Item draft is a game mode where dota is flipped around - draft your items, and level up to getthem, while buying abilities with your hard-earned gold!
+  "draftstarttimer"  "Time until draft starts: {d:time}s"
+  "draftunderwaytimer"  "Pick time left: {d:time}s"
 
-Remember that when you pick your hero, you don't get their skills. (Unless you buy them!)
+  "addondescription"  "
+    <p>This game mode is in <span class=\"alpha\">alpha</span>! It is a very early version, expect bugs, imbalance, and
+    a lack of polish. Please report bugs and request features at the GitHub repository
+    (<a href=\"https://github.com/Lattyware/itemdraft\">git.io/itemdraft</a>). Thanks for taking
+    the time to try Item Draft!</p>
 
-As you level up, you can spend your experience on items you drafted. You can draft items until you have 25 levels of experience worth.
+    <p>Item draft is a game mode where dota is flipped around - draft your items, and level up to get them, while
+    buying abilities with your hard-earned gold!</p>
 
-Items that are not consumable or component items, as well as recipes, can only be drafted by one person! Get them quick or miss out!
+    <p>When you draft an item, you only get that exact item (not it's build up) - remember not to draft too
+    greedily!</p>
 
-Some consumables (and the gem) still get bought with gold."
+    <p>Remember that when you pick your hero, you don't get their skills. (Unless you buy them!)</p>
+
+    <p>As you level up, you can spend your experience on items you drafted. You can draft items until you have 25
+    levels worth of experience.</p>
+
+    <p>You have five seconds per draft! Try to think about your drafts while others are drafting. If you don't draft
+    in time, you will get a random item!</p>
+
+    <p>Some consumables (and the gem) still get bought with gold.</p>
+  "
 }

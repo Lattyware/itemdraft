@@ -40,3 +40,13 @@ function buy() {
     item: item
   });
 }
+
+function goldChange(args) {
+  var gold = Players.GetGold(Players.GetLocalPlayer());
+  if (gold < cost) {
+    rootPanel.AddClass("not-buyable");
+  } else {
+    rootPanel.RemoveClass("not-buyable");
+  }
+}
+GameEvents.Subscribe("dota_money_changed", goldChange)

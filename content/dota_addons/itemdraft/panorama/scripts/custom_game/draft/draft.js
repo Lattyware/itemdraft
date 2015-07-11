@@ -2,6 +2,9 @@
 
 var rootPanel = $.GetContextPanel();
 
+var time = 30;
+var draftUnderway = false;
+
 var teamNames = [$.Localize("DOTA_GoodGuys"), $.Localize("DOTA_BadGuys")];
 var nextTeamName = 0;
 for (var teamId of Game.GetAllTeamIDs()) {
@@ -24,9 +27,35 @@ for (var i = 1; i <= draftersShown; i++) {
   draftOrderPlayer.BLoadLayout("file://{resources}/layout/custom_game/draft/order.xml", false, false);
 }
 
+var draftTimer = $("#draft-start-timer");
+
+function decrementTimer()
+{
+  time -= 1;
+  draftTimer.SetDialogVariableInt("time", time);
+  $.Schedule(1, decrementTimer);
+}
+
+draftTimer.SetDialogVariableInt("time", time);
+$.Schedule(1, decrementTimer);
 function draftChange(table, key, value) {
+  if (draftUnderway) {
+    time = 5;
+    draftTimer.SetDialogVariableInt("time", time);
+  }
   if (key === "draft") {
-    if (Object.keys(value["order"]).length === 0) {
+    if (value["order"] != undefined) {
+      if (!draftUnderway) {
+        draftUnderway = true;
+        draftTimer.AddClass("hidden");
+        draftTimer = $("#draft-underway-timer");
+        draftTimer.RemoveClass("hidden");
+        $("#draft-order").RemoveClass("hidden");
+        time = 5;
+        draftTimer.SetDialogVariableInt("time", time);
+      }
+    }
+    if (draftUnderway && Object.keys(value["order"]).length === 0) {
       rootPanel.DeleteAsync(0);
     }
   }

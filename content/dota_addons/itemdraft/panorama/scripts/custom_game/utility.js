@@ -26,9 +26,5 @@ function toArray(map) {
  * Flip/unflip the UI as per user preference to account for the minimap-on-right option.
  */
 function setForHudFlipping(panel) {
-  if (Game.IsHUDFlipped()) {
-    panel.AddClass("hud-flipped")
-  } else {
-    panel.RemoveClass("hud-flipped")
-  }
+  panel.SetHasClass("hud-flipped", Game.IsHUDFlipped())
 }

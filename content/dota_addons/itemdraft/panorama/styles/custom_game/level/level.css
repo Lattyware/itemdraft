@@ -2,12 +2,26 @@
   visibility: collapse;
 }
 
+#level-gold {
+  vertical-align: bottom;
+  margin-left: 580px;
+  margin-bottom: 250px;
+  color: #FFD700;
+  background-color: #000000;
+  width: 40px;
+  height: 25px;
+  text-align: center;
+}
+#level-gold.hud-flipped {
+  margin-left: 680px;
+}
+
 #level-button {
   horizontal-align: left;
   margin-bottom: 250px;
   vertical-align: bottom;
   background-color: #FFD700;
-  width: 150px;
+  width: 90px;
   height: 25px;
   text-align: center;
   margin-left: 480px;

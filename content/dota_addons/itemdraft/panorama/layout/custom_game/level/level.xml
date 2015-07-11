@@ -13,6 +13,7 @@
     <ToggleButton id="level-button" onactivate="showLevelOptions();" class="hidden">
       <Label text="#DOTA_LevelUp" />
     </ToggleButton>
+    <Label id="level-gold" text="#levelgold" />
     <Panel id="item-selection" class="hidden" />
   </Panel>
 </root>
