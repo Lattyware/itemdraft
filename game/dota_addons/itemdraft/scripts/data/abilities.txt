@@ -2022,110 +2022,110 @@
   {
     "sniper_shrapnel"
     {
-      "cost"  "1000"
+      "cost"  "1700"
     }
     "sniper_headshot"
     {
-      "cost"  "1000"
+      "cost"  "1600"
     }
     "sniper_take_aim"
     {
-      "cost"  "1000"
+      "cost"  "1600"
     }
     "sniper_assassinate"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
   }
   "npc_dota_hero_bloodseeker"
   {
     "bloodseeker_bloodrage"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "bloodseeker_blood_bath"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "bloodseeker_thirst"
     {
-      "cost"  "1000"
+      "cost"  "3500"
     }
     "bloodseeker_rupture"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_skywrath_mage"
   {
     "skywrath_mage_arcane_bolt"
     {
-      "cost"  "1000"
+      "cost"  "500"
     }
     "skywrath_mage_concussive_shot"
     {
-      "cost"  "1000"
+      "cost"  "500"
     }
     "skywrath_mage_ancient_seal"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "skywrath_mage_mystic_flare"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_juggernaut"
   {
     "juggernaut_blade_fury"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "juggernaut_healing_ward"
     {
-      "cost"  "1000"
+      "cost"  "1100"
     }
     "juggernaut_blade_dance"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "juggernaut_omni_slash"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_riki"
   {
     "riki_smoke_screen"
     {
-      "cost"  "1000"
+      "cost"  "2400"
     }
     "riki_permanent_invisibility"
     {
-      "cost"  "1000"
+      "cost"  "3500"
     }
     "riki_backstab"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "riki_blink_strike"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_nyx_assassin"
   {
     "nyx_assassin_impale"
     {
-      "cost"  "1000"
+      "cost"  "700"
     }
     "nyx_assassin_mana_burn"
     {
-      "cost"  "1000"
+      "cost"  "900"
     }
     "nyx_assassin_spiked_carapace"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "nyx_assassin_burrow"
     {
@@ -2137,26 +2137,26 @@
     }
     "nyx_assassin_vendetta"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_lich"
   {
     "lich_frost_nova"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "lich_frost_armor"
     {
-      "cost"  "1000"
+      "cost"  "700"
     }
     "lich_dark_ritual"
     {
-      "cost"  "1000"
+      "cost"  "900"
     }
     "lich_chain_frost"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_tinker"
@@ -2182,11 +2182,11 @@
   {
     "dragon_knight_breathe_fire"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "dragon_knight_dragon_tail"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "dragon_knight_dragon_blood"
     {
@@ -2201,11 +2201,11 @@
   {
     "mirana_starfall"
     {
-      "cost"  "1000"
+      "cost"  "350"
     }
     "mirana_arrow"
     {
-      "cost"  "1000"
+      "cost"  "1400"
     }
     "mirana_leap"
     {
@@ -2213,26 +2213,26 @@
     }
     "mirana_invis"
     {
-      "cost"  "1000"
+      "cost"  "3500"
     }
   }
   "npc_dota_hero_ember_spirit"
   {
     "ember_spirit_searing_chains"
     {
-      "cost"  "1000"
+      "cost"  "500"
     }
     "ember_spirit_sleight_of_fist"
     {
-      "cost"  "1000"
+      "cost"  "2200"
     }
     "ember_spirit_flame_guard"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "ember_spirit_fire_remnant"
     {
-      "cost"  "1000"
+      "cost"  "3000"
       "subabilities"
       {
         "1"  "ember_spirit_activate_fire_remnant"
@@ -2243,57 +2243,57 @@
   {
     "witch_doctor_paralyzing_cask"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "witch_doctor_voodoo_restoration"
     {
-      "cost"  "1000"
+      "cost"  "400"
     }
     "witch_doctor_maledict"
     {
-      "cost"  "1000"
+      "cost"  "700"
     }
     "witch_doctor_death_ward"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_chaos_knight"
   {
     "chaos_knight_chaos_bolt"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "chaos_knight_reality_rift"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "chaos_knight_chaos_strike"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "chaos_knight_phantasm"
     {
-      "cost"  "1000"
+      "cost"  "4000"
     }
   }
   "npc_dota_hero_viper"
   {
     "viper_poison_attack"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "viper_nethertoxin"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "viper_corrosive_skin"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "viper_viper_strike"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
 }

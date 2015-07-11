@@ -7,7 +7,7 @@ require("libs/timers")
 
 levelGold = 15000
 
-preDraftTime = 0
+preDraftTime = 30
 draftTime = 5
 
 draftTurn = 0
