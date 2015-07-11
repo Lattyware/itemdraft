@@ -4,8 +4,10 @@
     "draft",
     "items",
     "shop",
+    "shop_items",
     "abilities",
     "game",
-    "search_synonyms"
+    "search_synonyms",
+    "stock"
   ]
 }

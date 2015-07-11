@@ -1,8 +1,8 @@
 "use strict";
 
 var playerId = Game.GetLocalPlayerID().toString();
-var levelButton = $("#levelButton");
-var itemSelection = $("#itemSelection");
+var levelButton = $("#level-button");
+var itemSelection = $("#item-selection");
 
 adjustForHudFlipping()
 

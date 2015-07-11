@@ -2,7 +2,7 @@
   visibility: collapse;
 }
 
-#levelButton {
+#level-button {
   horizontal-align: left;
   margin-bottom: 250px;
   vertical-align: bottom;
@@ -10,14 +10,14 @@
   width: 150px;
   height: 25px;
   text-align: center;
-  margin-left: 400px;
+  margin-left: 480px;
   font-weight: bold;
 }
-#levelButton.hud-flipped {
-  margin-left: 520px;
+#level-button.hud-flipped {
+  margin-left: 580px;
 }
 
-#itemSelection {
+#item-selection {
   horizontal-align: left;
   vertical-align: bottom;
   width: 370px;
@@ -25,10 +25,10 @@
   margin-bottom: 280px;
   background-color: #000000;
   flow-children: right-wrap;
-  margin-left: 320px;
+  margin-left: 360px;
 }
-#itemSelection.hud-flipped {
-  margin-left: 400px;
+#item-selection.hud-flipped {
+  margin-left: 460px;
 }
 
 .item {

@@ -3,6 +3,7 @@
 --
 
 require("utility")
+require("shop/stock")
 
 abilitySlots = {"Q", "W", "E", "D", "F", "R"}
 ultimateAbilitySlot = {Q = false, W = false, E = false, D = false, F = false, R = true }
@@ -11,6 +12,7 @@ placeholders = {Q = "invoker_empty1", W = "invoker_empty2", E = "doom_bringer_em
 
 -- Register the listeners for events to do with drafting.
 function registerShopCallbacks()
+  CustomGameEventManager:RegisterListener("buy_item", onBuyItem)
   CustomGameEventManager:RegisterListener("buy_ability", onBuyAility)
   CustomGameEventManager:RegisterListener("upgrade_ability", onUpgradeAility)
   CustomGameEventManager:RegisterListener("sell_ability", onSellAbility)
@@ -35,22 +37,63 @@ function loadShop()
       end
     end
   end
+  local draftingRules = LoadKeyValues("scripts/data/item_drafting_rules.txt")
+  local items = LoadKeyValues("scripts/data/items.txt")
+  local grouping = LoadKeyValues("scripts/data/item_grouping.txt")
+  local itemsToGroup = {}
+  for group, items in pairs(grouping) do
+    for _, item in pairs(items) do
+      itemsToGroup[item] = group
+    end
+  end
+  local grouped = {}
+  for item, _ in pairs(draftingRules["undrafted"]) do
+    local groupName = itemsToGroup[item]
+    local group = grouped[groupName]
+    if group == nil then
+      group = {}
+      grouped[groupName] = group
+    end
+    group[item] = items[item]
+  end
+  for group, groupItems in pairs(grouped) do
+    CustomNetTables:SetTableValue("shop_items", group, groupItems)
+  end
+  loadStock()
+end
+
+-- Handles buy ability events from clients.
+function onBuyItem(_, args)
+  local playerId = args["PlayerID"]
+  local purchasedItem = args["item"]
+
+  local item = CustomNetTables:GetTableValue("items", purchasedItem)
+  local cost = item["cost"]
+  local gold = PlayerResource:GetGold(playerId)
+
+  if gold < cost then return end
+
+  if not reduceStock(PlayerResource:GetTeam(playerId), purchasedItem) then return end
+
+  local player = PlayerResource:GetPlayer(playerId)
+  local hero = player:GetAssignedHero()
+  local itemInstance = CreateItem(purchasedItem, hero, hero)
+  hero:AddItem(itemInstance)
+  hero:SpendGold(cost, DOTA_ModifyGold_PurchaseItem)
 end
 
 -- Handles buy ability events from clients.
 function onBuyAility(_, args)
   local playerId = args["PlayerID"]
-  local sourceHero = decodeFromKey(args["sourceHero"])
-  local purchasedAbility = decodeFromKey(args["ability"])
+  local sourceHero = args["sourceHero"]
+  local purchasedAbility = args["ability"]
 
   local abilityDetails = CustomNetTables:GetTableValue("shop", sourceHero)[purchasedAbility]
   local cost = tonumber(abilityDetails["cost"])
   local ultimate = abilityDetails["ultimate"] ~= 0
   local gold = PlayerResource:GetGold(playerId)
 
-  if gold < cost then
-    return
-  end
+  if gold < cost then return end
   -- TODO: Check stock.
 
   local hero = PlayerResource:GetPlayer(playerId):GetAssignedHero()
@@ -62,16 +105,14 @@ end
 -- Handles upgrade ability events from the client.
 function onUpgradeAility(_, args)
   local playerId = args["PlayerID"]
-  local sourceHero = decodeFromKey(args["sourceHero"])
-  local upgradedAbility = decodeFromKey(args["ability"])
+  local sourceHero = args["sourceHero"]
+  local upgradedAbility = args["ability"]
 
   local abilityDetails = CustomNetTables:GetTableValue("shop", sourceHero)[upgradedAbility]
   local cost = tonumber(abilityDetails["cost"])
   local gold = PlayerResource:GetGold(playerId)
 
-  if gold < cost then
-    return
-  end
+  if gold < cost then return end
 
   local hero = PlayerResource:GetPlayer(playerId):GetAssignedHero()
   if upgradeAbility(playerId, hero, upgradedAbility, cost) then
@@ -82,7 +123,7 @@ end
 -- Handles sell ability events from clients.
 function onSellAbility(_, args)
   local playerId = args["PlayerID"]
-  local soldAbility = decodeFromKey(args["ability"])
+  local soldAbility = args["ability"]
 
   local hero = PlayerResource:GetPlayer(playerId):GetAssignedHero()
 
@@ -91,7 +132,8 @@ end
 
 -- Add or upgrade the given ability on the given player, returning true if the ability was added/upgraded.
 function addOrUpgradeAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
-  if (abilityInfoByName(playerId, abilityName) ~= nil) then
+  local abilityInfo = abilityInfoByName(playerId, abilityName)
+  if abilityInfo ~= nil then
     return upgradeAbility(playerId, hero, abilityName, cost)
   else
     return addAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
@@ -155,13 +197,15 @@ function upgradeAbility(playerId, hero, abilityName, cost)
   local ability = hero:FindAbilityByName(abilityName)
   if (ability:GetLevel() < ability:GetMaxLevel()) then
     local abilityInfo = abilityInfoByName(playerId, abilityName)
-    abilityInfo["level"] = abilityInfo["level"] + 1
-    abilityInfo["sunkCost"] = abilityInfo["sunkCost"] + cost
-    ability:UpgradeAbility(false)
-    local playerAbilities = getPlayerAbilities(playerId)
-    playerAbilities[abilityInfo["slot"]] = abilityInfo
-    setPlayerAbilities(playerId, playerAbilities)
-    return true;
+    if abilityInfo["empty"] ~= true then
+      abilityInfo["level"] = abilityInfo["level"] + 1
+      abilityInfo["sunkCost"] = abilityInfo["sunkCost"] + cost
+      ability:UpgradeAbility(false)
+      local playerAbilities = getPlayerAbilities(playerId)
+      playerAbilities[abilityInfo["slot"]] = abilityInfo
+      setPlayerAbilities(playerId, playerAbilities)
+      return true;
+    end
   end
   return false;
 end

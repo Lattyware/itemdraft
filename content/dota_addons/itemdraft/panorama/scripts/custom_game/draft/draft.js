@@ -18,10 +18,10 @@ itemsPanel.BLoadLayout("file://{resources}/layout/custom_game/draft/items.xml", 
 var draftOrderPanel = $("#draft-order");
 var draftersShown = 4;
 for (var i = 1; i <= draftersShown; i++) {
-    var draftOrderPlayer = $.CreatePanel("Panel", draftOrderPanel, "draft-order-player-" + i.toString());
-    draftOrderPlayer.SetAttributeInt("order", i);
-    draftOrderPlayer.SetAttributeInt("maxOrder", draftersShown);
-    draftOrderPlayer.BLoadLayout("file://{resources}/layout/custom_game/draft/order.xml", false, false);
+  var draftOrderPlayer = $.CreatePanel("Panel", draftOrderPanel, "draft-order-player-" + i.toString());
+  draftOrderPlayer.SetAttributeInt("order", i);
+  draftOrderPlayer.SetAttributeInt("maxOrder", draftersShown);
+  draftOrderPlayer.BLoadLayout("file://{resources}/layout/custom_game/draft/order.xml", false, false);
 }
 
 function draftChange(table, key, value) {

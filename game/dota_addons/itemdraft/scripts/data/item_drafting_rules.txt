@@ -1,13 +1,13 @@
 "drafting_rules"
 {
   "undrafted" {
-    "item_smoke_of_deceit" true
-    "item_ward_observer" true
-    "item_ward_sentry" true
-    "item_courier" true
-    "item_flying_courier" true
-    "item_tpscroll" true
-    "item_dust" true
-    "item_gem" true
+    "item_smoke_of_deceit"  true
+    "item_ward_observer"  true
+    "item_ward_sentry"  true
+    "item_courier"  true
+    "item_flying_courier"  true
+    "item_tpscroll"  true
+    "item_dust"  true
+    "item_gem"  true
   }
 }

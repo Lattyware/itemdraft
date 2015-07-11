@@ -4,7 +4,7 @@
 
 require("draft")
 require("level")
-require("shop")
+require("shop/shop")
 
 if ItemDraftGameMode == nil then
 	ItemDraftGameMode = class({})

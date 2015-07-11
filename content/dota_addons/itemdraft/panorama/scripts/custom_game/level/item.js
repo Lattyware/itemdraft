@@ -16,7 +16,7 @@ var costLabel = button.GetChild(1);
 costLabel.text = cost;
 
 function buy() {
-  GameEvents.SendCustomGameEventToServer("item", {draftId: encodeAsKey(draftId)});
+  GameEvents.SendCustomGameEventToServer("item", {draftId: draftId});
 }
 
 var items = {};

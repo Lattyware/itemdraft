@@ -10,7 +10,7 @@
 #shop-button {
   horizontal-align: right;
   margin-right: 20px;
-  margin-bottom: 180px;
+  margin-bottom: 170px;
   vertical-align: bottom;
   background-color: #FFD700;
   width: 80px;
@@ -30,7 +30,7 @@
   vertical-align: bottom;
   width: 380px;
   height: 750px;
-  background-color: #222222;
+  background-color: #111111;
   flow-children: down;
 }
 #shop.hud-flipped {
@@ -38,35 +38,61 @@
   margin-left: 30px;
 }
 
-#shop #current-view {
+#current-view {
   flow-children: right;
 }
 
-#shop #current-view .slot {
+#current-view .slot {
   width: 60px;
   height: 60px;
   margin: 2px;
 }
 
-#shop #search-box {
+#tabs {
+  flow-children: right;
   width: 100%;
-  height: 35px;
+}
+
+.tab {
+  padding: 5px 10px 0px 10px;
+  color: #d7d7d7;
+  margin: 10px 0px 0px 10px;
+  background-color: #222222;
+  border-top: 3px solid #222222;
+  width: 150px;
   font-size: 30px;
+  text-align: center;
+}
+
+.tab:selected {
+  border-top: 3px solid #555555;
+}
+
+.tab-content {
+  width: 100%;
+  height: 100%;
+  background-color: #222222;
+  flow-children: down;
+}
+
+#search-box {
+  width: 100%;
+  height: 40px;
+  font-size: 35px;
   background-color: #333333;
   color: #d7d7d7;
-  margin: 5px 5px 10px 5px;
+  margin: 10px 0px 10px 0px;
   background-image: url("file://{images}/search.png");
   background-position: left 5px center;
   background-repeat: no-repeat;
   padding-left: 45px;
 }
 
-
-#shop #search-box Label {
+#search-box Label {
   color: #505358;
 }
 
-#shop #rows {
+#rows {
   flow-children: down;
   overflow: scroll;
 }
@@ -100,13 +126,42 @@
   visibility: visible;
 }
 
-#shop .hero-row .abilities .ability .cost {
+.not-buyable {
+  opacity: 0.1;
+}
+
+.out-of-stock {
+  opacity: 0.1;
+}
+
+.out-of-stock .stock {
+  color: #FF0000;
+}
+
+#item-tab-content {
+  flow-children: down;
+}
+
+#item-tab-content .item-group {
+  flow-children: right-wrap;
+}
+
+#item-tab-content .item-group .shop-item {
+  margin: 2px;
+}
+
+.cost {
+  margin: 1px;
   horizontal-align: right;
   vertical-align: bottom;
   color: #FFD700;
   background-color: #000000;
 }
 
-.not-buyable {
-  opacity: 0.1;
+.stock {
+  margin: 1px;
+  horizontal-align: left;
+  vertical-align: bottom;
+  color: #FFFFFF;
+  background-color: #000000;
 }

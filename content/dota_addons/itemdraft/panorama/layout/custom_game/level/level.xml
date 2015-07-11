@@ -10,9 +10,9 @@
     <include src="file://{resources}/scripts/custom_game/level/level.js" />
   </scripts>
   <Panel class="fullscreen" hittest="false">
-    <Button id="levelButton" onactivate="showLevelOptions();" class="hidden">
+    <ToggleButton id="level-button" onactivate="showLevelOptions();" class="hidden">
       <Label text="#DOTA_LevelUp" />
-    </Button>
-    <Panel id="itemSelection" class="hidden"></Panel>
+    </ToggleButton>
+    <Panel id="item-selection" class="hidden" />
   </Panel>
 </root>

@@ -12,12 +12,6 @@ function destringTable(tbl)
   return destringed
 end
 
--- Events seem to lose all values, so we encode data as keys.
-function decodeFromKey(tbl)
-  local key, _ = next(tbl)
-  return key
-end
-
 -- Split a string
 function split(str, sSeparator, nMax, bRegexp)
   assert(sSeparator ~= '')

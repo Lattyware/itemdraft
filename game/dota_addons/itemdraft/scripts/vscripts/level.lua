@@ -21,7 +21,7 @@ end
 -- An item event was recieved from the user.
 function item(_, args)
   local playerId = args["PlayerID"]
-  local draftId = tonumber(decodeFromKey(args["draftId"]))
+  local draftId = tonumber(args["draftId"])
 
   local draft = destringTable(CustomNetTables:GetTableValue("draft", tostring(playerId))["draft"])
   local itemName = draft[draftId]

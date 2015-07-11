@@ -1,0 +1,23 @@
+"stock_rules"
+{
+  "item_ward_observer" {
+    "initial"  2
+    "max"  16
+    "restock"  180
+  }
+  "item_gem" {
+    "initial"  1
+    "max"  1
+    "restock"  600
+  }
+  "item_flying_courier" {
+    "initial"  1
+    "max"  1
+    "restock"  240
+  }
+  "item_smoke_of_deceit" {
+    "initial"  3
+    "max"  3
+    "restock"  720
+  }
+}

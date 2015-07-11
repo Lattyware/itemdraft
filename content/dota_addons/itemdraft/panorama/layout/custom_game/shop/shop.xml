@@ -11,14 +11,22 @@
     <include src="file://{resources}/scripts/custom_game/shop/shop.js" />
   </scripts>
   <Panel class="fullscreen" hittest="false">
-    <Button id="shop-button" onactivate="toggleAbilityShop();">
+    <ToggleButton id="shop-button" onactivate="toggleAbilityShop();">
       <Label text="#DOTA_HUDShop" />
-    </Button>
+    </ToggleButton>
     <Panel id="shop" class="hidden" oncancel="toggleAbilityShop()">
       <Panel id="current-view" />
-      <TextEntry id="search-box" maxchars="100" placeholder="#search" oninputsubmit="onSearch()"
-                 oncancel="toggleAbilityShop()" onblur="clearSearch()" onfocus="removePlaceholder()" />
-      <Panel id="rows" />
+      <Panel id="tabs">
+        <ToggleButton id="ability-tab" class="tab" text="#abilities" checked="true" />
+        <ToggleButton id="item-tab" class="tab" text="#items" />
+      </Panel>
+      <Panel id="ability-tab-content" class="tab-content">
+        <TextEntry id="search-box" maxchars="100" placeholder="#search" oninputsubmit="onSearch()"
+                   oncancel="toggleAbilityShop()" onblur="clearSearch()" onfocus="removePlaceholder()" />
+        <Panel id="rows" />
+      </Panel>
+      <Panel id="item-tab-content" class="tab-content hidden">
+      </Panel>
     </Panel>
   </Panel>
 </root>

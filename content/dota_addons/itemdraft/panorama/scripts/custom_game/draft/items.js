@@ -4,15 +4,18 @@ var playerId = Players.GetLocalPlayer().toString();
 
 var items = {}
 function itemsChange(table, name, data) {
-  var costLabel = $.CreatePanel("Label", $("#" + name), name+"-cost");
-  costLabel.AddClass("cost");
-  costLabel.text = data.cost;
-  items[name] = parseInt(data.cost);
+  var itemPanel = $("#" + name);
+  if (itemPanel != null) {
+    var costLabel = $.CreatePanel("Label", itemPanel, name + "-cost");
+    costLabel.AddClass("cost");
+    costLabel.text = data.cost;
+    items[name] = parseInt(data.cost);
+  }
 }
 manageNetTable("items", itemsChange);
 
 function attemptDraft(item) {
-  GameEvents.SendCustomGameEventToServer("draft", {draft: encodeAsKey(item)});
+  GameEvents.SendCustomGameEventToServer("draft", {draft: item});
 }
 
 function draftChange(table, key, value) {

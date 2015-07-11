@@ -9,7 +9,29 @@ var shop = $("#shop");
 var rows = $("#rows");
 var shopButton = $("#shop-button");
 var currentView = $("#current-view");
-var searchBox = $("#search-box")
+var searchBox = $("#search-box");
+var itemTabContent = $("#item-tab-content");
+var abilityTabContent = $("#ability-tab-content");
+
+var itemTab = $("#item-tab");
+var abilityTab = $("#ability-tab");
+
+function swapToItems() {
+  abilityTab.SetSelected(false);
+  abilityTabContent.SetHasClass("hidden", true);
+  itemTabContent.SetHasClass("hidden", false);
+}
+
+function swapToAbilities() {
+  itemTab.SetSelected(false);
+  itemTabContent.SetHasClass("hidden", true);
+  abilityTabContent.SetHasClass("hidden", false);
+}
+
+itemTab.SetPanelEvent("onselect", swapToItems);
+abilityTab.SetPanelEvent("onselect", swapToAbilities);
+
+abilityTab.SetSelected(true);
 
 searchBox.RaiseChangeEvents(true);
 
@@ -33,24 +55,48 @@ function shopChanged(table, heroName, abilities) {
   heroes.push(newRow);
   var abilityArray = [];
   for (var ability in abilities) {
+    heroSearchIndex[$.Localize("#" + ability).toLowerCase()] = newRow;
     var cost = abilities[ability]["cost"];
     if (abilities[ability]["ultimate"]) {
       ability += "!";
     }
     abilityArray.push(ability + "=" + cost);
   }
-  var localName = $.Localize("#" + heroName);
-  heroSearchIndex[localName.toLowerCase()] = newRow;
+  var localHeroName = $.Localize("#" + heroName);
+  heroSearchIndex[localHeroName.toLowerCase()] = newRow;
   for (var synonym in synonyms[heroName]) {
     heroSearchIndex[synonyms[heroName][synonym].toLowerCase()] = newRow;
   }
   newRow.SetAttributeString("heroName", heroName);
-  newRow.SetAttributeString("name", localName);
+  newRow.SetAttributeString("name", localHeroName);
   newRow.SetAttributeString("abilities", abilityArray.join(";"));
   newRow.BLoadLayout("file://{resources}/layout/custom_game/shop/row.xml", false, false);
   sort();
 }
 manageNetTable("shop", shopChanged);
+
+function itemsChanged(table, groupName, group) {
+  var newGroup = $.CreatePanel("Panel", itemTabContent, "shop-group-" + groupName);
+  newGroup.AddClass("item-group");
+  var sortedItems = [];
+  for (var item in group) {
+    sortedItems.push(item);
+  }
+  sortedItems.sort(function(a, b) {
+    var aCost = group[a]["ItemCost"];
+    var bCost = group[b]["ItemCost"];
+    if (aCost < bCost) return -1;
+    if (aCost > bCost) return 1;
+    return 0;
+  });
+  for (var item of sortedItems) {
+    var newItem = $.CreatePanel("Panel", newGroup, "shop-item-" + item);
+    newItem.SetAttributeString("item", item);
+    newItem.SetAttributeInt("cost", group[item]["ItemCost"]);
+    newItem.BLoadLayout("file://{resources}/layout/custom_game/shop/item.xml", false, false);
+  }
+}
+manageNetTable("shop_items", itemsChanged);
 
 function sort() {
   heroes.sort(function(a, b) {

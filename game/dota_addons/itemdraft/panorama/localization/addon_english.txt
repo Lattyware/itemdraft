@@ -3,7 +3,9 @@
   "addonname"  "Item Draft"
 
   "draftorder"  "Drafting order:"
-  "search"  "Search by hero name..."
+  "search"  "Hero/ability name"
+  "abilities"  "Abilities"
+  "items"  "Items"
 
   "addondescription"  "Item draft is a game mode where dota is flipped around - draft your items, and level up to getthem, while buying abilities with your hard-earned gold!
 

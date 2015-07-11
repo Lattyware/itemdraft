@@ -13,15 +13,14 @@ end
 
 -- Load the relevant data for the draft.
 function loadDraft()
-  local draftingRules = LoadKeyValues("scripts/data/item_drafting_rules.txt")
-  parseItems(draftingRules)
+  parseItems()
 end
 
 -- Start a draft.
 function startDraft()
   PauseGame(true)
 
-  teams = {}
+  local teams = {}
   teams[DOTA_TEAM_GOODGUYS] = {}
   teams[DOTA_TEAM_BADGUYS] = {}
   for teamNumber, teamPlayers in pairs(teams) do
@@ -49,16 +48,14 @@ function finishDraft()
 end
 
 -- Parses the item list to pull out information we need, populating the item net table.
-function parseItems(draftingRules)
-  local exclude = draftingRules["undrafted"]
+function parseItems()
   local items = LoadKeyValues("scripts/data/items.txt")
   local parsedItems = {}
 
   for itemName, item in pairs(items) do
     if type(item) == "table" and item["ItemPurchasable"] ~= 0 and
-        item["ItemCost"] ~= 0 and item["ItemRecipe"] ~= 1 and
-        not exclude[itemName] then
-      itemDetails = {
+        item["ItemCost"] ~= 0 and item["ItemRecipe"] ~= 1 then
+      local itemDetails = {
         cost = item["ItemCost"]
       }
       parsedItems[itemName] = itemDetails
@@ -68,7 +65,8 @@ function parseItems(draftingRules)
   for itemName, item in pairs(items) do
     if type(item) == "table" and item["ItemPurchasable"] ~= 0 and
         item["ItemRecipe"] == 1 then
-      key, value = next(item["ItemRequirements"])
+      local _, value = next(item["ItemRequirements"])
+      local req
       if (item["ItemCost"] ~= 0) then
         req = value .. ";" .. itemName
       else
@@ -86,7 +84,7 @@ end
 -- Handles draft events from clients.
 function draft(_, args)
   local playerId = args["PlayerID"]
-  local draftedItem = decodeFromKey(args["draft"])
+  local draftedItem = args["draft"]
 
   local draftOrder = destringTable(CustomNetTables:GetTableValue("draft", "draft")["order"])
   local itemDetails = CustomNetTables:GetTableValue("items", draftedItem)

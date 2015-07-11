@@ -27,7 +27,8 @@ function abilityChanged(table, playerId, abilities) {
     for (var abilitySlot in abilities) {
       if (abilitySlot === slot) {
         var abilityInfo = abilities[abilitySlot];
-        ability = abilityInfo["name"]
+        ability = abilityInfo["name"];
+        sourceHero = abilityInfo["sourceHero"];
         update()
       }
     }
@@ -37,17 +38,19 @@ manageNetTable("abilities", abilityChanged);
 
 function sell() {
   GameEvents.SendCustomGameEventToServer("sell_ability", {
-    ability: encodeAsKey(ability)
+    ability: ability
   });
 }
 
 button.SetPanelEvent("oncontextmenu", sell);
 
 function upgrade() {
-  GameEvents.SendCustomGameEventToServer("upgrade_ability", {
-    ability: encodeAsKey(ability),
-    sourceHero: encodeAsKey(sourceHero)
-  });
+  if (sourceHero != undefined) {
+    GameEvents.SendCustomGameEventToServer("upgrade_ability", {
+      ability: ability,
+      sourceHero: sourceHero
+    });
+  }
 }
 
 function update() {

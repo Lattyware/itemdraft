@@ -26,8 +26,8 @@ icon.SetPanelEvent("onmouseout", hideTooltip);
 
 function buy() {
   GameEvents.SendCustomGameEventToServer("buy_ability", {
-    sourceHero: encodeAsKey(heroName),
-    ability: encodeAsKey(ability)
+    sourceHero: heroName,
+    ability: ability
   });
 }
 

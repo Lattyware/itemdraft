@@ -34,7 +34,6 @@ function draftChange(table, key, value) {
     for (var item of newItems) {
       var itemImage = $.CreatePanel("DOTAItemImage", draftedItemsPanel, "player-drafted-item-" + (itemNumber++).toString());
       itemImage.itemname = item;
-      $.Msg(item);
       itemImage.AddClass("drafted-item");
     }
     draftedItems = draftedItems.concat(newItems);
