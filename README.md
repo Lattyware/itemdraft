@@ -3,14 +3,11 @@ Item Draft custom game mode for Dota 2, where skills and items are swapped.
 
 ## Status
 
-Development underway.
-
-See [the wiki](https://github.com/Lattyware/itemdraft/wiki/Item-Draft) for plans and implementation detail.
+See [the wiki](https://github.com/Lattyware/itemdraft/wiki/Item-Draft) for the current project status, plans, and implementation detail.
 
 ## Running
 
-If you want to try the mod, you are best waiting for an actual release in the workshop. If you can't wait, then grab
-a copy and place into your dota directory.
+If you want to try the mod, you are best trying [the alpha in the workshop] (http://steamcommunity.com/sharedfiles/filedetails/?id=479645470).
 
 ## Developing
 
