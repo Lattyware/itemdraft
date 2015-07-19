@@ -1,11 +1,7 @@
 "grouping" {
   "draft" {
     "consumables" {
-      "1"     "item_clarity"
-      "2"     "item_flask"
-      "3"     "item_tango"
-      "4"     "item_enchanted_mango"
-      "5"     "item_bottle"
+      "1"     "item_bottle"
     }
     "attributes" {
       "1"     "item_branches"
@@ -164,6 +160,12 @@
   }
 
   "shop" {
+    "consumables" {
+        "1"     "item_clarity"
+        "2"     "item_flask"
+        "3"     "item_tango"
+        "4"     "item_enchanted_mango"
+    }
     "wards" {
       "1"     "item_ward_observer"
       "2"     "item_ward_sentry"

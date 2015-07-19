@@ -41,6 +41,7 @@ var slotOrder = ["Q", "W", "E", "D", "F", "R"];
 var heroes = [];
 
 adjustForHudFlipping();
+stashVisible();
 
 var synonyms = {};
 function synonymsChanged(table, heroName, heroSynonyms) {
@@ -112,15 +113,14 @@ function sort() {
 }
 
 function toggleAbilityShop() {
-  shop.ToggleClass("hidden");
-  // We can't detect the settings change, so doing it here means it can at least be sorted when the user clicks.
-  adjustForHudFlipping();
+  shop.ToggleClass("shop-hidden");
 }
 
 function adjustForHudFlipping() {
   setForHudFlipping(shop);
   setForHudFlipping(shopButton);
 }
+GameEvents.Subscribe("hud_flip_changed", adjustForHudFlipping)
 
 function abilityChanged(table, playerId, abilities) {
   if (playerId === Game.GetLocalPlayerID().toString()) {
@@ -128,8 +128,10 @@ function abilityChanged(table, playerId, abilities) {
       if ((slot in abilities) && !(slot in slots)) {
         var abilityInfo = abilities[slot];
         var ability = $.CreatePanel("Panel", currentView, "slot_" + slot);
+        if (slot === "R") {
+          ability.SetAttributeString("type", "Ult");
+        }
         ability.SetAttributeString("slot", slot);
-        ability.SetAttributeString("key", slot);
         ability.SetAttributeString("ability", abilityInfo["name"]);
         ability.SetAttributeString("sourceHero", abilityInfo["sourceHero"]);
         slots[slot] = ability;
@@ -165,3 +167,9 @@ function clearSearch() {
   searchBox.text = "";
   searchBox.GetChild(0).SetHasClass("hidden", false);
 }
+
+function stashVisible() {
+  var hero = Players.GetPlayerHeroEntityIndex(Game.GetLocalPlayerID());
+  shop.SetHasClass("stash-visible", Entities.GetNumItemsInStash(hero) > 0);
+}
+GameEvents.Subscribe("dota_inventory_changed", stashVisible)

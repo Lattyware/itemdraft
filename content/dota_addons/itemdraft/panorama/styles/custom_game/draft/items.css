@@ -8,19 +8,22 @@
 
 .item-grid .group .item {
   margin: 2px;
-  border: 1px solid #000000;
+  border-radius: 5px;
+  border: 2px solid #a28425;
 }
-
 .item-grid .group .item:hover {
-  border: 1px solid #ffffff;
+  box-shadow: #755512 -2px -2px 4px 4px;
 }
 
 .item-grid .group .item .cost {
-  color: #FFD700;
+  color: #ffd700;
   align: right bottom;
   background-color: #000000;
 }
 
-.not-buyable {
-  opacity: 0.1;
+.item-grid .group .item.not-buyable {
+  border: 2px solid #000000;
+}
+.item-grid .group .item.not-buyable:hover {
+  box-shadow: #111111 -2px -2px 4px 4px;
 }

@@ -36,8 +36,6 @@ manageNetTable("draft", draftChange)
 
 function showLevelOptions() {
   itemSelection.ToggleClass("hidden");
-  // We can't detect the settings change, so doing it here means it can at least be sorted when the user clicks.
-  adjustForHudFlipping()
 }
 
 function gameChange(table, key, value) {
@@ -67,3 +65,4 @@ function adjustForHudFlipping() {
   setForHudFlipping(levelButton);
   setForHudFlipping(levelGold);
 }
+GameEvents.Subscribe("hud_flip_changed", adjustForHudFlipping)

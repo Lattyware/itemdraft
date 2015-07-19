@@ -4,48 +4,91 @@
 }
 
 .background {
-  background-color: #000000;
-}
-
-#draft-description {
-  margin-left: 425px;
-  margin-top: 35px;
-  width: 500px;
-  color: #ffffff;
-  font-size: 40px;
-  text-align: right;
-}
-
-.draft-timer {
-  margin-left: 25px;
-  margin-top: 35px;
-  width: 575px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 40px;
+  background-color: #222222;
 }
 
 #teams {
-  margin-left: 1150px;
+  margin-left: 1100px;
   margin-top: 5px;
   flow-children: down;
 }
 
 #items {
   margin-left: 10px;
-  margin-top: 100px;
+  margin-top: 120px;
+  background-color: #111111;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+#draft-info-panel {
+  flow-children: right;
+  margin: 5px 0px 0px 20px;
+  height: 115px;
+}
+
+#name {
+  font-size: 50px;
+  width: 150px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#draft-timer-panel {
+  background-color: #111111;
+  padding: 17px 5px 5px 5px;
+  margin: 5px 25px 5px 5px;
+  border-radius: 10px;
+  width: 145px;
+  height: 100%;
+  color: #ffffff;
+  flow-children: down;
+}
+
+#draft-timer-description {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+#draft-timer {
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.draft-timer {
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+#draft-description {
+  color: #33ff33;
+  font-size: 15px;
+  width: 430px;
+  margin: 10px 25px 5px 0px;
+}
+
+#draft-order-panel {
+  margin-top: 10px;
+  flow-children: down;
+}
+
+#currently-drafting {
+  color: #ffffff;
+  font-size: 15px;
 }
 
 #draft-order {
   flow-children: right;
-  margin-top: 5px;
-  margin-left: 725px;
-  width: 400px;
 }
 
 #draft-order .draft-order-player {
   flow-children: down;
   margin: 5px;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 #draft-order .draft-order-player DOTAAvatarImage {
@@ -56,7 +99,7 @@
 #draft-order .overlay.last-fade {
   width: 100%;
   height: 100%;
-  background-color: gradient(linear, 0% 0%, 100% 0%, from(rgba(0, 0, 0, 0)), color-stop(0.75, #000000), to(#000000));
+  background-color: gradient(linear, 0% 0%, 100% 0%, from(#22222200), color-stop(0.75, #222222), to(#222222));
 }
 
 .hidden {

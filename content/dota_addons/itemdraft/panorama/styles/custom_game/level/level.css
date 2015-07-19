@@ -3,51 +3,91 @@
 }
 
 #level-gold {
-  vertical-align: bottom;
-  margin-left: 580px;
-  margin-bottom: 250px;
-  color: #FFD700;
-  background-color: #000000;
-  width: 40px;
-  height: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  position: 355px 840px 0px;
+  width: 100px;
+  height: 30px;
   text-align: center;
+  border: 3px solid  #555555;
+  background-color: #111111;
+  color: #d28817;
 }
 #level-gold.hud-flipped {
-  margin-left: 680px;
+  x: 440px;
+  y: 875px;
 }
 
 #level-button {
   horizontal-align: left;
-  margin-bottom: 250px;
+  margin-bottom: 240px;
   vertical-align: bottom;
-  background-color: #FFD700;
-  width: 90px;
-  height: 25px;
-  text-align: center;
   margin-left: 480px;
-  font-weight: bold;
+  background-color: gradient(linear, 0% 100%, 0% 0%,
+    from(#ba9454),
+    color-stop(0.6, #583d26),
+    color-stop(0.7, #ffffff),
+    color-stop(0.8, #eadea8),
+    to(#eadea8)
+  );
+  border: 2px solid #000000;
+  padding: 3px 5px;
+  box-shadow: #755512 -4px -4px 8px 8px;
 }
 #level-button.hud-flipped {
   margin-left: 580px;
 }
 
+#level-button Label {
+  width: 130px;
+  padding: 3px 3px 3px 3px;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: center;
+  horizontal-align: center;
+  font-family: "Goudy Trajan";
+  color: #ffffff;
+  background-color: gradient(linear, 0% 100%, 0% 0%,
+    from(#755512),
+    color-stop(0.1, #755512),
+    color-stop(0.2, #e0ba2c),
+    color-stop(0.8, #e0ba2c),
+    color-stop(0.1, #ddc13d),
+    to(#ddc13d)
+  );
+  letter-spacing: 1px;
+  border: 2px solid #401F14;
+  text-shadow: -1px 2px 1px 2.0 #333333b0;
+}
+
 #item-selection {
   horizontal-align: left;
   vertical-align: bottom;
-  width: 370px;
+  width: 335px;
   height: fit-children;
-  margin-bottom: 280px;
-  background-color: #000000;
+  margin-bottom: 282px;
+  border: 3px solid  #555555;
+  background-color: #111111;
   flow-children: right-wrap;
-  margin-left: 360px;
+  margin-left: 380px;
+  padding: 2px;
 }
 #item-selection.hud-flipped {
-  margin-left: 460px;
+  margin-left: 480px;
 }
 
 .item {
-  width: 60px;
+  width: 50px;
   height: 40px;
+  margin: 2px;
+  border-radius: 5px;
+  border: 2px solid #a28425;
+}
+.item:hover {
+  box-shadow: #755512 -2px -2px 4px 4px;
+}
+.item.not-buyable:hover {
+  box-shadow: #000000 0px 0px 0px 0px;
 }
 
 .item .cost {
@@ -63,5 +103,5 @@
 }
 
 .not-buyable {
-  opacity: 0.1;
+  border: 2px solid #000000;
 }

@@ -29,7 +29,7 @@ icon.SetPanelEvent("onmouseout", hideTooltip);
 function stockChange(table, key, value) {
   if (key === item) {
     var currentStock = value[playerTeam];
-    button.SetHasClass("out-of-stock", currentStock < 1);
+    rootPanel.SetHasClass("out-of-stock", currentStock < 1);
     stockLabel.text = currentStock;
   }
 }

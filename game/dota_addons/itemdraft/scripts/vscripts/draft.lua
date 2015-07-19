@@ -31,6 +31,16 @@ end
 function startDraft()
   PauseGame(true)
 
+  local teams = {DOTA_TEAM_GOODGUYS, DOTA_TEAM_BADGUYS}
+  for _, team in ipairs(teams) do
+    local playerCount = PlayerResource:GetPlayerCountForTeam(team)
+    if playerCount ~= 0 then
+      for i = 1, playerCount do
+        local playerId = PlayerResource:GetNthPlayerIDOnTeam(team, i)
+      end
+    end
+  end
+
   local teams = {}
   teams[DOTA_TEAM_GOODGUYS] = {}
   teams[DOTA_TEAM_BADGUYS] = {}
@@ -114,6 +124,7 @@ function draft(_, args)
     local gold = tonumber(playerInfo["gold"])
     local cost = tonumber(itemDetails["cost"])
 
+    -- TODO: Check valid draft item.
     if #draftOrder == 0 then return false end
     if playerId ~= draftOrder[1] then return false end
     if gold < cost then return false end
@@ -142,8 +153,8 @@ function randomDraft(playerId)
   for _, items in pairs(itemGrouping) do
     groups[#groups + 1] = destringTable(items)
   end
-  local group = groups[math.random(#groups)]
-  local item = group[math.random(#group)]
+  local group = groups[RandomInt(1, #groups)]
+  local item = group[RandomInt(1, #group)]
   if not draft(nil, {PlayerID = playerId, draft = item}) then
     randomDraft(playerId)
   end

@@ -14,7 +14,7 @@
     <ToggleButton id="shop-button" onactivate="toggleAbilityShop();">
       <Label text="#DOTA_HUDShop" />
     </ToggleButton>
-    <Panel id="shop" class="hidden" oncancel="toggleAbilityShop()">
+    <Panel id="shop" class="shop-hidden" oncancel="toggleAbilityShop()">
       <Panel id="current-view" />
       <Panel id="tabs">
         <ToggleButton id="ability-tab" class="tab" text="#abilities" checked="true" />

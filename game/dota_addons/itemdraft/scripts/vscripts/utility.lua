@@ -148,3 +148,15 @@ function interleave(tables)
   end
   return interleaved
 end
+
+-- Check if the given entity is in range of a shop.
+-- Not working at the moment.
+function inRangeOfShop(entity)
+  local radius = entity:GetPaddedCollisionRadius()
+  for _, thing in pairs(Entities:FindAllInSphere(GetGroundPosition(entity:GetCenter(), nil), radius)) do
+    if (thing:GetName() == "trigger_shop") then
+      return true
+    end
+  end
+  return false
+end

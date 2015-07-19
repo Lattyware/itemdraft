@@ -3,6 +3,8 @@
 
   This is not generated as otherwise the assets are not loaded. The grouping is
   also arbitrary.
+
+  TODO: Generate instead of hardcoded.
 -->
 <root>
   <styles>
@@ -14,14 +16,9 @@
   </scripts>
   <Panel>
     <Panel class="item-grid">
-      <Panel id="consumables" class="group">
-        <Panel class="item" id="item_clarity"><Button onactivate="attemptDraft('item_clarity');"><DOTAItemImage itemname="item_clarity" onmouseover="DOTAShowAbilityTooltip(item_clarity)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
-        <Panel class="item" id="item_flask"><Button onactivate="attemptDraft('item_flask');"><DOTAItemImage itemname="item_flask" onmouseover="DOTAShowAbilityTooltip(item_flask)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
-        <Panel class="item" id="item_tango"><Button onactivate="attemptDraft('item_tango');"><DOTAItemImage itemname="item_tango" onmouseover="DOTAShowAbilityTooltip(item_tango)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
-        <Panel class="item" id="item_enchanted_mango"><Button onactivate="attemptDraft('item_enchanted_mango');"><DOTAItemImage itemname="item_enchanted_mango" onmouseover="DOTAShowAbilityTooltip(item_enchanted_mango)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
-        <Panel class="item" id="item_bottle"><Button onactivate="attemptDraft('item_bottle');"><DOTAItemImage itemname="item_bottle" onmouseover="DOTAShowAbilityTooltip(item_bottle)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
-      </Panel>
       <Panel id="attributes" class="group">
+        <Panel class="item" id="item_bottle"><Button onactivate="attemptDraft('item_bottle');"><DOTAItemImage itemname="item_bottle" onmouseover="DOTAShowAbilityTooltip(item_bottle)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
+
         <Panel class="item" id="item_branches"><Button onactivate="attemptDraft('item_branches');"><DOTAItemImage itemname="item_branches" onmouseover="DOTAShowAbilityTooltip(item_branches)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
         <Panel class="item" id="item_gauntlets"><Button onactivate="attemptDraft('item_gauntlets');"><DOTAItemImage itemname="item_gauntlets" onmouseover="DOTAShowAbilityTooltip(item_gauntlets)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>
         <Panel class="item" id="item_slippers"><Button onactivate="attemptDraft('item_slippers');"><DOTAItemImage itemname="item_slippers" onmouseover="DOTAShowAbilityTooltip(item_slippers)" onmouseout="DOTAHideAbilityTooltip()" /></Button></Panel>

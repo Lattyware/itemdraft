@@ -1,0 +1,403 @@
+"DOTAAbilities"
+{
+	"Version"		"1"
+  "item_bottle"   {
+     "ItemSellable" "0"
+   }
+  "item_branches"   {
+      "ItemSellable" "0"
+   }
+  "item_gauntlets"   {
+      "ItemSellable" "0"
+   }
+  "item_slippers"   {
+      "ItemSellable" "0"
+   }
+  "item_mantle"   {
+      "ItemSellable" "0"
+   }
+  "item_circlet"   {
+      "ItemSellable" "0"
+   }
+  "item_belt_of_strength"   {
+      "ItemSellable" "0"
+   }
+  "item_boots_of_elves"   {
+      "ItemSellable" "0"
+   }
+  "item_robe"   {
+      "ItemSellable" "0"
+   }
+  "item_ogre_axe"   {
+      "ItemSellable" "0"
+   }
+  "item_blade_of_alacrity"   {
+      "ItemSellable" "0"
+   }
+  "item_staff_of_wizardry"   {
+      "ItemSellable" "0"
+   }
+  "item_ring_of_protection"   {
+      "ItemSellable" "0"
+   }
+  "item_stout_shield"   {
+      "ItemSellable" "0"
+   }
+  "item_quelling_blade"   {
+      "ItemSellable" "0"
+   }
+  "item_orb_of_venom"   {
+      "ItemSellable" "0"
+   }
+  "item_blades_of_attack"   {
+      "ItemSellable" "0"
+   }
+  "item_chainmail"   {
+      "ItemSellable" "0"
+   }
+  "item_quarterstaff"   {
+      "ItemSellable" "0"
+   }
+  "item_helm_of_iron_will"   {
+      "ItemSellable" "0"
+   }
+  "item_broadsword"   {
+      "ItemSellable" "0"
+   }
+  "item_claymore"   {
+      "ItemSellable" "0"
+   }
+  "item_javelin"   {
+      "ItemSellable" "0"
+   }
+  "item_mithril_hammer"   {
+      "ItemSellable" "0"
+   }
+  "item_magic_stick"   {
+      "ItemSellable" "0"
+   }
+  "item_sobi_mask"   {
+      "ItemSellable" "0"
+   }
+  "item_ring_of_regen"   {
+      "ItemSellable" "0"
+   }
+  "item_boots"   {
+      "ItemSellable" "0"
+   }
+  "item_gloves"   {
+      "ItemSellable" "0"
+   }
+  "item_cloak"   {
+      "ItemSellable" "0"
+   }
+  "item_ring_of_health"   {
+      "ItemSellable" "0"
+   }
+  "item_void_stone"   {
+      "ItemSellable" "0"
+   }
+  "item_lifesteal"   {
+      "ItemSellable" "0"
+   }
+  "item_shadow_amulet"   {
+      "ItemSellable" "0"
+   }
+  "item_ghost"   {
+      "ItemSellable" "0"
+   }
+  "item_blink"   {
+      "ItemSellable" "0"
+   }
+  "item_magic_wand"   {
+      "ItemSellable" "0"
+   }
+  "item_null_talisman"   {
+      "ItemSellable" "0"
+   }
+  "item_wraith_band"   {
+      "ItemSellable" "0"
+   }
+  "item_bracer"   {
+      "ItemSellable" "0"
+   }
+  "item_poor_mans_shield"   {
+      "ItemSellable" "0"
+   }
+  "item_soul_ring"   {
+      "ItemSellable" "0"
+   }
+  "item_phase_boots"   {
+      "ItemSellable" "0"
+   }
+  "item_power_treads"   {
+      "ItemSellable" "0"
+   }
+  "item_oblivion_staff"   {
+      "ItemSellable" "0"
+   }
+  "item_pers"   {
+      "ItemSellable" "0"
+   }
+  "item_hand_of_midas"   {
+      "ItemSellable" "0"
+   }
+  "item_moon_shard"   {
+      "ItemSellable" "0"
+   }
+  "item_ring_of_basilius"   {
+      "ItemSellable" "0"
+   }
+  "item_headdress"   {
+      "ItemSellable" "0"
+   }
+  "item_buckler"   {
+      "ItemSellable" "0"
+   }
+  "item_urn_of_shadows"   {
+      "ItemSellable" "0"
+   }
+  "item_tranquil_boots"   {
+      "ItemSellable" "0"
+   }
+  "item_ring_of_aquila"   {
+      "ItemSellable" "0"
+   }
+  "item_medallion_of_courage"   {
+      "ItemSellable" "0"
+   }
+  "item_arcane_boots"   {
+      "ItemSellable" "0"
+   }
+  "item_ancient_janggo"   {
+      "ItemSellable" "0"
+   }
+  "item_mekansm"   {
+      "ItemSellable" "0"
+   }
+  "item_vladmir"   {
+      "ItemSellable" "0"
+   }
+  "item_pipe"   {
+      "ItemSellable" "0"
+   }
+  "item_guardian_greaves"   {
+      "ItemSellable" "0"
+   }
+  "item_glimmer_cape"   {
+      "ItemSellable" "0"
+   }
+  "item_force_staff"   {
+      "ItemSellable" "0"
+   }
+  "item_veil_of_discord"   {
+      "ItemSellable" "0"
+   }
+  "item_cyclone"   {
+      "ItemSellable" "0"
+   }
+  "item_solar_crest"   {
+      "ItemSellable" "0"
+   }
+  "item_rod_of_atos"   {
+      "ItemSellable" "0"
+   }
+  "item_orchid"   {
+      "ItemSellable" "0"
+   }
+  "item_ultimate_scepter"   {
+      "ItemSellable" "0"
+   }
+  "item_refresher"   {
+      "ItemSellable" "0"
+   }
+  "item_sheepstick"   {
+      "ItemSellable" "0"
+   }
+  "item_octarine_core"   {
+      "ItemSellable" "0"
+   }
+  "item_lesser_crit"   {
+      "ItemSellable" "0"
+   }
+  "item_armlet"   {
+      "ItemSellable" "0"
+   }
+  "item_basher"   {
+      "ItemSellable" "0"
+   }
+  "item_invis_sword"   {
+      "ItemSellable" "0"
+   }
+  "item_bfury"   {
+      "ItemSellable" "0"
+   }
+  "item_ethereal_blade"   {
+      "ItemSellable" "0"
+   }
+  "item_silver_edge"   {
+      "ItemSellable" "0"
+   }
+  "item_radiance"   {
+      "ItemSellable" "0"
+   }
+  "item_monkey_king_bar"   {
+      "ItemSellable" "0"
+   }
+  "item_greater_crit"   {
+      "ItemSellable" "0"
+   }
+  "item_butterfly"   {
+      "ItemSellable" "0"
+   }
+  "item_rapier"   {
+      "ItemSellable" "0"
+   }
+  "item_abyssal_blade"   {
+      "ItemSellable" "0"
+   }
+  "item_hood_of_defiance"   {
+      "ItemSellable" "0"
+   }
+  "item_vanguard"   {
+      "ItemSellable" "0"
+   }
+  "item_blade_mail"   {
+      "ItemSellable" "0"
+   }
+  "item_soul_booster"   {
+      "ItemSellable" "0"
+   }
+  "item_crimson_guard"   {
+      "ItemSellable" "0"
+   }
+  "item_black_king_bar"   {
+      "ItemSellable" "0"
+   }
+  "item_lotus_orb"   {
+      "ItemSellable" "0"
+   }
+  "item_shivas_guard"   {
+      "ItemSellable" "0"
+   }
+  "item_bloodstone"   {
+      "ItemSellable" "0"
+   }
+  "item_manta"   {
+      "ItemSellable" "0"
+   }
+  "item_sphere"   {
+      "ItemSellable" "0"
+   }
+  "item_assault"   {
+      "ItemSellable" "0"
+   }
+  "item_heart"   {
+      "ItemSellable" "0"
+   }
+  "item_mask_of_madness"   {
+      "ItemSellable" "0"
+   }
+  "item_helm_of_the_dominator"   {
+      "ItemSellable" "0"
+   }
+  "item_sange"   {
+      "ItemSellable" "0"
+   }
+  "item_yasha"   {
+      "ItemSellable" "0"
+   }
+  "item_maelstrom"   {
+      "ItemSellable" "0"
+   }
+  "item_desolator"   {
+      "ItemSellable" "0"
+   }
+  "item_heavens_halberd"   {
+      "ItemSellable" "0"
+   }
+  "item_sange_and_yasha"   {
+      "ItemSellable" "0"
+   }
+  "item_skadi"   {
+      "ItemSellable" "0"
+   }
+  "item_mjollnir"   {
+      "ItemSellable" "0"
+   }
+  "item_satanic"   {
+      "ItemSellable" "0"
+   }
+  "item_energy_booster"   {
+      "ItemSellable" "0"
+   }
+  "item_vitality_booster"   {
+      "ItemSellable" "0"
+   }
+  "item_point_booster"   {
+      "ItemSellable" "0"
+   }
+  "item_platemail"   {
+      "ItemSellable" "0"
+   }
+  "item_talisman_of_evasion"   {
+      "ItemSellable" "0"
+   }
+  "item_hyperstone"   {
+      "ItemSellable" "0"
+   }
+  "item_ultimate_orb"   {
+      "ItemSellable" "0"
+   }
+  "item_demon_edge"   {
+      "ItemSellable" "0"
+   }
+  "item_mystic_staff"   {
+      "ItemSellable" "0"
+   }
+  "item_reaver"   {
+      "ItemSellable" "0"
+   }
+  "item_eagle"   {
+      "ItemSellable" "0"
+   }
+  "item_relic"   {
+      "ItemSellable" "0"
+   }
+  "item_travel_boots"   {
+      "ItemSellable" "0"
+   }
+  "item_travel_boots_2"   {
+      "ItemSellable" "0"
+   }
+  "item_necronomicon"   {
+      "ItemSellable" "0"
+   }
+  "item_necronomicon_2"   {
+      "ItemSellable" "0"
+   }
+  "item_necronomicon_3"   {
+      "ItemSellable" "0"
+   }
+  "item_dagon"   {
+      "ItemSellable" "0"
+   }
+  "item_dagon_2"   {
+      "ItemSellable" "0"
+   }
+  "item_dagon_3"   {
+      "ItemSellable" "0"
+   }
+  "item_dagon_4"   {
+      "ItemSellable" "0"
+   }
+  "item_dagon_5"   {
+      "ItemSellable" "0"
+   }
+  "item_diffusal_blade"   {
+      "ItemSellable" "0"
+   }
+  "item_diffusal_blade_2"   {
+      "ItemSellable" "0"
+   }
+}

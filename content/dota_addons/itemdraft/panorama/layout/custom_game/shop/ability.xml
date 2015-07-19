@@ -12,7 +12,8 @@
   <Panel class="ability">
     <Button onactivate="buy()">
       <DOTAAbilityImage />
-      <Label class="cost" />
+      <Label class="cost" onmouseover="DOTAShowTextTooltip(#buyability)" onmouseout="DOTAHideTextTooltip()"  />
+      <Panel class="subabilities" />
     </Button>
   </Panel>
 </root>

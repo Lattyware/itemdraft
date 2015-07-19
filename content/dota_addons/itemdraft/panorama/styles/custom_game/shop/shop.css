@@ -9,33 +9,69 @@
 
 #shop-button {
   horizontal-align: right;
-  margin-right: 20px;
-  margin-bottom: 170px;
+  margin-right: 5px;
+  margin-bottom: 162px;
   vertical-align: bottom;
-  background-color: #FFD700;
-  width: 80px;
-  height: 25px;
-  text-align: center;
-  font-weight: bold;
+  background-color: gradient(linear, 0% 100%, 0% 0%,
+    from(#ba9454),
+    color-stop(0.6, #583d26),
+    color-stop(0.7, #ffffff),
+    color-stop(0.8, #eadea8),
+    to(#eadea8)
+  );
+  border: 2px solid #000000;
+  padding: 3px 5px;
 }
 #shop-button.hud-flipped {
   horizontal-align: left;
-  margin-left: 20px;
+  margin-left: 5px;
+}
+
+#shop-button Label {
+  font-size: 22px;
+  text-align: center;
+  vertical-align: center;
+  horizontal-align: center;
+  color: #ffffff;
+  font-family: "Goudy Trajan";
+  background-color: gradient(linear, 0% 100%, 0% 0%,
+    from(#755512),
+    color-stop(0.1, #755512),
+    color-stop(0.3, #dfb92d),
+    to(#dfb92d)
+  );
+  letter-spacing: 1px;
+  border: 2px solid #401F14;
+  text-shadow: -1px 2px 1px 2.0 #333333b0;
+  padding: 3px 3px 3px 3px;
 }
 
 #shop {
-  horizontal-align: right;
-  margin-right: 30px;
-  margin-bottom: 250px;
+  border: 3px solid  #555555;
+  position: 1517px -230px 0px;
   vertical-align: bottom;
-  width: 380px;
-  height: 750px;
+  width: 400px;
+  height: 800px;
   background-color: #111111;
   flow-children: down;
+  transition: position 0.1s ease-in-out 0.1s;
 }
 #shop.hud-flipped {
-  horizontal-align: left;
-  margin-left: 30px;
+  x: 35px;
+  vertical-align: bottom;
+}
+#shop.stash-visible {
+  margin-bottom: 100px;
+  height: 700px;
+}
+
+#shop.shop-hidden {
+  x: 1920px;
+  transition: position 0.1s ease-in-out 0.1s;
+}
+#shop.shop-hidden.hud-flipped {
+  x: -500px;
+  vertical-align: bottom;
 }
 
 #current-view {
@@ -46,6 +82,14 @@
   width: 60px;
   height: 60px;
   margin: 2px;
+}
+
+#current-view .slot .slot-type {
+  margin: 2px;
+  horizontal-align: left;
+  vertical-align: top;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 #tabs {
@@ -112,34 +156,59 @@
   flow-children: right-wrap;
 }
 
-#shop .hero-row .abilities .ability.ultimate {
-  border: 1px solid #FFD700;
+#shop .hero-row .abilities .ability .ultimate {
+  margin: 2px;
+  horizontal-align: left;
+  vertical-align: top;
+  color: #ffffff;
+  background-color: #000000;
 }
 
-#shop .hero-row .abilities .ability Button {
+#shop .hero-row .abilities .ability {
   width: 80px;
   height: 80px;
   margin: 2px;
+  border-radius: 5px;
+  border: 2px solid #a28425;
 }
 
-#shop .hero-row .abilities .ability:hover .tooltip {
-  visibility: visible;
+#shop .hero-row .abilities .ability:hover {
+  box-shadow: #755512 -3px -3px 6px 6px;
 }
 
-.not-buyable {
-  opacity: 0.1;
+#shop .hero-row .abilities .ability.not-buyable:hover {
+  box-shadow: #000000 0px 0px 0px 0px;
 }
 
-.out-of-stock {
-  opacity: 0.1;
+#shop .hero-row .abilities .ability.not-buyable {
+  border: 2px solid #222222;
+}
+
+#item-tab-content .item-group .shop-item .out-of-stock {
+  border: 2px solid #222222;
+  opacity: 0.5;
+}
+
+.subabilities {
+  flow-children: down;
+  horizontal-align: left;
+  vertical-align: bottom;
+  background-color: #000000;
+}
+
+.subabilities DOTAAbilityImage {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
 }
 
 .out-of-stock .stock {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 #item-tab-content {
   flow-children: down;
+  padding: 5px;
 }
 
 #item-tab-content .item-group {
@@ -148,20 +217,42 @@
 
 #item-tab-content .item-group .shop-item {
   margin: 2px;
+  border-radius: 5px;
+  border: 2px solid #a28425;
+}
+#item-tab-content .item-group .shop-item.not-buyable {
+  border: 2px solid #222222;
+}
+#item-tab-content .item-group .shop-item:hover {
+  box-shadow: #755512 -2px -2px 4px 4px;
+}
+#item-tab-content .item-group .shop-item.not-buyable:hover {
+  box-shadow: #000000 0px 0px 0px 0px;
+}
+#item-tab-content .item-group .shop-item.out-of-stock:hover {
+  box-shadow: #000000 0px 0px 0px 0px;
 }
 
 .cost {
-  margin: 1px;
+  margin: 2px;
   horizontal-align: right;
   vertical-align: bottom;
-  color: #FFD700;
+  color: #ffd700;
+  background-color: #000000;
+}
+
+.value {
+  margin: 2px;
+  horizontal-align: left;
+  vertical-align: bottom;
+  color: #ff0000;
   background-color: #000000;
 }
 
 .stock {
-  margin: 1px;
+  margin: 2px;
   horizontal-align: left;
   vertical-align: bottom;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
 }

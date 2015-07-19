@@ -23,10 +23,27 @@ function loadShop()
   local abilities = LoadKeyValues("scripts/data/abilities.txt")
   local npcAbilities = LoadKeyValues("scripts/data/npc_abilities.txt")
   for hero, skills in pairs(abilities) do
+    local parsedSkills = {}
     for skillName, skill in pairs(skills) do
-      skill["ultimate"] = npcAbilities[skillName]["AbilityType"] == "DOTA_ABILITY_TYPE_ULTIMATE"
+      local parsedSkill = {}
+      parsedSkill["cost"] = skill["cost"]
+      parsedSkill["ultimate"] = npcAbilities[skillName]["AbilityType"] == "DOTA_ABILITY_TYPE_ULTIMATE"
+      local hidden = {}
+      local visible = {}
+      if (skill["subabilities"] ~= nil) then
+        for _, subability in pairs(skill["subabilities"]) do
+          if (string.find(npcAbilities[subability]["AbilityBehavior"], "DOTA_ABILITY_BEHAVIOR_HIDDEN") ~= nil) then
+            hidden[#hidden + 1] = subability
+          else
+            visible[#visible + 1] = subability
+          end
+        end
+      end
+      parsedSkill["hiddensubabilities"] = hidden
+      parsedSkill["subabilities"] = visible
+      parsedSkills[skillName] = parsedSkill
     end
-    CustomNetTables:SetTableValue("shop", hero, skills)
+    CustomNetTables:SetTableValue("shop", hero, parsedSkills)
   end
   local npcHeroes = LoadKeyValues("scripts/data/npc_heroes.txt")
   for hero, data in pairs(npcHeroes) do
@@ -70,13 +87,13 @@ function onBuyItem(_, args)
   local item = CustomNetTables:GetTableValue("items", purchasedItem)
   local cost = item["cost"]
   local gold = PlayerResource:GetGold(playerId)
+  local player = PlayerResource:GetPlayer(playerId)
+  local hero = player:GetAssignedHero()
 
   if gold < cost then return end
 
   if not reduceStock(PlayerResource:GetTeam(playerId), purchasedItem) then return end
 
-  local player = PlayerResource:GetPlayer(playerId)
-  local hero = player:GetAssignedHero()
   local itemInstance = CreateItem(purchasedItem, hero, hero)
   hero:AddItem(itemInstance)
   hero:SpendGold(cost, DOTA_ModifyGold_PurchaseItem)
@@ -92,13 +109,22 @@ function onBuyAility(_, args)
   local cost = tonumber(abilityDetails["cost"])
   local ultimate = abilityDetails["ultimate"] ~= 0
   local gold = PlayerResource:GetGold(playerId)
+  local subabilities = abilityDetails["subabilities"]
+  local hiddenSubabilities = abilityDetails["hiddensubabilities"]
 
   if gold < cost then return end
   -- TODO: Check stock.
 
   local hero = PlayerResource:GetPlayer(playerId):GetAssignedHero()
-  if addOrUpgradeAbility(playerId, hero, sourceHero, purchasedAbility, cost, ultimate) then
-    hero:SpendGold(cost, DOTA_ModifyGold_PurchaseItem)
+  local abilityInfo = abilityInfoByName(playerId, purchasedAbility)
+  if abilityInfo ~= nil then
+    if (upgradeAbility(playerId, hero, purchasedAbility, cost / 2)) then
+      hero:SpendGold(cost / 2, DOTA_ModifyGold_PurchaseItem)
+    end
+  else
+    if (addAbility(playerId, hero, sourceHero, purchasedAbility, cost, ultimate, subabilities, hiddenSubabilities)) then
+      hero:SpendGold(cost, DOTA_ModifyGold_PurchaseItem)
+    end
   end
 end
 
@@ -109,14 +135,17 @@ function onUpgradeAility(_, args)
   local upgradedAbility = args["ability"]
 
   local abilityDetails = CustomNetTables:GetTableValue("shop", sourceHero)[upgradedAbility]
+
+  if abilityDetails == nil then return end
+
   local cost = tonumber(abilityDetails["cost"])
   local gold = PlayerResource:GetGold(playerId)
 
   if gold < cost then return end
 
   local hero = PlayerResource:GetPlayer(playerId):GetAssignedHero()
-  if upgradeAbility(playerId, hero, upgradedAbility, cost) then
-    hero:SpendGold(cost, DOTA_ModifyGold_PurchaseItem)
+  if upgradeAbility(playerId, hero, upgradedAbility, cost / 2) then
+    hero:SpendGold(cost / 2, DOTA_ModifyGold_PurchaseItem)
   end
 end
 
@@ -124,24 +153,28 @@ end
 function onSellAbility(_, args)
   local playerId = args["PlayerID"]
   local soldAbility = args["ability"]
+  local abilityInfo = abilityInfoByName(playerId, soldAbility)
+
+  if abilityInfo["empty"] == "true" then return end
+
+  local abilityDetails = CustomNetTables:GetTableValue("shop", abilityInfo["sourceHero"])[soldAbility]
+  local subabilities
+  local hiddenSubabilities
+  if abilityDetails == nil then
+    subabilities = {}
+    hiddenSubabilities = {}
+  else
+    subabilities = abilityDetails["subabilities"]
+    hiddenSubabilities = abilityDetails["hiddensubabilities"]
+  end
 
   local hero = PlayerResource:GetPlayer(playerId):GetAssignedHero()
 
-  sellAbility(playerId, hero, soldAbility)
-end
-
--- Add or upgrade the given ability on the given player, returning true if the ability was added/upgraded.
-function addOrUpgradeAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
-  local abilityInfo = abilityInfoByName(playerId, abilityName)
-  if abilityInfo ~= nil then
-    return upgradeAbility(playerId, hero, abilityName, cost)
-  else
-    return addAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
-  end
+  sellAbility(playerId, hero, soldAbility, subabilities, hiddenSubabilities)
 end
 
 -- Add an ability to the given player, returning true if the ability was added/upgraded.
-function addAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
+function addAbility(playerId, hero, sourceHero, abilityName, cost, ultimate, subabilities, hiddenSubabilities)
   local slot = nextEmptyAbilitySlot(playerId, ultimate)
   if slot ~= nil then
     local playerAbilities = getPlayerAbilities(playerId)
@@ -152,20 +185,27 @@ function addAbility(playerId, hero, sourceHero, abilityName, cost, ultimate)
     abilityInfo["sunkCost"] = 0
     abilityInfo["sourceHero"] = sourceHero
     abilityInfo["empty"] = false
-    PrecacheUnitByNameAsync(sourceHero, addAbilityCallback(playerId, hero, abilityName, cost, replacing))
+    PrecacheUnitByNameAsync(sourceHero, addAbilityCallback(playerId, hero, abilityName, cost, replacing,
+      hiddenSubabilities))
     -- We don't need the whole hero! But this doesn't work T__T
     --PrecacheItemByNameAsync(abilityName, addAbilityCallback(playerId, hero, abilityName, cost))
     setPlayerAbilities(playerId, playerAbilities)
+    for _, subability in pairs(subabilities) do
+      addAbility(playerId, hero, sourceHero, subability, 0, false, {}, {})
+    end
     return true
   end
   return false
 end
 
 -- Actually add and upgrade the ability, used as a callback after loading the ability.
-function addAbilityCallback(playerId, hero, abilityName, cost, replacing)
+function addAbilityCallback(playerId, hero, abilityName, cost, replacing, hiddenSubabilities)
   function callback()
     hero:RemoveAbility(replacing)
     hero:AddAbility(abilityName)
+    for _, subabilityName in pairs(hiddenSubabilities) do
+      hero:AddAbility(subabilityName)
+    end
     upgradeAbility(playerId, hero, abilityName, cost)
   end
   return callback
@@ -212,10 +252,16 @@ function upgradeAbility(playerId, hero, abilityName, cost)
 end
 
 -- Sell an ability.
-function sellAbility(playerId, hero, abilityName)
+function sellAbility(playerId, hero, abilityName, subabilities, hiddenSubabilities)
   local abilityInfo = abilityInfoByName(playerId, abilityName)
   hero:ModifyGold(tonumber(abilityInfo["sunkCost"]) / 2, true, DOTA_ModifyGold_SellItem)
   hero:RemoveAbility(abilityName)
+  for _, subabilityName in pairs(subabilities) do
+    hero:RemoveAbility(subabilityName)
+  end
+  for _, subabilityName in pairs(hiddenSubabilities) do
+    hero:RemoveAbility(subabilityName)
+  end
   placeholderAbility(playerId, hero, abilityInfo["slot"])
 end
 

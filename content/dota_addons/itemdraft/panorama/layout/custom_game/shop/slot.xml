@@ -12,7 +12,9 @@
   <Panel class="slot">
     <Button onactivate="upgrade()">
       <DOTAAbilityImage class="icon" />
-      <Label class="key" />
+      <Label class="slot-type" />
+      <Label class="cost" onmouseover="DOTAShowTextTooltip(#upgrade)" onmouseout="DOTAHideTextTooltip()" />
+      <Label class="value" onmouseover="DOTAShowTextTooltip(#sell)" onmouseout="DOTAHideTextTooltip()" />
     </Button>
   </Panel>
 </root>

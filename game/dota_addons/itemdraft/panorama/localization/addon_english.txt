@@ -1,16 +1,31 @@
 "addon"
 {
-  "addonname"  "Item Draft"
+  "addonname" "Item Draft"
 
-  "search"  "Hero/ability name"
-  "abilities"  "Abilities"
-  "items"  "Items"
-  "levelgold"  "{d:gold}xp"
+  "search" "Hero/ability name"
+  "abilities" "Abilities"
+  "items" "Items"
+  "levelgold" "{d:gold}xp"
 
-  "draftstarttimer"  "Time until draft starts: {d:time}s"
-  "draftunderwaytimer"  "Pick time left: {d:time}s"
+  "draftstartdescription" "Time until draft starts:"
+  "draftunderwaydescription" "Pick time left:"
+  "timer" "{d:time}s"
 
-  "addondescription"  "
+  "upgrade" "Left click to upgrade."
+  "sell" "Right click to sell."
+  "buyability" "Left click to buy/upgrade. Upgrade is half the price."
+
+  "currentlydrafting" "Currently Drafting"
+
+  "draftdescription" "
+    <p>Draft the items you will receive over the course of the game. Each level you will get 600xp, which can be spent
+    on the items you draft.</p>
+
+    <p>You draft until you are out of experience to spend. You have 5s to draft each item, so think about what you want
+    while others draft! If you don't draft in time, you will get a random item!</p>
+  "
+
+  "addondescription" "
     <p>This game mode is in <span class=\"alpha\">alpha</span>! It is a very early version, expect bugs, imbalance, and
     a lack of polish. Please report bugs and request features at the GitHub repository
     (<a href=\"https://github.com/Lattyware/itemdraft\">git.io/itemdraft</a>). Thanks for taking

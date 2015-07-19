@@ -11,9 +11,18 @@
   </scripts>
   <Panel class="fullscreen">
     <Panel id="draft" class="fullscreen background">
-      <Label id="draft-start-timer" class="draft-timer" text="#draftstarttimer" />
-      <Label id="draft-underway-timer" class="draft-timer hidden" text="#draftunderwaytimer" />
-      <Panel id="draft-order" class="hidden" />
+      <Panel id="draft-info-panel">
+        <Label id="name" text="#addonname" />
+        <Panel id="draft-timer-panel">
+          <Label id="draft-timer-description" text="#draftstartdescription" />
+          <Label id="draft-timer" text="#timer" />
+        </Panel>
+        <Label id="draft-description" html="true" text="#draftdescription" />
+        <Panel id="draft-order-panel" class="hidden">
+          <Label id="currently-drafting" text="#currentlydrafting" />
+          <Panel id="draft-order" />
+        </Panel>
+      </Panel>
       <Panel id="teams" />
     </Panel>
   </Panel>

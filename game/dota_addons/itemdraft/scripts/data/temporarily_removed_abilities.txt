@@ -1,0 +1,57 @@
+"abilities"
+{
+  "npc_dota_hero_invoker"
+  {
+    "invoker_cold_snap"
+    {
+      "cost"  "1000"
+    }
+    "invoker_ghost_walk"
+    {
+      "cost"  "1000"
+    }
+    "invoker_tornado"
+    {
+      "cost"  "1000"
+    }
+    "invoker_emp"
+    {
+      "cost"  "1000"
+    }
+    "invoker_alacrity"
+    {
+      "cost"  "1000"
+    }
+    "invoker_chaos_meteor"
+    {
+      "cost"  "1000"
+    }
+    "invoker_sun_strike"
+    {
+      "cost"  "1000"
+    }
+    "invoker_forge_spirit"
+    {
+      "cost"  "1000"
+    }
+    "invoker_ice_wall"
+    {
+      "cost"  "1000"
+    }
+    "invoker_deafening_blast"
+    {
+      "cost"  "1000"
+    }
+  }
+  "npc_dota_hero_keeper_of_the_light"
+  {
+    "keeper_of_the_light_spirit_form_illuminate"
+    {
+      "cost"  "1000"
+      "subabilities"
+      {
+        "1"  "keeper_of_the_light_spirit_form_illuminate_end"
+      }
+    }
+  }
+}

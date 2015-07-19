@@ -4,19 +4,19 @@
   {
     "lone_druid_spirit_bear"
     {
-      "cost"  "3000"
+      "cost"  "5000"
     }
     "lone_druid_rabid"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "lone_druid_synergy"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "lone_druid_true_form"
     {
-      "cost"  "5000"
+      "cost"  "4000"
       "subabilities"
       {
         "1"  "lone_druid_true_form_battle_cry"
@@ -28,76 +28,76 @@
   {
     "death_prophet_carrion_swarm"
     {
-      "cost"  "2000"
+      "cost"  "700"
     }
     "death_prophet_silence"
     {
-      "cost"  "3000"
+      "cost"  "2500"
     }
     "death_prophet_witchcraft"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "death_prophet_exorcism"
     {
-      "cost"  "5000"
+      "cost"  "4000"
     }
   }
   "npc_dota_hero_drow_ranger"
   {
     "drow_ranger_frost_arrows"
     {
-      "cost"  "2000"
+      "cost"  "1600"
     }
     "drow_ranger_wave_of_silence"
     {
-      "cost"  "5000"
+      "cost"  "3250"
     }
     "drow_ranger_trueshot"
     {
-      "cost"  "1000"
+      "cost"  "2200"
     }
     "drow_ranger_marksmanship"
     {
-      "cost"  "4000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_pugna"
   {
     "pugna_nether_blast"
     {
-      "cost"  "2500"
+      "cost"  "1700"
     }
     "pugna_decrepify"
     {
-      "cost"  "3000"
+      "cost"  "2600"
     }
     "pugna_nether_ward"
     {
-      "cost"  "3500"
+      "cost"  "1500"
     }
     "pugna_life_drain"
     {
-      "cost"  "6000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_naga_siren"
   {
     "naga_siren_mirror_image"
     {
-      "cost"  "4000"
+      "cost"  "2600"
     }
     "naga_siren_ensnare"
     {
-      "cost"  "3000"
+      "cost"  "1400"
     }
     "naga_siren_rip_tide"
     {
-      "cost"  "2000"
+      "cost"  "950"
     }
     "naga_siren_song_of_the_siren"
     {
-      "cost"  "6000"
+      "cost"  "3500"
       "subabilities"
       {
         "1"  "naga_siren_song_of_the_siren_cancel"
@@ -108,7 +108,7 @@
   {
     "wisp_tether"
     {
-      "cost"  "500"
+      "cost"  "400"
       "subabilities"
       {
         "1"  "wisp_tether_break"
@@ -116,7 +116,7 @@
     }
     "wisp_spirits"
     {
-      "cost"  "300"
+      "cost"  "1000"
       "subabilities"
       {
         "1"  "wisp_spirits_in"
@@ -125,98 +125,98 @@
     }
     "wisp_overcharge"
     {
-      "cost"  "800"
+      "cost"  "700"
     }
     "wisp_relocate"
     {
-      "cost"  "5000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_ogre_magi"
   {
     "ogre_magi_fireblast"
     {
-      "cost"  "2000"
+      "cost"  "450"
     }
     "ogre_magi_ignite"
     {
-      "cost"  "2000"
+      "cost"  "300"
     }
     "ogre_magi_bloodlust"
     {
-      "cost"  "3000"
+      "cost"  "700"
     }
     "ogre_magi_unrefined_fireblast"
     {
-      "cost"  "5000"
+      "cost"  "800"
     }
     "ogre_magi_multicast"
     {
-      "cost"  "6000"
+      "cost"  "2000"
     }
   }
   "npc_dota_hero_tidehunter"
   {
     "tidehunter_gush"
     {
-      "cost"  "1500"
+      "cost"  "600"
     }
     "tidehunter_kraken_shell"
     {
-      "cost"  "1000"
+      "cost"  "750"
     }
     "tidehunter_anchor_smash"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "tidehunter_ravage"
     {
-      "cost"  "5000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_slardar"
   {
     "slardar_sprint"
     {
-      "cost"  "1000"
+      "cost"  "500"
     }
     "slardar_slithereen_crush"
     {
-      "cost"  "2500"
+      "cost"  "1250"
     }
     "slardar_bash"
     {
-      "cost"  "2500"
+      "cost"  "1500"
     }
     "slardar_amplify_damage"
     {
-      "cost"  "3000"
+      "cost"  "2000"
     }
   }
   "npc_dota_hero_jakiro"
   {
     "jakiro_dual_breath"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "jakiro_ice_path"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "jakiro_liquid_fire"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "jakiro_macropyre"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
   }
   "npc_dota_hero_windrunner"
   {
     "windrunner_shackleshot"
     {
-      "cost"  "1000"
+      "cost"  "750"
     }
     "windrunner_powershot"
     {
@@ -224,18 +224,18 @@
     }
     "windrunner_windrun"
     {
-      "cost"  "1000"
+      "cost"  "1400"
     }
     "windrunner_focusfire"
     {
-      "cost"  "1000"
+      "cost"  "2700"
     }
   }
   "npc_dota_hero_tiny"
   {
     "tiny_avalanche"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "tiny_toss"
     {
@@ -243,26 +243,26 @@
     }
     "tiny_craggy_exterior"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "tiny_grow"
     {
-      "cost"  "1000"
+      "cost"  "4000"
     }
   }
   "npc_dota_hero_morphling"
   {
     "morphling_waveform"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "morphling_adaptive_strike"
     {
-      "cost"  "1000"
+      "cost"  "1100"
     }
     "morphling_morph_agi"
     {
-      "cost"  "1000"
+      "cost"  "2000"
       "subabilities"
       {
         "1"  "morphling_morph_str"
@@ -270,11 +270,11 @@
     }
     "morphling_hybrid"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "morphling_replicate"
     {
-      "cost"  "1000"
+      "cost"  "3000"
       "subabilities"
       {
         "1"  "morphling_morph_replicate"
@@ -285,7 +285,7 @@
   {
     "lycan_summon_wolves"
     {
-      "cost"  "1000"
+      "cost"  "2100"
     }
     "lycan_howl"
     {
@@ -293,106 +293,106 @@
     }
     "lycan_feral_impulse"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "lycan_shapeshift"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_medusa"
   {
     "medusa_split_shot"
     {
-      "cost"  "1000"
+      "cost"  "3500"
     }
     "medusa_mystic_snake"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "medusa_mana_shield"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "medusa_stone_gaze"
     {
-      "cost"  "1000"
+      "cost"  "4000"
     }
   }
   "npc_dota_hero_enigma"
   {
     "enigma_malefice"
     {
-      "cost"  "1000"
+      "cost"  "500"
     }
     "enigma_demonic_conversion"
     {
-      "cost"  "1000"
+      "cost"  "1700"
     }
     "enigma_midnight_pulse"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "enigma_black_hole"
     {
-      "cost"  "1000"
+      "cost"  "3700"
     }
   }
   "npc_dota_hero_oracle"
   {
     "oracle_fortunes_end"
     {
-      "cost"  "1000"
+      "cost"  "350"
     }
     "oracle_fates_edict"
     {
-      "cost"  "1000"
+      "cost"  "1150"
     }
     "oracle_purifying_flames"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "oracle_false_promise"
     {
-      "cost"  "1000"
+      "cost"  "4100"
     }
   }
   "npc_dota_hero_razor"
   {
     "razor_plasma_field"
     {
-      "cost"  "1000"
+      "cost"  "1350"
     }
     "razor_static_link"
     {
-      "cost"  "1000"
+      "cost"  "2250"
     }
     "razor_unstable_current"
     {
-      "cost"  "1000"
+      "cost"  "1900"
     }
     "razor_eye_of_the_storm"
     {
-      "cost"  "1000"
+      "cost"  "3400"
     }
   }
   "npc_dota_hero_shredder"
   {
     "shredder_whirling_death"
     {
-      "cost"  "1000"
+      "cost"  "900"
     }
     "shredder_timber_chain"
     {
-      "cost"  "1000"
+      "cost"  "1350"
     }
     "shredder_reactive_armor"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "shredder_chakram_2"
     {
-      "cost"  "1000"
+      "cost"  "2500"
       "subabilities"
       {
         "1"  "shredder_return_chakram_2"
@@ -400,7 +400,7 @@
     }
     "shredder_chakram"
     {
-      "cost"  "1000"
+      "cost"  "2500"
       "subabilities"
       {
         "1"  "shredder_return_chakram"
@@ -411,26 +411,26 @@
   {
     "clinkz_strafe"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "clinkz_searing_arrows"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "clinkz_wind_walk"
     {
-      "cost"  "1000"
+      "cost"  "2100"
     }
     "clinkz_death_pact"
     {
-      "cost"  "1000"
+      "cost"  "2400"
     }
   }
   "npc_dota_hero_templar_assassin"
   {
     "templar_assassin_refraction"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "templar_assassin_meld"
     {
@@ -438,11 +438,11 @@
     }
     "templar_assassin_psi_blades"
     {
-      "cost"  "1000"
+      "cost"  "2100"
     }
     "templar_assassin_trap"
     {
-      "cost"  "1000"
+      "cost"  "2000"
       "subabilities"
       {
         "1"  "templar_assassin_psionic_trap"
@@ -453,19 +453,19 @@
   {
     "lina_dragon_slave"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "lina_light_strike_array"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "lina_fiery_soul"
     {
-      "cost"  "1000"
+      "cost"  "2400"
     }
     "lina_laguna_blade"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_magnataur"
@@ -476,91 +476,91 @@
     }
     "magnataur_empower"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "magnataur_skewer"
     {
-      "cost"  "1000"
+      "cost"  "1100"
     }
     "magnataur_reverse_polarity"
     {
-      "cost"  "1000"
+      "cost"  "3700"
     }
   }
   "npc_dota_hero_skeleton_king"
   {
     "skeleton_king_hellfire_blast"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "skeleton_king_vampiric_aura"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "skeleton_king_mortal_strike"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "skeleton_king_reincarnation"
     {
-      "cost"  "1000"
+      "cost"  "3800"
     }
   }
   "npc_dota_hero_slark"
   {
     "slark_dark_pact"
     {
-      "cost"  "1000"
+      "cost"  "2400"
     }
     "slark_pounce"
     {
-      "cost"  "1000"
+      "cost"  "1600"
     }
     "slark_essence_shift"
     {
-      "cost"  "1000"
+      "cost"  "2600"
     }
     "slark_shadow_dance"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_weaver"
   {
     "weaver_the_swarm"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "weaver_shukuchi"
     {
-      "cost"  "1000"
+      "cost"  "1900"
     }
     "weaver_geminate_attack"
     {
-      "cost"  "1000"
+      "cost"  "2100"
     }
     "weaver_time_lapse"
     {
-      "cost"  "1000"
+      "cost"  "3600"
     }
   }
   "npc_dota_hero_abaddon"
   {
     "abaddon_death_coil"
     {
-      "cost"  "500"
+      "cost"  "550"
     }
     "abaddon_aphotic_shield"
     {
-      "cost"  "3000"
+      "cost"  "1900"
     }
     "abaddon_frostmourne"
     {
-      "cost"  "2000"
+      "cost"  "1800"
     }
     "abaddon_borrowed_time"
     {
-      "cost"  "5000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_puck"
@@ -575,60 +575,60 @@
     }
     "puck_waning_rift"
     {
-      "cost"  "1000"
+      "cost"  "1400"
     }
     "puck_phase_shift"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "puck_dream_coil"
     {
-      "cost"  "1000"
+      "cost"  "3400"
     }
   }
   "npc_dota_hero_antimage"
   {
     "antimage_mana_break"
     {
-      "cost"  "2000"
+      "cost"  "2400"
     }
     "antimage_blink"
     {
-      "cost"  "5000"
+      "cost"  "3000"
     }
     "antimage_spell_shield"
     {
-      "cost"  "3000"
+      "cost"  "2300"
     }
     "antimage_mana_void"
     {
-      "cost"  "5000"
+      "cost"  "4000"
     }
   }
   "npc_dota_hero_legion_commander"
   {
     "legion_commander_overwhelming_odds"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "legion_commander_press_the_attack"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "legion_commander_moment_of_courage"
     {
-      "cost"  "1000"
+      "cost"  "1900"
     }
     "legion_commander_duel"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_bane"
   {
     "bane_enfeeble"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "bane_brain_sap"
     {
@@ -644,7 +644,7 @@
     }
     "bane_fiends_grip"
     {
-      "cost"  "6000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_kunkka"
@@ -655,41 +655,41 @@
     }
     "kunkka_tidebringer"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "kunkka_x_marks_the_spot"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "kunkka_ghostship"
     {
-      "cost"  "1000"
+      "cost"  "3900"
     }
   }
   "npc_dota_hero_pudge"
   {
     "pudge_meat_hook"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "pudge_rot"
     {
-      "cost"  "1000"
+      "cost"  "1700"
     }
     "pudge_flesh_heap"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "pudge_dismember"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_winter_wyvern"
   {
     "winter_wyvern_arctic_burn"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "winter_wyvern_splinter_blast"
     {
@@ -697,34 +697,34 @@
     }
     "winter_wyvern_cold_embrace"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "winter_wyvern_winters_curse"
     {
-      "cost"  "1000"
+      "cost"  "3500"
     }
   }
   "npc_dota_hero_techies"
   {
     "techies_land_mines"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "techies_stasis_trap"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "techies_suicide"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "techies_minefield_sign"
     {
-      "cost"  "1000"
+      "cost"  "250"
     }
     "techies_remote_mines"
     {
-      "cost"  "1000"
+      "cost"  "3000"
       "subabilities"
       {
         "1"  "techies_focused_detonate"
@@ -735,19 +735,19 @@
   {
     "ancient_apparition_cold_feet"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "ancient_apparition_ice_vortex"
     {
-      "cost"  "1000"
+      "cost"  "550"
     }
     "ancient_apparition_chilling_touch"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "ancient_apparition_ice_blast"
     {
-      "cost"  "1000"
+      "cost"  "2500"
       "subabilities"
       {
         "1"  "ancient_apparition_ice_blast_release"
@@ -766,7 +766,7 @@
     }
     "phoenix_fire_spirits"
     {
-      "cost"  "1000"
+      "cost"  "800"
       "subabilities"
       {
         "1"  "phoenix_launch_fire_spirit"
@@ -774,7 +774,7 @@
     }
     "phoenix_sun_ray"
     {
-      "cost"  "1000"
+      "cost"  "1250"
       "subabilities"
       {
         "1"  "phoenix_sun_ray_stop"
@@ -783,49 +783,49 @@
     }
     "phoenix_supernova"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_treant"
   {
     "treant_natures_guise"
     {
-      "cost"  "1000"
+      "cost"  "1650"
     }
     "treant_leech_seed"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "treant_living_armor"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "treant_eyes_in_the_forest"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "treant_overgrowth"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_life_stealer"
   {
     "life_stealer_rage"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "life_stealer_feast"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "life_stealer_open_wounds"
     {
-      "cost"  "1000"
+      "cost"  "1600"
     }
     "life_stealer_assimilate"
     {
-      "cost"  "1000"
+      "cost"  "2600"
       "subabilities"
       {
         "1"  "life_stealer_assimilate_eject"
@@ -833,34 +833,31 @@
     }
     "life_stealer_infest"
     {
-      "cost"  "1000"
-    }
-    "life_stealer_control"
-    {
-      "cost"  "1000"
-    }
-    "life_stealer_consume"
-    {
-      "cost"  "1000"
+      "cost"  "3000"
+      "subabilities"
+      {
+        "1"  "life_stealer_control"
+        "2"  "life_stealer_consume"
+      }
     }
   }
   "npc_dota_hero_faceless_void"
   {
     "faceless_void_time_walk"
     {
-      "cost"  "1000"
+      "cost"  "1450"
     }
     "faceless_void_backtrack"
     {
-      "cost"  "1000"
+      "cost"  "1600"
     }
     "faceless_void_time_lock"
     {
-      "cost"  "1000"
+      "cost"  "1750"
     }
     "faceless_void_chronosphere"
     {
-      "cost"  "1000"
+      "cost"  "3800"
     }
   }
   "npc_dota_hero_venomancer"
@@ -871,125 +868,125 @@
     }
     "venomancer_poison_sting"
     {
-      "cost"  "1000"
+      "cost"  "1100"
     }
     "venomancer_plague_ward"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "venomancer_poison_nova"
     {
-      "cost"  "1000"
+      "cost"  "3100"
     }
   }
   "npc_dota_hero_earthshaker"
   {
     "earthshaker_fissure"
     {
-      "cost"  "1000"
+      "cost"  "900"
     }
     "earthshaker_enchant_totem"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
     "earthshaker_aftershock"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "earthshaker_echo_slam"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_enchantress"
   {
     "enchantress_untouchable"
     {
-      "cost"  "1000"
+      "cost"  "2400"
     }
     "enchantress_enchant"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "enchantress_natures_attendants"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "enchantress_impetus"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_earth_spirit"
   {
     "earth_spirit_boulder_smash"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "earth_spirit_rolling_boulder"
     {
-      "cost"  "1000"
+      "cost"  "1750"
     }
     "earth_spirit_geomagnetic_grip"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "earth_spirit_stone_caller"
     {
-      "cost"  "1000"
+      "cost"  "1900"
     }
     "earth_spirit_petrify"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "earth_spirit_magnetize"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_leshrac"
   {
     "leshrac_split_earth"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "leshrac_diabolic_edict"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "leshrac_lightning_storm"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "leshrac_pulse_nova"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_necrolyte"
   {
     "necrolyte_death_pulse"
     {
-      "cost"  "1000"
+      "cost"  "1400"
     }
     "necrolyte_heartstopper_aura"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "necrolyte_sadist"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "necrolyte_reapers_scythe"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_sand_king"
   {
     "sandking_burrowstrike"
     {
-      "cost"  "1000"
+      "cost"  "750"
     }
     "sandking_sand_storm"
     {
@@ -997,22 +994,22 @@
     }
     "sandking_caustic_finale"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "sandking_epicenter"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_tusk"
   {
     "tusk_ice_shards"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "tusk_snowball"
     {
-      "cost"  "1000"
+      "cost"  "800"
       "subabilities"
       {
         "1"  "tusk_launch_snowball"
@@ -1020,34 +1017,34 @@
     }
     "tusk_frozen_sigil"
     {
-      "cost"  "1000"
+      "cost"  "400"
     }
     "tusk_walrus_kick"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "tusk_walrus_punch"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
   }
   "npc_dota_hero_bristleback"
   {
     "bristleback_viscous_nasal_goo"
     {
-      "cost"  "1000"
+      "cost"  "500"
     }
     "bristleback_quill_spray"
     {
-      "cost"  "1000"
+      "cost"  "850"
     }
     "bristleback_bristleback"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "bristleback_warpath"
     {
-      "cost"  "1000"
+      "cost"  "1750"
     }
   }
   "npc_dota_hero_centaur"
@@ -1058,22 +1055,22 @@
     }
     "centaur_double_edge"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "centaur_return"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "centaur_stampede"
     {
-      "cost"  "1000"
+      "cost"  "2900"
     }
   }
   "npc_dota_hero_troll_warlord"
   {
     "troll_warlord_berserkers_rage"
     {
-      "cost"  "1000"
+      "cost"  "1900"
       "subabilities"
       {
         "1"  "troll_warlord_whirling_axes_ranged"
@@ -1082,30 +1079,30 @@
     }
     "troll_warlord_fervor"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "troll_warlord_battle_trance"
     {
-      "cost"  "1000"
+      "cost"  "4250"
     }
   }
   "npc_dota_hero_visage"
   {
     "visage_grave_chill"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "visage_soul_assumption"
     {
-      "cost"  "1000"
+      "cost"  "1100"
     }
     "visage_gravekeepers_cloak"
     {
-      "cost"  "1000"
+      "cost"  "900"
     }
     "visage_summon_familiars"
     {
-      "cost"  "1000"
+      "cost"  "3200"
     }
   }
   "npc_dota_hero_keeper_of_the_light"
@@ -1120,80 +1117,73 @@
     }
     "keeper_of_the_light_mana_leak"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "keeper_of_the_light_chakra_magic"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "keeper_of_the_light_recall"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "keeper_of_the_light_blinding_light"
     {
-      "cost"  "1000"
+      "cost"  "2300"
     }
     "keeper_of_the_light_spirit_form"
     {
-      "cost"  "1000"
+      "cost"  "2400"
     }
-    "keeper_of_the_light_spirit_form_illuminate"
-    {
-      "cost"  "1000"
-      "subabilities"
-      {
-        "1"  "keeper_of_the_light_spirit_form_illuminate_end"
-      }
-    }
+
   }
   "npc_dota_hero_phantom_lancer"
   {
     "phantom_lancer_spirit_lance"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "phantom_lancer_doppelwalk"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "phantom_lancer_phantom_edge"
     {
-      "cost"  "1000"
+      "cost"  "1600"
     }
     "phantom_lancer_juxtapose"
     {
-      "cost"  "1000"
+      "cost"  "3250"
     }
   }
   "npc_dota_hero_spirit_breaker"
   {
     "spirit_breaker_charge_of_darkness"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "spirit_breaker_empowering_haste"
     {
-      "cost"  "1000"
+      "cost"  "900"
     }
     "spirit_breaker_greater_bash"
     {
-      "cost"  "1000"
+      "cost"  "2150"
     }
     "spirit_breaker_nether_strike"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_elder_titan"
   {
     "elder_titan_echo_stomp"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "elder_titan_ancestral_spirit"
     {
-      "cost"  "1000"
+      "cost"  "1350"
       "subabilities"
       {
         "1"  "elder_titan_return_spirit"
@@ -1201,11 +1191,11 @@
     }
     "elder_titan_natural_order"
     {
-      "cost"  "1000"
+      "cost"  "2600"
     }
     "elder_titan_earth_splitter"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_rattletrap"
@@ -1216,22 +1206,22 @@
     }
     "rattletrap_power_cogs"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "rattletrap_rocket_flare"
     {
-      "cost"  "1000"
+      "cost"  "1150"
     }
     "rattletrap_hookshot"
     {
-      "cost"  "1000"
+      "cost"  "2400"
     }
   }
   "npc_dota_hero_nevermore"
   {
     "nevermore_shadowraze1"
     {
-      "cost"  "1000"
+      "cost"  "2500"
       "subabilities"
       {
         "1"  "nevermore_shadowraze2"
@@ -1240,11 +1230,11 @@
     }
     "nevermore_dark_lord"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "nevermore_requiem"
     {
-      "cost"  "1000"
+      "cost"  "3500"
       "subabilities"
       {
         "1"  "nevermore_necromastery"
@@ -1255,45 +1245,45 @@
   {
     "dazzle_poison_touch"
     {
-      "cost"  "1000"
+      "cost"  "300"
     }
     "dazzle_shallow_grave"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "dazzle_shadow_wave"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "dazzle_weave"
     {
-      "cost"  "1000"
+      "cost"  "1900"
     }
   }
   "npc_dota_hero_disruptor"
   {
     "disruptor_thunder_strike"
     {
-      "cost"  "1000"
+      "cost"  "900"
     }
     "disruptor_glimpse"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "disruptor_kinetic_field"
     {
-      "cost"  "1000"
+      "cost"  "1850"
     }
     "disruptor_static_storm"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_rubick"
   {
     "rubick_telekinesis"
     {
-      "cost"  "1000"
+      "cost"  "750"
       "subabilities"
       {
         "1"  "rubick_telekinesis_land"
@@ -1301,163 +1291,163 @@
     }
     "rubick_fade_bolt"
     {
-      "cost"  "1000"
+      "cost"  "450"
     }
     "rubick_null_field"
     {
-      "cost"  "1000"
+      "cost"  "300"
     }
     "rubick_spell_steal"
     {
-      "cost"  "1000"
+      "cost"  "3500"
     }
   }
   "npc_dota_hero_undying"
   {
     "undying_decay"
     {
-      "cost"  "1000"
+      "cost"  "850"
     }
     "undying_soul_rip"
     {
-      "cost"  "1000"
+      "cost"  "900"
     }
     "undying_tombstone"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "undying_flesh_golem"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
   }
   "npc_dota_hero_terrorblade"
   {
     "terrorblade_reflection"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "terrorblade_conjure_image"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
     "terrorblade_metamorphosis"
     {
-      "cost"  "1000"
+      "cost"  "3100"
     }
     "terrorblade_sunder"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_batrider"
   {
     "batrider_sticky_napalm"
     {
-      "cost"  "1000"
+      "cost"  "2900"
     }
     "batrider_flamebreak"
     {
-      "cost"  "1000"
+      "cost"  "500"
     }
     "batrider_firefly"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "batrider_flaming_lasso"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_meepo"
   {
     "meepo_earthbind"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "meepo_poof"
     {
-      "cost"  "1000"
+      "cost"  "250"
     }
     "meepo_geostrike"
     {
-      "cost"  "1000"
+      "cost"  "350"
     }
     "meepo_divided_we_stand"
     {
-      "cost"  "1000"
+      "cost"  "10000"
     }
   }
   "npc_dota_hero_phantom_assassin"
   {
     "phantom_assassin_stifling_dagger"
     {
-      "cost"  "1000"
+      "cost"  "1100"
     }
     "phantom_assassin_phantom_strike"
     {
-      "cost"  "1000"
+      "cost"  "2150"
     }
     "phantom_assassin_blur"
     {
-      "cost"  "1000"
+      "cost"  "3400"
     }
     "phantom_assassin_coup_de_grace"
     {
-      "cost"  "1000"
+      "cost"  "4900"
     }
   }
   "npc_dota_hero_huskar"
   {
     "huskar_inner_vitality"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "huskar_burning_spear"
     {
-      "cost"  "1000"
+      "cost"  "750"
     }
     "huskar_berserkers_blood"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "huskar_life_break"
     {
-      "cost"  "1000"
+      "cost"  "2450"
     }
   }
   "npc_dota_hero_brewmaster"
   {
     "brewmaster_thunder_clap"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "brewmaster_drunken_haze"
     {
-      "cost"  "1000"
+      "cost"  "1350"
     }
     "brewmaster_drunken_brawler"
     {
-      "cost"  "1000"
+      "cost"  "1450"
     }
     "brewmaster_primal_split"
     {
-      "cost"  "1000"
+      "cost"  "3350"
     }
   }
   "npc_dota_hero_shadow_demon"
   {
     "shadow_demon_disruption"
     {
-      "cost"  "1000"
+      "cost"  "1400"
     }
     "shadow_demon_soul_catcher"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "shadow_demon_shadow_poison"
     {
-      "cost"  "1000"
+      "cost"  "1250"
       "subabilities"
       {
         "1"  "shadow_demon_shadow_poison_release"
@@ -1465,94 +1455,94 @@
     }
     "shadow_demon_demonic_purge"
     {
-      "cost"  "1000"
+      "cost"  "2900"
     }
   }
   "npc_dota_hero_luna"
   {
     "luna_lucent_beam"
     {
-      "cost"  "1000"
+      "cost"  "500"
     }
     "luna_moon_glaive"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "luna_lunar_blessing"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "luna_eclipse"
     {
-      "cost"  "1000"
+      "cost"  "3400"
     }
   }
   "npc_dota_hero_lion"
   {
     "lion_impale"
     {
-      "cost"  "1000"
+      "cost"  "750"
     }
     "lion_voodoo"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "lion_mana_drain"
     {
-      "cost"  "1000"
+      "cost"  "750"
     }
     "lion_finger_of_death"
     {
-      "cost"  "1000"
+      "cost"  "2850"
     }
   }
   "npc_dota_hero_beastmaster"
   {
     "beastmaster_wild_axes"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "beastmaster_call_of_the_wild"
     {
-      "cost"  "1000"
+      "cost"  "900"
     }
     "beastmaster_call_of_the_wild_boar"
     {
-      "cost"  "1000"
+      "cost"  "900"
     }
     "beastmaster_inner_beast"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "beastmaster_primal_roar"
     {
-      "cost"  "1000"
+      "cost"  "3400"
     }
   }
   "npc_dota_hero_axe"
   {
     "axe_berserkers_call"
     {
-      "cost"  "1000"
+      "cost"  "950"
     }
     "axe_battle_hunger"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "axe_counter_helix"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "axe_culling_blade"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_warlock"
   {
     "warlock_fatal_bonds"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "warlock_shadow_word"
     {
@@ -1564,7 +1554,7 @@
     }
     "warlock_rain_of_chaos"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_obsidian_destroyer"
@@ -1575,100 +1565,57 @@
     }
     "obsidian_destroyer_astral_imprisonment"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "obsidian_destroyer_essence_aura"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
     "obsidian_destroyer_sanity_eclipse"
     {
-      "cost"  "1000"
+      "cost"  "3250"
     }
   }
   "npc_dota_hero_silencer"
   {
     "silencer_curse_of_the_silent"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "silencer_glaives_of_wisdom"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "silencer_last_word"
     {
-      "cost"  "1000"
+      "cost"  "1400"
     }
     "silencer_global_silence"
     {
-      "cost"  "1000"
+      "cost"  "4000"
     }
   }
   "npc_dota_hero_spectre"
   {
     "spectre_spectral_dagger"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "spectre_desolate"
     {
-      "cost"  "1000"
+      "cost"  "1750"
     }
     "spectre_dispersion"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "spectre_haunt"
     {
-      "cost"  "1000"
+      "cost"  "3000"
       "subabilities"
       {
         "1"  "spectre_reality"
       }
-    }
-  }
-  "npc_dota_hero_invoker"
-  {
-    "invoker_cold_snap"
-    {
-      "cost"  "1000"
-    }
-    "invoker_ghost_walk"
-    {
-      "cost"  "1000"
-    }
-    "invoker_tornado"
-    {
-      "cost"  "1000"
-    }
-    "invoker_emp"
-    {
-      "cost"  "1000"
-    }
-    "invoker_alacrity"
-    {
-      "cost"  "1000"
-    }
-    "invoker_chaos_meteor"
-    {
-      "cost"  "1000"
-    }
-    "invoker_sun_strike"
-    {
-      "cost"  "1000"
-    }
-    "invoker_forge_spirit"
-    {
-      "cost"  "1000"
-    }
-    "invoker_ice_wall"
-    {
-      "cost"  "1000"
-    }
-    "invoker_deafening_blast"
-    {
-      "cost"  "1000"
     }
   }
   "npc_dota_hero_bounty_hunter"
@@ -1679,45 +1626,45 @@
     }
     "bounty_hunter_jinada"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "bounty_hunter_wind_walk"
     {
-      "cost"  "1000"
+      "cost"  "2250"
     }
     "bounty_hunter_track"
     {
-      "cost"  "1000"
+      "cost"  "3500"
     }
   }
   "npc_dota_hero_zuus"
   {
     "zuus_arc_lightning"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "zuus_lightning_bolt"
     {
-      "cost"  "1000"
+      "cost"  "650"
     }
     "zuus_static_field"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "zuus_thundergods_wrath"
     {
-      "cost"  "1000"
+      "cost"  "3500"
     }
   }
   "npc_dota_hero_alchemist"
   {
     "alchemist_acid_spray"
     {
-      "cost"  "1000"
+      "cost"  "750"
     }
     "alchemist_unstable_concoction"
     {
-      "cost"  "1000"
+      "cost"  "900"
       "subabilities"
       {
         "1"  "alchemist_unstable_concoction_throw"
@@ -1725,11 +1672,11 @@
     }
     "alchemist_goblins_greed"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "alchemist_chemical_rage"
     {
-      "cost"  "1000"
+      "cost"  "3250"
     }
   }
   "npc_dota_hero_omniknight"
@@ -1740,15 +1687,15 @@
     }
     "omniknight_repel"
     {
-      "cost"  "1000"
+      "cost"  "1900"
     }
     "omniknight_degen_aura"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "omniknight_guardian_angel"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_gyrocopter"
@@ -1759,49 +1706,53 @@
     }
     "gyrocopter_homing_missile"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "gyrocopter_flak_cannon"
     {
-      "cost"  "1000"
+      "cost"  "2700"
+    }
+    "gyrocopter_call_down"
+    {
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_furion"
   {
     "furion_sprout"
     {
-      "cost"  "1000"
+      "cost"  "400"
     }
     "furion_teleportation"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "furion_force_of_nature"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "furion_wrath_of_nature"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_crystal_maiden"
   {
     "crystal_maiden_crystal_nova"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "crystal_maiden_frostbite"
     {
-      "cost"  "1000"
+      "cost"  "750"
     }
     "crystal_maiden_brilliance_aura"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "crystal_maiden_freezing_field"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_chen"
@@ -1812,45 +1763,45 @@
     }
     "chen_test_of_faith"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "chen_test_of_faith_teleport"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "chen_holy_persuasion"
     {
-      "cost"  "1000"
+      "cost"  "1800"
     }
     "chen_hand_of_god"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_broodmother"
   {
     "broodmother_spawn_spiderlings"
     {
-      "cost"  "1000"
+      "cost"  "1100"
     }
     "broodmother_spin_web"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "broodmother_incapacitating_bite"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "broodmother_insatiable_hunger"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_doom_bringer"
   {
     "doom_bringer_devour"
     {
-      "cost"  "1000"
+      "cost"  "1800"
       "subabilities"
       {
         "1"  "doom_bringer_empty1"
@@ -1859,30 +1810,34 @@
     }
     "doom_bringer_scorched_earth"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "doom_bringer_lvl_death"
     {
-      "cost"  "1000"
+      "cost"  "1600"
     }
     "doom_bringer_doom"
     {
-      "cost"  "1000"
+      "cost"  "3400"
     }
   }
   "npc_dota_hero_ursa"
   {
     "ursa_earthshock"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "ursa_overpower"
     {
-      "cost"  "1000"
+      "cost"  "1300"
     }
     "ursa_fury_swipes"
     {
-      "cost"  "1000"
+      "cost"  "2500"
+    }
+    "ursa_enrage"
+    {
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_night_stalker"
@@ -1893,83 +1848,83 @@
     }
     "night_stalker_crippling_fear"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "night_stalker_hunter_in_the_night"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "night_stalker_darkness"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_vengefulspirit"
   {
     "vengefulspirit_magic_missile"
     {
-      "cost"  "1000"
+      "cost"  "550"
     }
     "vengefulspirit_wave_of_terror"
     {
-      "cost"  "1000"
+      "cost"  "750"
     }
     "vengefulspirit_command_aura"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "vengefulspirit_nether_swap"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
   }
   "npc_dota_hero_sven"
   {
     "sven_storm_bolt"
     {
-      "cost"  "1000"
+      "cost"  "1250"
     }
     "sven_great_cleave"
     {
-      "cost"  "1000"
+      "cost"  "2600"
     }
     "sven_warcry"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "sven_gods_strength"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_shadow_shaman"
   {
     "shadow_shaman_ether_shock"
     {
-      "cost"  "1000"
+      "cost"  "600"
     }
     "shadow_shaman_voodoo"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "shadow_shaman_shackles"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
     "shadow_shaman_mass_serpent_ward"
     {
-      "cost"  "1000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_storm_spirit"
   {
     "storm_spirit_static_remnant"
     {
-      "cost"  "1000"
+      "cost"  "800"
     }
     "storm_spirit_electric_vortex"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "storm_spirit_overload"
     {
@@ -1977,18 +1932,18 @@
     }
     "storm_spirit_ball_lightning"
     {
-      "cost"  "1000"
+      "cost"  "3150"
     }
   }
   "npc_dota_hero_dark_seer"
   {
     "dark_seer_vacuum"
     {
-      "cost"  "1000"
+      "cost"  "1500"
     }
     "dark_seer_ion_shell"
     {
-      "cost"  "1000"
+      "cost"  "1200"
     }
     "dark_seer_surge"
     {
@@ -1996,7 +1951,7 @@
     }
     "dark_seer_wall_of_replica"
     {
-      "cost"  "1000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_queenofpain"
@@ -2007,7 +1962,7 @@
     }
     "queenofpain_blink"
     {
-      "cost"  "1000"
+      "cost"  "2650"
     }
     "queenofpain_scream_of_pain"
     {
@@ -2015,22 +1970,22 @@
     }
     "queenofpain_sonic_wave"
     {
-      "cost"  "1000"
+      "cost"  "2800"
     }
   }
   "npc_dota_hero_sniper"
   {
     "sniper_shrapnel"
     {
-      "cost"  "1700"
+      "cost"  "1150"
     }
     "sniper_headshot"
     {
-      "cost"  "1600"
+      "cost"  "1250"
     }
     "sniper_take_aim"
     {
-      "cost"  "1600"
+      "cost"  "1350"
     }
     "sniper_assassinate"
     {
@@ -2041,95 +1996,95 @@
   {
     "bloodseeker_bloodrage"
     {
-      "cost"  "1500"
+      "cost"  "1800"
     }
     "bloodseeker_blood_bath"
     {
-      "cost"  "1500"
+      "cost"  "1250"
     }
     "bloodseeker_thirst"
     {
-      "cost"  "3500"
+      "cost"  "3450"
     }
     "bloodseeker_rupture"
     {
-      "cost"  "2800"
+      "cost"  "2400"
     }
   }
   "npc_dota_hero_skywrath_mage"
   {
     "skywrath_mage_arcane_bolt"
     {
-      "cost"  "500"
+      "cost"  "650"
     }
     "skywrath_mage_concussive_shot"
     {
-      "cost"  "500"
+      "cost"  "450"
     }
     "skywrath_mage_ancient_seal"
     {
-      "cost"  "2000"
+      "cost"  "1250"
     }
     "skywrath_mage_mystic_flare"
     {
-      "cost"  "3000"
+      "cost"  "2000"
     }
   }
   "npc_dota_hero_juggernaut"
   {
     "juggernaut_blade_fury"
     {
-      "cost"  "1300"
+      "cost"  "1250"
     }
     "juggernaut_healing_ward"
     {
-      "cost"  "1100"
+      "cost"  "1000"
     }
     "juggernaut_blade_dance"
     {
-      "cost"  "1800"
+      "cost"  "1500"
     }
     "juggernaut_omni_slash"
     {
-      "cost"  "3000"
+      "cost"  "3100"
     }
   }
   "npc_dota_hero_riki"
   {
     "riki_smoke_screen"
     {
-      "cost"  "2400"
+      "cost"  "1500"
     }
     "riki_permanent_invisibility"
     {
-      "cost"  "3500"
+      "cost"  "3250"
     }
     "riki_backstab"
     {
-      "cost"  "2500"
+      "cost"  "2800"
     }
     "riki_blink_strike"
     {
-      "cost"  "2500"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_nyx_assassin"
   {
     "nyx_assassin_impale"
     {
-      "cost"  "700"
+      "cost"  "900"
     }
     "nyx_assassin_mana_burn"
     {
-      "cost"  "900"
+      "cost"  "1100"
     }
     "nyx_assassin_spiked_carapace"
     {
-      "cost"  "1200"
+      "cost"  "1250"
     }
     "nyx_assassin_burrow"
     {
-      "cost"  "1000"
+      "cost"  "2500"
       "subabilities"
       {
         "1"  "nyx_assassin_unburrow"
@@ -2137,7 +2092,7 @@
     }
     "nyx_assassin_vendetta"
     {
-      "cost"  "2500"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_lich"
@@ -2148,26 +2103,26 @@
     }
     "lich_frost_armor"
     {
-      "cost"  "700"
+      "cost"  "1200"
     }
     "lich_dark_ritual"
     {
-      "cost"  "900"
+      "cost"  "500"
     }
     "lich_chain_frost"
     {
-      "cost"  "3000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_tinker"
   {
     "tinker_laser"
     {
-      "cost"  "3000"
+      "cost"  "1250"
     }
     "tinker_heat_seeking_missile"
     {
-      "cost"  "2000"
+      "cost"  "1500"
     }
     "tinker_march_of_the_machines"
     {
@@ -2182,57 +2137,57 @@
   {
     "dragon_knight_breathe_fire"
     {
-      "cost"  "1800"
+      "cost"  "1000"
     }
     "dragon_knight_dragon_tail"
     {
-      "cost"  "800"
+      "cost"  "1000"
     }
     "dragon_knight_dragon_blood"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "dragon_knight_elder_dragon_form"
     {
-      "cost"  "4000"
+      "cost"  "3000"
     }
   }
   "npc_dota_hero_mirana"
   {
     "mirana_starfall"
     {
-      "cost"  "350"
+      "cost"  "800"
     }
     "mirana_arrow"
     {
-      "cost"  "1400"
+      "cost"  "1250"
     }
     "mirana_leap"
     {
-      "cost"  "1000"
+      "cost"  "2000"
     }
     "mirana_invis"
     {
-      "cost"  "3500"
+      "cost"  "3200"
     }
   }
   "npc_dota_hero_ember_spirit"
   {
     "ember_spirit_searing_chains"
     {
-      "cost"  "500"
+      "cost"  "800"
     }
     "ember_spirit_sleight_of_fist"
     {
-      "cost"  "2200"
+      "cost"  "1750"
     }
     "ember_spirit_flame_guard"
     {
-      "cost"  "800"
+      "cost"  "1000"
     }
     "ember_spirit_fire_remnant"
     {
-      "cost"  "3000"
+      "cost"  "3400"
       "subabilities"
       {
         "1"  "ember_spirit_activate_fire_remnant"
@@ -2243,11 +2198,11 @@
   {
     "witch_doctor_paralyzing_cask"
     {
-      "cost"  "600"
+      "cost"  "750"
     }
     "witch_doctor_voodoo_restoration"
     {
-      "cost"  "400"
+      "cost"  "500"
     }
     "witch_doctor_maledict"
     {
@@ -2255,14 +2210,14 @@
     }
     "witch_doctor_death_ward"
     {
-      "cost"  "3000"
+      "cost"  "2500"
     }
   }
   "npc_dota_hero_chaos_knight"
   {
     "chaos_knight_chaos_bolt"
     {
-      "cost"  "600"
+      "cost"  "900"
     }
     "chaos_knight_reality_rift"
     {
@@ -2270,7 +2225,7 @@
     }
     "chaos_knight_chaos_strike"
     {
-      "cost"  "3000"
+      "cost"  "1800"
     }
     "chaos_knight_phantasm"
     {
@@ -2281,19 +2236,19 @@
   {
     "viper_poison_attack"
     {
-      "cost"  "600"
+      "cost"  "1250"
     }
     "viper_nethertoxin"
     {
-      "cost"  "600"
+      "cost"  "1300"
     }
     "viper_corrosive_skin"
     {
-      "cost"  "800"
+      "cost"  "1350"
     }
     "viper_viper_strike"
     {
-      "cost"  "2500"
+      "cost"  "2000"
     }
   }
 }

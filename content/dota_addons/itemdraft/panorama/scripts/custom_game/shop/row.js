@@ -20,22 +20,19 @@ function hideTooltip() {
 heroIcon.SetPanelEvent("onmouseover", showTooltip);
 heroIcon.SetPanelEvent("onmouseout", hideTooltip);
 
-var abilitesPanel = rootPanel.GetChild(1)
+var abilitiesPanel = rootPanel.GetChild(1)
 
 var abilities = []
-for (var abilityInfo of abilitiesString.split(";")) {
-  var splitAbilityInfo = abilityInfo.split("=");
-  var name = splitAbilityInfo[0];
-  var ultimate = name.indexOf("!", name.length - 1) !== -1;;
-  if (ultimate) {
-    name = name.substring(0, name.length - 1)
+function shopChanged(table, shopHeroName, shopAbilities) {
+  if (shopHeroName === heroName) {
+    for (var ability in shopAbilities) {
+      var abilityDetails = shopAbilities[ability];
+      abilityDetails["name"] = ability;
+      abilities.push(shopAbilities[ability]);
+    }
   }
-  abilities.push({
-    "name": name,
-    "ultimate": ultimate,
-    "cost": parseInt(splitAbilityInfo[1])
-  });
 }
+manageNetTable("shop", shopChanged);
 
 abilities.sort(function(a, b) {
   var aCost = a["cost"];
@@ -48,12 +45,14 @@ abilities.sort(function(a, b) {
 for (var a of abilities) {
   var ability = a["name"];
   var cost = a["cost"];
-  var newAbility = $.CreatePanel("Panel", abilitesPanel, "shop-row-" + heroName + "-" + ability);
+  var newAbility = $.CreatePanel("Panel", abilitiesPanel, "shop-row-" + heroName + "-" + ability);
   newAbility.SetAttributeString("heroName", heroName);
   newAbility.SetAttributeString("ability", ability);
   newAbility.SetAttributeInt("cost", cost);
   newAbility.BLoadLayout("file://{resources}/layout/custom_game/shop/ability.xml", false, false);
   if (a["ultimate"]) {
-    newAbility.AddClass("ultimate");
+    var ultIndicator = $.CreatePanel("Label", newAbility, "shop-row-" + heroName + "-" + ability + "-ult-indicator");
+    ultIndicator.text = "Ult";
+    ultIndicator.AddClass("ultimate");
   }
 }
